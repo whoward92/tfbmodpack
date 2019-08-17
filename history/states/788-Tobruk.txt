@@ -1,0 +1,28 @@
+
+state={
+	id=788
+	name="Tobruk"
+	manpower = 68442
+	
+	state_category = town
+
+	history={
+		owner = ITA
+		
+		victory_points = {
+			13218 5 
+		}
+		buildings = {
+			infrastructure = 4
+			13218 = {
+				naval_base = 6
+				bunker = 3
+			}
+		}
+		add_core_of = LBA
+	}
+
+	provinces={
+		13218
+	}
+}

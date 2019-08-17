@@ -1,0 +1,18 @@
+
+state={
+	id=789
+	name="Jotunheimen"
+	manpower = 0
+	
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = NOR
+		add_core_of = NOR
+	}
+
+	provinces={
+		6184 3059 11037 6136 9032 9135 9227 11113 11206 6114 3093 6204 6216 9047 9170 11198 11101 3129
+	}
+}

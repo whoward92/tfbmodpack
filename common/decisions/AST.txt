@@ -1,0 +1,18 @@
+AST_annex_new_zealand = {
+		AST_annex_newzealand = {
+			ai_will_do = { factor = 0 }
+			cost = 25	
+			visible = {
+				tag = AST
+				NZL = { is_ai = yes }
+				country_exists = NZL
+				date > 1939.1.1
+			}
+			fire_only_once = yes
+			complete_effect = {
+				AST = {
+					annex_country = { target = NZL transfer_troops = yes }
+				}
+			}
+		}
+}

@@ -1,0 +1,102 @@
+ideas = {
+	colonial_conscription_laws = { 
+		law = yes
+
+		#Zero Colonial
+		zero_colonial = {
+				
+			picture = resistance_press
+				
+			cost = 100
+			removal_cost = -1
+			level = 4
+			
+			available = {
+			}
+
+			modifier = {
+				stability_factor = 0.01
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			cancel_if_invalid = no
+			default = yes
+		}
+		
+		#Limited Colonial
+		limited_colonial = {
+				
+			picture = resistance_press
+				
+			cost = 100
+			removal_cost = -1
+			level = 4
+			
+			available = {
+			}
+
+			modifier = {
+				#attrition = -0.05
+				non_core_manpower = 0.005
+				stability_factor = -0.05
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		#Moderate Colonial
+		moderate_colonial = {
+
+			picture = resistance_press
+					
+			cost = 100
+			removal_cost = -1
+			level = 3
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = {
+				#conscription_factor = 0.025
+				non_core_manpower = 0.015
+				stability_factor = -0.07
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		#Severe Colonial
+		severe_colonial = {
+					
+			picture = resistance_press
+					
+			cost = 100
+			removal_cost = -1
+			level = 2
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = {
+				#conscription_factor = 0.05
+				#attrition = 0.05
+				#political_power_factor = -0.25
+				non_core_manpower = 0.020
+				stability_factor = -0.10
+				subjects_autonomy_gain = 0.5
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}

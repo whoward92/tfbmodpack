@@ -1,0 +1,10 @@
+################
+##### ENG ######
+################
+ENG_annex_empire = {
+     icon = eng_imperial_conference
+	 
+	 allowed = {
+		original_tag = ENG
+	}
+}

@@ -1,0 +1,10 @@
+################
+##### GER ######
+################
+GER_puppet_axis_minors = {
+     icon = eng_imperial_conference
+	 
+	 allowed = {
+		original_tag = GER
+	}
+}

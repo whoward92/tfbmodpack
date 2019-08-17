@@ -1,0 +1,176 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						tag = FRA 
+						NOT = { has_global_flag = fall_of_france } 
+					}
+				}
+				
+				set_global_flag = achievement_france_surrender
+				set_global_flag = fall_of_france
+				
+				if = {
+					limit = {
+						AND = {
+							ITA { NOT = { has_war_with = ENG } }
+						}
+					}
+					ITA = {
+						declare_war_on = {
+							target = FRA
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = FRF
+							type = annex_everything
+						}
+						declare_war_on = {
+							target = ENG
+							type = annex_everything
+						}
+					}
+				}
+				
+				## Free French
+				FRF = {
+				
+					#Remove France Ideas
+					remove_ideas = FRA_victors_of_wwi
+					remove_ideas = FRA_disjointed_government
+					remove_ideas = FRA_protected_by_the_maginot_line
+					remove_ideas = FRA_war_opposition
+				
+					# Give Free France Land
+					transfer_state = 539
+					transfer_state = 772
+					transfer_state = 773
+					transfer_state = 660
+					transfer_state = 774
+					transfer_state = 268
+					transfer_state = 708
+					transfer_state = 706
+					transfer_state = 635
+					transfer_state = 641
+					transfer_state = 728
+					transfer_state = 310
+					transfer_state = 734
+					transfer_state = 730
+					transfer_state = 713
+					set_state_controller = 515
+					set_state_controller = 660
+					set_state_controller = 539
+					
+					add_state_core = 539
+					add_state_core = 772
+					add_state_core = 773
+					add_state_core = 774
+					add_state_core = 660
+					
+					set_capital = 539
+					
+					set_global_flag = achievement_france_surrender
+					set_global_flag = fall_of_france
+					
+					load_oob = FRF_naval_oob
+
+				}
+				
+				FRF = {
+					change_tag_from = FRA
+				}
+				
+				FRF = { inherit_technology = FRA }
+				ENG = { add_to_faction = FRF }
+				GER = { declare_war_on = { target = FRF type = annex_everything } }
+				FRF = { news_event = { id = france.20 days = 1 } }
+				
+				## Vichy France ##
+				set_country_flag = is_vichy_france
+				EFR = {
+					diplomatic_relation = { country = GER relation = non_aggression_pact }
+					set_capital = 26
+					transfer_state = 1
+					transfer_state = 26
+					transfer_state = 22
+					transfer_state = 31
+					transfer_state = 25
+					transfer_state = 20
+					transfer_state = 21
+					transfer_state = 32
+					transfer_state = 33
+					transfer_state = 677
+					transfer_state = 680
+					transfer_state = 553
+					transfer_state = 554
+					transfer_state = 458
+					transfer_state = 459
+					transfer_state = 460
+					transfer_state = 461
+					transfer_state = 462
+					transfer_state = 513
+					transfer_state = 514 # Desert wastelands 
+					transfer_state = 786
+					transfer_state = 515
+					transfer_state = 782
+					transfer_state = 775
+					transfer_state = 556 # Africa 
+					transfer_state = 557
+					transfer_state = 272
+					transfer_state = 735
+					transfer_state = 778 
+					transfer_state = 781
+					transfer_state = 779
+					transfer_state = 780
+					transfer_state = 776
+					transfer_state = 777
+					transfer_state = 298
+					transfer_state = 543 #Madagascar 
+					transfer_state = 671
+					transfer_state = 670
+					transfer_state = 741
+					transfer_state = 286
+					transfer_state = 665
+					transfer_state = 694
+					transfer_state = 320
+
+					set_politics = {
+						ruling_party = fascism
+						elections_allowed = no
+					}
+						
+					set_popularities = {
+							fascism = 70
+							democratic = 18
+							communism = 2
+							neutrality = 10
+					}
+							
+					EFR = { inherit_technology = FRA }
+					
+					every_state = {
+						limit = {
+							is_core_of = FRA
+							is_controlled_by = EFR
+						}
+						add_core_of = EFR
+					}
+					every_state = {
+						limit = {
+							NOT = {
+								is_core_of = FRA
+							}
+							is_controlled_by = EFR
+						}
+						add_claim_by  = FRA
+					}
+					28 = {
+						remove_core_of = EFR
+					}
+				}
+			}
+		}
+	}
+}

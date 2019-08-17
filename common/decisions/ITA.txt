@@ -1,0 +1,19 @@
+ITA_annex_axis_bulgaria = {
+		ITA_annex_bulgaria = {
+			ai_will_do = { factor = 0 }
+			cost = 100	
+			visible = {
+				tag = ITA
+				BUL = { is_ai = yes }
+				country_exists = BUL
+				date > 1939.1.1
+			}
+			fire_only_once = yes
+			complete_effect = {
+				ITA = {
+					annex_country = { target = BUL transfer_troops = yes }
+					#add_ideas = annex_bulgaria_idea
+				}
+			}
+		}
+}

@@ -1,0 +1,20 @@
+ai_historical_focus_list_BUL = {
+	ai_national_focuses = {
+		BUL_Highway_Development
+		BUL_Begin_2_Year_Plan
+		BUL_Build_It_Better
+		BUL_Heavy_Machines
+		BUL_Fuel_Our_Industry
+		BUL_Finnish_2_Year_Plan
+		BUL_Monarch_Speech
+		BUL_Nationalism
+		BUL_Radar_Testing
+		BUL_Break_Western_Ties
+		BUL_University_Of_Sofia
+		BUL_Geological_Survey
+		BUL_Dig_Deep
+		BUL_Expand_Western_Mines
+		BUL_Inspire_A_Generation
+		BUL_War_Production
+	}
+}

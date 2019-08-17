@@ -1,0 +1,13 @@
+leader_traits = {
+	
+####### SOVIET TANK MANUFACTURERS #######
+
+	stalingrad_tractor_factory = {
+		random = no
+		equipment_bonus = {
+			medium_tank_equipment = {
+				build_cost_ic = -0.25
+			}
+		}
+	}
+}

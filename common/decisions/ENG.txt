@@ -1,0 +1,110 @@
+ENG_annex_empire = {
+	ENG_annex_canada = {
+			ai_will_do = { factor = 0 }
+			cost = 50	
+			visible = {
+				tag = ENG
+				CAN = { is_ai = yes }
+				country_exists = CAN
+				date > 1940.1.1
+			}
+			fire_only_once = yes
+			complete_effect = {
+				ENG = {
+					annex_country = { target = CAN transfer_troops = yes }
+					#add_ideas = annex_canada_idea
+				}
+			}
+		}
+	ENG_annex_british_raj = {
+		ai_will_do = { factor = 0 }
+		cost = 150
+		visible = {
+			tag = ENG
+			RAJ = { is_ai = yes }
+			country_exists = RAJ
+			date > 1940.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = RAJ transfer_troops = yes }
+				#add_ideas = annex_british_raj_idea
+			}
+		}
+	}
+	ENG_annex_south_africa = {
+		ai_will_do = { factor = 0 }
+		cost = 45
+		visible = {
+		tag = ENG
+		SAF = { is_ai = yes }
+			country_exists = SAF
+			date > 1940.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = SAF transfer_troops = yes }
+				#add_ideas = annex_south_africa_idea
+			}
+		}
+	}
+	ENG_annex_australia = {
+		ai_will_do = { factor = 0 }
+		cost = 35
+		visible = {
+			tag = ENG
+			AST = { is_ai = yes }
+			country_exists = AST
+			date > 1940.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				annex_country = { target = AST transfer_troops = yes }
+				#add_ideas = annex_australia_idea
+			}
+		}
+	}
+
+	ENG_annex_new_zealand_uk = {
+		ai_will_do = { factor = 0 }
+		cost = 20
+		visible = {
+			tag = ENG
+			NZL = { is_ai = yes }
+			country_exists = NZL
+			date > 1940.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				add_state_core = 723
+				add_state_core = 284
+				annex_country = { target = NZL transfer_troops = yes }
+				#add_ideas = annex_new_zealand_idea
+			}
+		}
+	}
+	ENG_annex_british_malaysia_uk = {
+		ai_will_do = { factor = 0 }
+		cost = 30
+		visible = {
+			tag = ENG
+			MAL = { is_ai = yes }
+			country_exists = MAL
+			date > 1940.1.1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ENG = {
+				add_state_core = 723
+				add_state_core = 284
+				annex_country = { target = MAL transfer_troops = yes }
+				#add_ideas = annex_new_zealand_idea
+			}
+		}
+	}
+}
+

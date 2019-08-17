@@ -1,0 +1,10 @@
+################
+##### AST ######
+################
+AST_annex_new_zealand = {
+     icon = eng_imperial_conference
+	 
+	 allowed = {
+		original_tag = AST
+	}
+}

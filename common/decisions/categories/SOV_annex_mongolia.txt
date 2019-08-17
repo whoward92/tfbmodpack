@@ -1,0 +1,10 @@
+################
+##### SOV ######
+################
+SOV_annex_puppets = {
+     icon = eng_imperial_conference
+	 
+	 allowed = {
+		original_tag = SOV
+	}
+}

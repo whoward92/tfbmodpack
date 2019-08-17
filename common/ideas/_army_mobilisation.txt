@@ -1,0 +1,90 @@
+ideas = {
+	
+	army_mobilization = {
+		law = yes
+		
+		reduced_mobilization = {
+			
+			picture = mobilization_press
+
+			available = {
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = -0.15
+				stability_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		
+		standard_mobilization = {
+			
+			picture = mobilization_press
+
+			available = {
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+			
+			default = yes
+		}
+		
+		increased_mobilization = {
+			
+			picture = mobilization_press
+
+			available = {
+			}			
+			
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+			
+			available = {
+				threat > 0.25
+				OR = {
+					has_government = fascism
+					has_government = communism
+					has_war = yes
+				}
+				has_war_support > 0.2
+			}
+		}
+		
+		rapid_mobilization = {
+			
+			picture = mobilization_press
+
+			available = {
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.10
+				production_factory_max_efficiency_factor = -0.10
+			}
+			
+			available = {
+				threat > 0.45
+				has_war_support > 0.40
+				OR = {
+					has_government = fascism
+					has_government = communism
+					AND = {
+						has_war = yes
+					}
+				}
+			}
+		}
+	}
+}
