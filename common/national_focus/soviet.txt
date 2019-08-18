@@ -871,7 +871,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = construction_tech_bonus
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				category = construction_tech
 			}
 		}
@@ -957,7 +957,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_new_generation
+		id = SOV_new_generatio
 		icon = GFX_sov_stakhonovite
 		prerequisite = { focus = SOV_capitals_of_socialism }
 		x = 6
@@ -970,12 +970,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 0.5
-				uses = 3
-				category = construction_tech
-			}
+			add_ideas = SOV_idea_new_soviet_generation
+
+			#add_tech_bonus = {
+			#	name = construction_tech_bonus
+			#	bonus = 0.5
+			#	uses = 3
+			#	category = construction_tech
+			#}
 		}
 	}		
 
@@ -1135,9 +1137,9 @@ focus_tree = {
 				category = construction_tech
 			}
 			add_popularity = {
-			ideology = communism
-			popularity = 0.04
-		}
+				ideology = communism
+				popularity = 0.04
+			}
 		}
 	}
 
@@ -1419,8 +1421,8 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-		custom_effect_tooltip = available_tank_designer
-				show_ideas_tooltip = morozov_design_bureau
+			custom_effect_tooltip = available_tank_designer
+			show_ideas_tooltip = morozov_design_bureau
 		}
 	}
 	
@@ -1459,30 +1461,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = SOV_support_tanks
-		icon = GFX_goal_TD
-		prerequisite = { focus =  SOV_armor_effort }
-		
-		x = 1 
-		y = 8
-		cost = 5
-		ai_will_do = {
-			factor = 0
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			
-			add_tech_bonus = {
-			name = armor_bonus
-			
-			bonus = 0.5
-			uses = 2
-			category = cat_medium_armor_support
-			}
-		}
-	}
-
 	focus = {
 		id = SOV_t_34_prototype
 		icon = GFX_t_34_prototype
@@ -1537,8 +1515,7 @@ focus_tree = {
 		icon = GFX_sov_tankograd
 		prerequisite = { focus = SOV_t_34_finalized }
 		prerequisite = { focus = SOV_armor_effort }
-
-		x = 2
+		x = 1
 		y = 9
 		cost = 8
 		ai_will_do = {
@@ -1621,7 +1598,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = socialist_science_tech_bonus
 				bonus = 0.5
-				uses = 5
+				uses = 2
 				category = construction_tech
 			}
 		}
@@ -3617,16 +3594,16 @@ prerequisite = { focus = SOV_Baltic_Sea focus = SOV_Black_Sea }
 		}
 	}
 
-	focus = {
+		focus = {
 		id = SOV_great_purge
-		icon = GFX_Goal_Great_Purge2
+		icon = GFX_goal_generic_war_with_comintern
 		available = {
 			NOT = { has_country_flag = counter_purge }
 			has_government = communism
 		}
 		x = 30
 		y = 0
-		cost = 20
+		cost = 1
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -3648,44 +3625,60 @@ prerequisite = { focus = SOV_Baltic_Sea focus = SOV_Black_Sea }
 			set_country_flag = SOV_purge_started
 		}
 		completion_reward = {
-			custom_effect_tooltip = SOV_great_purge_tt
-			custom_effect_tooltip = SOV_great_purge_tt2
-			custom_effect_tooltip = SOV_great_purge_tt3
+			#custom_effect_tooltip = SOV_great_purge_tt
+			#custom_effect_tooltip = SOV_great_purge_tt2
 			
+			add_timed_idea = {
+				idea = officers_purged
+				days = 1460
+			}
+
 			#Full military purge. Hardest penalty
-			if = {
-				limit = {
-					OR = {
-						has_country_flag = purge_1_group_a
-						has_country_flag = purge_1_group_b
-					}
-					OR = {						
-						has_country_flag = purge_2_group_a
-						has_country_flag = purge_2_group_b
-					}
-				}
-				
-				hidden_effect = {
-					news_event = { hours = 6 id = news.219 }
-				}
-			}
+			#if = {
+			#	limit = {
+			#		OR = {
+			#			has_country_flag = purge_1_group_a
+			#			has_country_flag = purge_1_group_b
+			#		}
+			#		OR = {						
+			#			has_country_flag = purge_2_group_a
+			#			has_country_flag = purge_2_group_b
+			#		}
+			#	}
+			#	add_timed_idea = {
+			#		idea = officers_purged
+			#		#idea = navy_purged
+			#		#idea = air_purged
+			#		days = 1460
+			#	}
+			#	
+			#	
+			#	
+			#	hidden_effect = {
+			#		country_event = { id = soviet.37 days = 146 }				
+			#	}
+			#	hidden_effect = {
+			#		news_event = { hours = 6 id = news.219 }
+			#	}
+			#}	
 
-			remove_ideas = trotskyite_plot
-			add_ideas = trotskyite_plot_purged
+			#remove_ideas = trotskyite_plot
+			#add_ideas = trotskyite_plot_purged
 
-			hidden_effect = {
-				if = {
-					limit = { 
-						any_other_country = {
-							is_major = yes
-							has_offensive_war_with = SOV
-						}
-					}
-					country_event = { id = soviet.46 days = 3 }
-				}				 
-			}
+			#hidden_effect = {
+			#	if = {
+			#		limit = { 
+			#			any_other_country = {
+			#				is_major = yes
+			#				has_offensive_war_with = SOV
+			#			}
+			#		}
+			#		country_event = { id = soviet.46 days = 3 }
+			#	}				 
+			#}
 		}
 	}
+
     focus = {
 		id = SOV_great_navy_purge 
 		icon = GFX_nav_purge

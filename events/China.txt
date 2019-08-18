@@ -717,7 +717,7 @@ country_event = {
 		add_ideas = german_chinese_trade_agreement_ger
 	
 		CHI = {
-		country_event = { id = china.20 }
+			country_event = { id = china.20 }
 		}
 	}
 	option = { #no

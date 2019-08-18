@@ -26,6 +26,25 @@ ideas = {
 			}
 		}
 
+		SOV_idea_new_soviet_generation = {
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = sov_stakhonovite
+
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+			}
+		}
+
 		navy_purged = {
 			removal_cost = -1
 			
@@ -62,23 +81,23 @@ ideas = {
 
 			equipment_bonus = {
 				fighter_equipment = {
-					air_agility = -0.25
-					air_attack = -0.25
+					air_agility = -0.20
+					air_attack = -0.20
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_agility = -0.25
-					air_attack = -0.25
+					air_agility = -0.20
+					air_attack = -0.20
 					instant = yes
 				}
 				CAS_equipment = {
-					air_agility = -0.25
-					air_ground_attack = -0.25
+					air_agility = -0.20
+					air_ground_attack = -0.20
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					air_agility = -0.25
-					air_ground_attack = -0.25
+					air_agility = -0.20
+					air_ground_attack = -0.20
 					instant = yes
 				}
 			}
@@ -113,18 +132,18 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
+			research_bonus = {
+				electronics = -0.15
+			}
 			
 			modifier = {
 				drift_defence_factor = 0.5
 				production_speed_buildings_factor = 0.10
+				global_building_slots_factor = 0.25
 			}
 			rule = {
 				can_create_factions = yes
 			}
-			research_bonus = {
-				electronics = -0.15
-			}
-
 		}
 
 		SOV_idea_3_5_year_plan = {
@@ -544,6 +563,31 @@ ideas = {
 				army_attack_factor = -0.25
 				army_defence_factor = -0.25
 				command_power_gain = -0.75
+
+				naval_hit_chance = -0.20
+			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					air_agility = -0.20
+					air_attack = -0.20
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_agility = -0.20
+					air_attack = -0.20
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.20
+					air_ground_attack = -0.20
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.20
+					air_ground_attack = -0.20
+					instant = yes
+				}
 			}
 			
 			research_bonus = {
@@ -1696,7 +1740,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				armor = 0.04
+				armor = 0.10
 			}
 			
 			traits = { fast_tank_manufacturer }
@@ -1715,7 +1759,7 @@ ideas = {
 
 			
 			research_bonus = {
-				armor = 0.04
+				armor = 0.10
 			}
 			
 			traits = { medium_tank_manufacturer }
@@ -1734,7 +1778,7 @@ ideas = {
 
 			
 			research_bonus = {
-				armor = 0.04
+				armor = 0.10
 			}
 			
 			traits = { heavy_tank_manufacturer }
@@ -1751,7 +1795,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				armor = 0.04
+				armor = 0.10
 			}
 			
 			traits = { stalingrad_tractor_factory }
@@ -1773,7 +1817,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				air_equipment = 0.04
+				air_equipment = 0.10
 			}
 			
 			traits = { mig_design_bureau_aircraft_manufacturer }
@@ -1789,7 +1833,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				air_equipment = 0.04
+				air_equipment = 0.10
 			}
 			
 			traits = { ilyushin_design_bureau_aircraft_manufacturer }
@@ -1805,7 +1849,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				air_equipment = 0.04
+				air_equipment = 0.10
 			}
 			
 			traits = { tupolev_design_bureau_aircraft_manufacturer }
@@ -1821,7 +1865,7 @@ ideas = {
 			}
 						
 			research_bonus = {
-				air_equipment = 0.04
+				air_equipment = 0.10
 			}
 			
 			traits = { naval_aircraft_manufacturer }
@@ -1844,7 +1888,7 @@ ideas = {
 
 			
 			research_bonus = {
-				industry = 0.04
+				industry = 0.10
 			}
 			
 			traits = { industrial_concern }
@@ -1863,7 +1907,7 @@ ideas = {
 
 			
 			research_bonus = {
-				electronics = 0.04
+				electronics = 0.10
 			}
 			
 			traits = { electronics_concern }
@@ -1884,10 +1928,14 @@ ideas = {
 				original_tag = SOV
 			}
 			
-
+			equipment_bonus = {
+				artillery_equipment = {
+					reliability = 0.05
+				}
+			}
 			
 			research_bonus = {
-				artillery = 0.04
+				artillery = 0.10
 			}
 			
 			traits = { artillery_manufacturer }
@@ -1905,10 +1953,14 @@ ideas = {
 				original_tag = SOV
 			}
 			
-
+			equipment_bonus = {
+				infantry_equipment = {
+					reliability = 0.05
+				}
+			}
 			
 			research_bonus = {
-				infantry_weapons = 0.04
+				infantry_weapons = 0.10
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -1924,11 +1976,15 @@ ideas = {
 				original_tag = SOV
 			}
 			
-
+			equipment_bonus = {
+				motorized_equipment = {
+					reliability = 0.05
+				}
+			}
 			
 			research_bonus = {
-				motorized_equipment = 0.04
-				mot_rockets = 0.50
+				motorized_equipment = 0.10
+				mot_rockets = 0.10
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -1949,10 +2005,14 @@ ideas = {
 				original_tag = SOV
 			}
 			
-
+			equipment_bonus = {
+				naval_equipment = {
+					reliability = 0.10
+				}
+			}
 			
 			research_bonus = {
-				naval_equipment = 0.04
+				naval_equipment = 0.10
 			}
 			
 			traits = { naval_manufacturer }
@@ -1980,7 +2040,12 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_mass_assault = 0.04
+				cat_mass_assault = 0.10
+			}
+
+			modifier = {
+				land_reinforce_rate = 0.02	
+				army_org_factor = 0.02
 			}
 			
 			# PURGED
@@ -1993,11 +2058,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-			
 
-			
 			research_bonus = {
-				land_doctrine = 0.1
+				land_doctrine = 0.10
 			}
 			
 			traits = { military_theorist }
@@ -2021,8 +2084,15 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_mass_assault = 0.04
+				cat_mass_assault = 0.10
 			}
+
+			modifier = {
+				land_reinforce_rate = 0.02	
+				max_planning = 0.02
+			}
+
+			#land_reinforce_rate = 0.02
 			
 			traits = { mass_assault_expert }
 		}
@@ -2042,7 +2112,7 @@ ideas = {
 			cost = 100
 			
 			research_bonus = {
-				naval_doctrine = 0.1
+				naval_doctrine = 0.10
 			}
 			
 			traits = { naval_theorist }
@@ -2057,8 +2127,12 @@ ideas = {
 			
 			cost = 250
 			
+			modifier = {
+				naval_damage_factor = 0.05
+			}
+
 			research_bonus = {
-				cat_fleet_in_being = 0.04
+				cat_fleet_in_being = 0.10
 			}
 			
 			traits = { grand_fleet_proponent}
@@ -2079,7 +2153,13 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_battlefield_support = 0.04
+				cat_battlefield_support = 0.10
+			}
+
+			equipment_bonus = {
+				CAS_equipment = {
+					air_ground_attack = 0.03
+				}
 			}
 			
 			traits = { close_air_support_proponent }
@@ -2095,7 +2175,7 @@ ideas = {
 
 			
 			research_bonus = {
-				air_doctrine = 0.1
+				air_doctrine = 0.10
 			}
 			
 			traits = { air_warfare_theorist }
@@ -2111,7 +2191,7 @@ ideas = {
 
 			
 			research_bonus = {
-				nuclear = 0.04
+				nuclear = 0.10
 			}
 			
 			traits = { nuclear_scientist }
@@ -2125,7 +2205,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				rocketry = 0.04
+				rocketry = 0.10
 			}
 
 			

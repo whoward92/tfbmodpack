@@ -214,8 +214,9 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		
+
 		completion_reward = {
-		custom_effect_tooltip = el_ala_forts_tt
 			hidden_effect = {
 				SAF = { load_oob = SAF_spawn_in }
 				
@@ -252,6 +253,7 @@ focus_tree = {
 						}
 					}
 			}
+			custom_effect_tooltip = def_el_ala
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
