@@ -2347,9 +2347,9 @@ country_event = {
 	#fire_only_once = yes
 	
 	option = {
-		#trigger = {
-		#	SOV = { controls_state = 219 }
-		#}
+		trigger = {
+			SOV = { controls_state = 219 }
+		}
 		name = soviet.336.a
 		load_oob = "SOV_berlings_army"
 	}
