@@ -322,3 +322,4 @@
  sov_develop_urals:0 "Develop Infrastructure in the Urals"
  SOV_urals_armed:0 "Develop Arms Production in the Urals"
  sov_retool_tractor_factories:0 "Retool the Tractor Factories"
+ SOV_wartime_propaganda:0 "Wartime Propaganda"

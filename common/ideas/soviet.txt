@@ -573,14 +573,180 @@ ideas = {
 			}
 			
 			modifier = {
-				experience_gain_army_factor = -0.5
+				experience_gain_army_factor = -0.50
 				army_org_factor = -0.60
-				planning_speed = -0.65
-				max_planning = -0.25
+				planning_speed = -0.60
+				max_planning = -0.35
+				army_morale_factor = -0.35
+				army_attack_factor = -0.35
+				army_defence_factor = -0.35
+				command_power_gain = -0.75
+
+				naval_hit_chance = -0.35
+			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					air_agility = -0.35
+					air_attack = -0.35
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_agility = -0.35
+					air_attack = -0.35
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.35
+					air_ground_attack = -0.35
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.35
+					air_ground_attack = -0.35
+					instant = yes
+				}
+			}
+			
+			research_bonus = {
+				land_doctrine = -0.35
+				naval_doctrine = -0.35
+				air_doctrine = -0.35
+			}
+		}
+
+		officers_purged_2 = {
+			removal_cost = -1
+
+			picture = officers_purged
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				experience_gain_army_factor = -0.45
+				army_org_factor = -0.55
+				planning_speed = -0.55
+				max_planning = -0.30
 				army_morale_factor = -0.30
+				army_attack_factor = -0.30
+				army_defence_factor = -0.30
+				command_power_gain = -0.70
+
+				naval_hit_chance = -0.30
+			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					air_agility = -0.30
+					air_attack = -0.30
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_agility = -0.30
+					air_attack = -0.30
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.30
+					air_ground_attack = -0.30
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.30
+					air_ground_attack = -0.30
+					instant = yes
+				}
+			}
+			
+			research_bonus = {
+				land_doctrine = -0.30
+				naval_doctrine = -0.30
+				air_doctrine = -0.30
+			}
+		}
+		officers_purged_3 = {
+			removal_cost = -1
+
+			picture = officers_purged
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				experience_gain_army_factor = -0.40
+				army_org_factor = -0.50
+				planning_speed = -0.50
+				max_planning = -0.25
+				army_morale_factor = -0.25
 				army_attack_factor = -0.25
 				army_defence_factor = -0.25
-				command_power_gain = -0.75
+				command_power_gain = -0.65
+
+				naval_hit_chance = -0.25
+			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					air_agility = -0.25
+					air_attack = -0.25
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_agility = -0.25
+					air_attack = -0.25
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.25
+					air_ground_attack = -0.25
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.25
+					air_ground_attack = -0.25
+					instant = yes
+				}
+			}
+			
+			research_bonus = {
+				land_doctrine = -0.25
+				naval_doctrine = -0.25
+				air_doctrine = -0.25
+			}
+		}
+		officers_purged_4 = {
+			removal_cost = -1
+
+			picture = officers_purged
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			modifier = {
+				experience_gain_army_factor = -0.35
+				army_org_factor = -0.45
+				planning_speed = -0.45
+				max_planning = -0.20
+				army_morale_factor = -0.20
+				army_attack_factor = -0.20
+				army_defence_factor = -0.20
+				command_power_gain = -0.60
 
 				naval_hit_chance = -0.20
 			}
@@ -609,122 +775,6 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = -0.25
-				naval_doctrine = -0.25
-				air_doctrine = -0.25
-			}
-		}
-
-		officers_purged_2 = {
-			removal_cost = -1
-
-			picture = officers_purged
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				experience_gain_army_factor = -0.45
-				army_org_factor = -0.55
-				planning_speed = -0.60
-				max_planning = -0.23
-				army_morale_factor = -0.28
-				army_attack_factor = -0.23
-				army_defence_factor = -0.23
-				command_power_gain = -0.70
-
-				naval_hit_chance = -0.18
-			}
-
-			research_bonus = {
-				land_doctrine = -0.23
-				naval_doctrine = -0.23
-				air_doctrine = -0.23
-			}
-
-			equipment_bonus = {
-				fighter_equipment = {
-					air_agility = -0.18
-					air_attack = -0.18
-					instant = yes
-				}
-				heavy_fighter_equipment = {
-					air_agility = -0.18
-					air_attack = -0.18
-					instant = yes
-				}
-				CAS_equipment = {
-					air_agility = -0.18
-					air_ground_attack = -0.18
-					instant = yes
-				}
-				tac_bomber_equipment = {
-					air_agility = -0.18
-					air_ground_attack = -0.18
-					instant = yes
-				}
-			}
-		}
-		officers_purged_3 = {
-			removal_cost = -1
-
-			picture = officers_purged
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				experience_gain_army_factor = -0.45
-				army_org_factor = -0.50
-				planning_speed = -0.55
-				max_planning = -0.22
-				army_morale_factor = -0.26
-				army_attack_factor = -0.21
-				army_defence_factor = -0.21
-				command_power_gain = -0.65
-			}
-			
-			research_bonus = {
-				land_doctrine = -0.21
-				naval_doctrine = -0.21
-				air_doctrine = -0.21
-			}
-		}
-		officers_purged_4 = {
-			removal_cost = -1
-
-			picture = officers_purged
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				experience_gain_army_factor = -0.45
-				army_org_factor = -0.48
-				planning_speed = -0.53
-				max_planning = -0.20
-				army_morale_factor = -0.24
-				army_attack_factor = -0.20
-				army_defence_factor = -0.20
-				command_power_gain = -0.60
-			}
-			
-			research_bonus = {
 				land_doctrine = -0.20
 				naval_doctrine = -0.20
 				air_doctrine = -0.20
@@ -744,20 +794,45 @@ ideas = {
 			}
 			
 			modifier = {
-				experience_gain_army_factor = -0.45
-				army_org_factor = -0.46
-				planning_speed = -0.51
-				max_planning = -0.20
-				army_morale_factor = -0.22
-				army_attack_factor = -0.20
-				army_defence_factor = -0.20
+				experience_gain_army_factor = -0.30
+				army_org_factor = -0.40
+				planning_speed = -0.40
+				max_planning = -0.15
+				army_morale_factor = -0.15
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
 				command_power_gain = -0.55
+
+				naval_hit_chance = -0.15
+			}
+
+			equipment_bonus = {
+				fighter_equipment = {
+					air_agility = -0.15
+					air_attack = -0.15
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_agility = -0.15
+					air_attack = -0.15
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.15
+					air_ground_attack = -0.15
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.15
+					air_ground_attack = -0.15
+					instant = yes
+				}
 			}
 			
 			research_bonus = {
-				land_doctrine = -0.18
-				naval_doctrine = -0.18
-				air_doctrine = -0.18
+				land_doctrine = -0.15
+				naval_doctrine = -0.15
+				air_doctrine = -0.15
 			}
 		}
 		officers_purged_6 = {
@@ -774,140 +849,45 @@ ideas = {
 			}
 			
 			modifier = {
-				experience_gain_army_factor = -0.40
-				army_org_factor = -0.44
-				planning_speed = -0.50
-				max_planning = -0.20
-				army_morale_factor = -0.22
-				army_attack_factor = -0.18
-				army_defence_factor = -0.18
-				command_power_gain = -0.55
-			}
-			
-			research_bonus = {
-				land_doctrine = -0.16
-				naval_doctrine = -0.16
-				air_doctrine = -0.16
-			}
-		}
-		officers_purged_7 = {
-			removal_cost = -1
-
-			picture = officers_purged
-			
-			allowed = {
-				always = no # Added via focus
-			}
-			
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				experience_gain_army_factor = -0.40
-				army_org_factor = -0.42
-				planning_speed = -0.50
-				max_planning = -0.20
-				army_morale_factor = -0.20
-				army_attack_factor = -0.16
-				army_defence_factor = -0.16
+				experience_gain_army_factor = -0.15
+				army_org_factor = -0.35
+				planning_speed = -0.35
+				max_planning = -0.10
+				army_morale_factor = -0.10
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
 				command_power_gain = -0.50
-			}
-			
-			research_bonus = {
-				land_doctrine = -0.14
-				naval_doctrine = -0.14
-				air_doctrine = -0.14
-			}
-		}
-		officers_purged_8 = {
-			removal_cost = -1
 
-			picture = officers_purged
-			
-			allowed = {
-				always = no # Added via focus
+				naval_hit_chance = -0.10
 			}
 
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				experience_gain_army_factor = -0.38
-				army_org_factor = -0.40
-				planning_speed = -0.50
-				max_planning = -0.20
-				army_morale_factor = -0.18
-				army_attack_factor = -0.14
-				army_defence_factor = -0.14
-				command_power_gain = -0.45
-			}
-			
-			research_bonus = {
-				land_doctrine = -0.12
-				naval_doctrine = -0.12
-				air_doctrine = -0.12
-			}
-		}
-		officers_purged_9 = {
-			removal_cost = -1
-
-			picture = officers_purged
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				experience_gain_army_factor = -0.35
-				army_org_factor = -0.38
-				planning_speed = -0.48
-				max_planning = -0.18
-				army_morale_factor = -0.16
-				army_attack_factor = -0.12
-				army_defence_factor = -0.12
-				command_power_gain = -0.40
+			equipment_bonus = {
+				fighter_equipment = {
+					air_agility = -0.10
+					air_attack = -0.10
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_agility = -0.10
+					air_attack = -0.10
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.10
+					air_ground_attack = -0.10
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.10
+					air_ground_attack = -0.10
+					instant = yes
+				}
 			}
 			
 			research_bonus = {
 				land_doctrine = -0.10
 				naval_doctrine = -0.10
 				air_doctrine = -0.10
-			}
-		}
-		officers_purged_10 = {
-			removal_cost = -1
-
-			picture = officers_purged
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-			
-			modifier = {
-				experience_gain_army_factor = -0.32
-				army_org_factor = -0.36
-				planning_speed = -0.45
-				max_planning = -0.16
-				army_morale_factor = -0.14
-				army_attack_factor = -0.10
-				army_defence_factor = -0.10
-				command_power_gain = -0.35
-			}
-			
-			research_bonus = {
-				land_doctrine = -0.08
-				naval_doctrine = -0.08
-				air_doctrine = -0.08
 			}
 		}
 

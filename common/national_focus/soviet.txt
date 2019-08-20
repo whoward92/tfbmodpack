@@ -1048,6 +1048,129 @@ focus_tree = {
 		}
 	}
 
+		focus = {
+		id = SOV_wartime_propaganda
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = SOV_defense_of_moscow }
+		relative_position_id = SOV_defense_of_moscow
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war_with = GER		
+		}		
+		
+		completion_reward = {
+        add_ideas = wartime_propaganda
+		}
+	}
+
+	focus = {
+		id = SOV_move_industry_to_urals
+		icon = GFX_goal_generic_construct_civilian
+		x = 1
+		y = 1
+		relative_position_id = SOV_defense_of_moscow
+		prerequisite = { focus = SOV_defense_of_moscow } 
+		
+		cost = 4.3
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		available = {
+			OR = {
+				has_war_with = GER
+				ENG = { surrender_progress > 0.15 }
+				USA = { surrender_progress > 0.15 }			
+			}
+			219 = {
+				is_owned_and_controlled_by = SOV
+				industrial_complex > 1
+			}
+			195 = {
+				is_owned_and_controlled_by = SOV
+				industrial_complex > 0
+			}
+			573 = {
+				is_owned_and_controlled_by = SOV
+			}
+			582 = {
+				is_owned_and_controlled_by = SOV
+			}
+		}
+		 cancel_if_invalid = no
+		continue_if_invalid = yes
+		completion_reward = {
+			add_ideas = tot_economic_mobilisation 
+			add_ideas = SOV_industrial_relocations
+			
+		}	
+	}
+
+	focus = {
+		id = SOV_industrial_war_mobilisation 
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = SOV_move_industry_to_urals }
+		prerequisite = { focus = SOV_wartime_propaganda }
+		relative_position_id = SOV_defense_of_moscow
+		x = 0
+		y = 2
+		cost = 5
+		available = {
+			OR = {
+			has_war_with = GER
+			has_war_with = JAP
+			}
+		}
+		completion_reward = {
+			if = { 
+				limit = {
+				 NOT = { has_idea = peoples_commissariat_focus }
+				 }
+				 add_ideas = emergency_industrial_effort 
+			}
+			if = {
+				limit = {
+					has_idea = peoples_commissariat_focus
+					}
+					swap_ideas = { 
+					remove_idea = peoples_commissariat_focus
+					add_idea = emergency_industrial_effort
+					}
+			} 
+			random_owned_controlled_state = {
+				prioritize = { 587 }
+					limit = {
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 406 }
+					limit = {
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+			}
+		}
+	}
+
 	focus = {
 		id = SOV_anti_fascist_diplomacy
 		icon = GFX_Goal_Anti_fascist_dimplomacy
@@ -1651,6 +1774,28 @@ focus_tree = {
 	}	
 
 	focus = {
+		id = SOV_closed_city_network
+		icon = GFX_focus_research
+		prerequisite = { focus = SOV_restructured_government }
+		#available = {
+		#	has_global_flag = sov_yes_pact
+		#}
+		x = 0
+		y = 1
+		relative_position_id = SOV_restructured_government
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
 		id = SOV_rehabilitated_military
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = SOV_military_reorganization }
@@ -1753,27 +1898,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_closed_city_network
-		icon = GFX_focus_research
-		
-		available = {
-		has_global_flag = sov_yes_pact
-		}
-		x = 14
-		y = 0
-		relative_position_id = SOV_peoples_commissariat
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
+	
 
 	### END BRANCH ###
 
