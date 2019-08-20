@@ -12,5 +12,11 @@
  SOV_tankograd:0 "Tankograd"
  SOV_idea_arms_production:0 "Arms Production"
  SOV_idea_new_soviet_generation:0 "New Soviet Generation"
+ SOV_lessons_of_war_tt:0 " \n"
+ SOV_military_reorg_tt:0 " \n"
+ SOV_rehab_military_tt:0 " \n"
+ SOV_mil_schools_tt:0 " \n"
+ SOV_return_heros_tt:0 " \n"
+ #custom_effect_tooltip = <tooltip name>
 
  

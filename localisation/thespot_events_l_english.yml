@@ -31,4 +31,9 @@
  spain_spot_mod.1.t:0 "Franco Becomes General"
  spain_spot_mod.1.d:0 "Our countriy's leader is a skilled general, and now we can use that in action to help us win this civil war. He is ready to join the fight, leading our armies, while managing Spain's politics."
  spain_spot_mod.1.a:0 "Employ Franco as our armies general"
+
+ soviet.336.t:0 "Form the Polish Free Army"
+ soviet.336.d:0 "With the Annexation of Poland in 1939, we have many millions of polish refugees that can be put to good use. We will form them into the Polish Free Army fighting under Soviet Command"
+ soviet.336.a:0 "Mobilise the Poles"
+ SOV_berlings_army:0 "Polish Free Army"
  
