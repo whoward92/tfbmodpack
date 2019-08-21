@@ -19,10 +19,30 @@ ideas = {
 			modifier = {
 				min_export = -0.25 # why? Represents isolated communist economy?
 				consumer_goods_factor = 0.03
-				production_speed_industrial_complex_factor = 0.15
-				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
 				production_speed_synthetic_refinery_factor = 0.05
 				production_speed_bunker_factor = -0.25
+			}
+		}
+
+		wartime_propaganda = {
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+				war_support_factor = 0.05
+				army_core_defence_factor = 0.025
+				army_core_attack_factor = 0.025
 			}
 		}
 
