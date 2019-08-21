@@ -1,5 +1,21 @@
 spriteTypes = {	
 
+
+
+
+SpriteType = {
+	name = "GFX_goal_black_dragon"
+	texturefile = "gfx/interface/goals/goal_black_dragon.dds"			
+	}	
+
+
+
+
+
+
+
+
+
 	#### Generic continuous goal icons
 
 	SpriteType = {
