@@ -7,20 +7,21 @@ SpriteType = {
 	texturefile = "gfx/interface/goals/Annex_Siam.dds"			
 	}	
 
-SpriteType = {
-	name = "GFX_goal_black_dragon"
-	texturefile = "gfx/interface/goals/goal_black_dragon.dds"			
-	}	
-
 
 SpriteType = {
 	name = "GFX_Goal_Purge_The_Kodoha_Faction"
 	texturefile = "gfx/interface/goals/goal_purge_the_kodoha_faction.dds"			
 	}	
 
+SpriteType = {
+	name = "GFX_Co_Prosperity_Sphere"
+	texturefile = "gfx/interface/goals/Co_Prosperity_Sphere.dds"			
+	}	
 
-
-
+SpriteType = {
+	name = "GFX_Marco_Polo"
+	texturefile = "gfx/interface/goals/Marco_Polo.dds"			
+	}	
 
 
 	#### Generic continuous goal icons
