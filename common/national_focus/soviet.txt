@@ -442,6 +442,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			#add_ideas = SOV_tankograd
 			407 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -548,12 +549,12 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 32
+				amount = 102
 				state = 229
 			}
 			add_resource = {
 				type = rubber
-				amount = 16
+				amount = 26
 				state = 229
 			}
 			229 = {
@@ -569,8 +570,8 @@ focus_tree = {
 			}
             add_tech_bonus = {
 				name = GER_oil_knowledge
-					bonus = 0.6
-					uses = 2
+					bonus = 0.5
+					uses = 1
 					category = synth_resources
 			}			
 		}
@@ -1153,6 +1154,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_ideas = SOV_industrial_relocations
 			if = { 
 				limit = {
 				 NOT = { has_idea = peoples_commissariat_focus }
@@ -1482,37 +1484,87 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
-	}	
+	}
 
 	focus = {
-		id = SOV_women_pilots
-		icon = GFX_goal_generic_CAS
+		id = SOV_Yakovlev_Fighters
 		prerequisite = { focus = SOV_Red_Army_Airforce }
-		x = 0
+		icon = GFX_SOV_Yakovlev
+		cost = 5
+		mutually_exclusive = {	focus = SOV_MiG_Fighters	}
+		x = -1
 		y = 1
 		relative_position_id = SOV_Red_Army_Airforce
-		cost = 10
-		ai_will_do = {
-			factor = 1
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = yakovlev_design_bureau
+				add_tech_bonus = {
+					uses = 1
+					bonus = 1
+					category = light_fighter
+				}
+		}
+	}
+
+	focus = {
+		id = SOV_MiG_Fighters
+		icon = GFX_Goal_MIG
+		prerequisite = { focus = SOV_Red_Army_Airforce }
+		cost = 5
+		mutually_exclusive = { 	focus = SOV_Yakovlev_Fighters }
+		x = 1
+		y = 1
+		relative_position_id = SOV_Red_Army_Airforce
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = mig_design_bureau
+				add_tech_bonus = {
+					uses = 1
+					bonus = 1
+					category = light_fighter
+				}
 		}
 
-		available_if_capitulated = yes
+	}
+
+	
+	focus = {
+		id = SOV_Sturmovik
+		icon = GFX_Goal_Aircraft_Research
+		cost = 4.5
+		prerequisite = { focus = SOV_Yakovlev_Fighters }
+		x = 0
+		y = 1
+		relative_position_id = SOV_Yakovlev_Fighters
 
 		completion_reward = {
-			air_experience = 25
-			set_rule = {
-				can_generate_female_aces = yes
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1
+				uses = 1
+				category = cas_bomber
 			}
-			if = {
-				limit = {
-					SOV = { has_full_control_of_state = 219 }
-				}
-				custom_effect_tooltip = SOV_night_witches_tt
-				hidden_effect = {
-					load_oob = "SOV_night_witches"
-				}
-			}
+			air_experience = 500
 		}
+	}
+
+	focus = {
+		id = SOV_Soviet_Airforce
+		icon = GFX_goal_generic_air_doctrine
+		cost = 6
+		prerequisite = { focus = SOV_MiG_Fighters	}
+		x = 0
+		y = 1
+		relative_position_id = SOV_MiG_Fighters
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 2
+				category = air_doctrine
+			}
+			air_experience = 500
+		}
+
 	}
 
 	focus = {
@@ -1600,27 +1652,51 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_polish_army
-		icon = GFX_polish_army
+		id = SOV_Campaign_for_Mass_Mechanization
+		icon = GFX_Goal_Mass_Mechanization_effort
 		prerequisite = { focus = SOV_positive_heroism  }
 		relative_position_id = SOV_positive_heroism
+		cost = 5
 		x = 0
 		y = 1
-		cost = 5
-		available = {
-			has_war_with = GER
-			GER = {controls_state = 10}
-			date > 1942.01.01
-			
-		}
-		ai_will_do = {
-			factor = 5
+		completion_reward = {
+			add_tech_bonus = {
+				uses = 1
+				bonus = 0.75
+				ahead_reduction = 0.5
+				category = cat_mechanized_equipment
+			}
+			add_timed_idea = {
+				idea = SOV_mecha
+				days = 365
+			}
 		}
 
-		completion_reward = {
-			country_event = {id = soviet.336 }
-		}
 	}
+
+	#focus = {
+	#	id = SOV_polish_army
+	#	icon = GFX_polish_army
+	#	prerequisite = { focus = SOV_positive_heroism  }
+	#	relative_position_id = SOV_positive_heroism
+	#	x = 0
+	#	y = 1
+	#	cost = 5
+	#	available = {
+	#		#has_war_with = GER
+	#		#GER = {controls_state = 10}
+	#		#date > 1942.01.01
+	#		
+	#	}
+	#	ai_will_do = {
+	#		factor = 5
+	#	}
+	#
+	#	completion_reward = {
+	#		country_event = { id = soviet.336 }
+	#		add_manpower = -250000
+	#	}
+	#}
 
 	focus = {
 		id = SOV_nkvd_primacy
@@ -1737,7 +1813,8 @@ focus_tree = {
 			swap_ideas = { 
 				remove_idea = officers_purged
 				add_idea = officers_purged_2
-			}			
+			}	
+			add_ideas = SOV_cold_acclimatization_army		
 		}
 	}
 
