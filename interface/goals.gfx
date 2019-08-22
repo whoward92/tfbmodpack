@@ -2,6 +2,10 @@ spriteTypes = {
 
 
 
+SpriteType = {
+	name = "GFX_Annex_Siam"
+	texturefile = "gfx/interface/goals/Annex_Siam.dds"			
+	}	
 
 SpriteType = {
 	name = "GFX_goal_black_dragon"
@@ -9,7 +13,10 @@ SpriteType = {
 	}	
 
 
-
+SpriteType = {
+	name = "GFX_Goal_Purge_The_Kodoha_Faction"
+	texturefile = "gfx/interface/goals/goal_purge_the_kodoha_faction.dds"			
+	}	
 
 
 
