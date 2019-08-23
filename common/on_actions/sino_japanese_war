@@ -1,0 +1,84 @@
+on_actions = {
+    #on_state_control_changed = {
+    on_declare_war = {    
+        effect = {
+            if = {
+                limit = {
+                    ROOT = { 
+                        tag = JAP
+                        has_offensive_war_with = CHI
+                    } 
+                    FROM = { 
+                        tag = CHI
+                    } 
+                    #AND = {
+                    #    tag = JAP
+                    #    has_full_control_of_state = 605
+                    #    has_full_control_of_state = 748
+                    #    has_full_control_of_state = 603
+                    #}
+                }
+
+                JAP = {
+
+                    # Give Japan Chinese Land
+                    transfer_state = 608
+                    transfer_state = 614
+                    transfer_state = 597
+                    transfer_state = 598
+                    transfer_state = 607
+                    transfer_state = 606
+                    transfer_state = 613
+                    transfer_state = 749
+                    transfer_state = 596
+                    transfer_state = 595
+                    transfer_state = 600
+                    transfer_state = 620
+                    transfer_state = 602
+                    transfer_state = 750
+                    transfer_state = 744
+                    transfer_state = 605
+                    transfer_state = 748
+                    transfer_state = 603
+                }
+
+                CHI = {
+                    
+                    diplomatic_relation = { country = JAP relation = non_aggression_pact }
+
+                    set_politics = {
+						ruling_party = fascism
+						elections_allowed = no
+					}
+
+                    puppet = JAP
+						
+					set_popularities = {
+							fascism = 100
+							democratic = 0
+							communism = 0
+							neutrality = 0
+					}
+                }
+                
+            }
+        }
+    }
+
+    on_declare_war = { 
+        effect = { 
+            if = { 
+                limit = { 
+                    ROOT = { 
+                        tag = JAP
+                    } 
+                    FROM = { 
+                        tag = CHI
+                    } 
+                } 
+            } 
+        } 
+    }
+
+
+}
