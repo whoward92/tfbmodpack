@@ -330,3 +330,11 @@
  soviet.336.d:0 "The Polish First Army 'Pierwsza Armia Wojska Polskiego', 1 AWP for short, was a Polish Army unit formed in the Soviet Union in 1944, from the previously existing Polish I Corps as part of the People's Army of Poland (LWP), a formation of the Polish Armed Forces in the East. The First Army fought westward, subordinated to the Soviet 1st Belorussian Front, during the offensive against Germany that led to the liberation of Warsaw in February 1945, and the capture of Berlin in May 1945."
  SOV_berlings_army:0 "The Polish First Army 'Pierwsza Armia Wojska Polskiego' forms"
  SOV_industrial_relocations:0 "Relocate the Industry"
+
+ ## Soviet Ideas
+
+ SOV_Isolated_Economy:0 "Isolated Economy"
+ SOV_cold_acclimatization_army:0 "General Winter"
+ SOV_Spainish_gold:0 "Spanish Gold"
+ SOV_SPR_help:0 "Spanish Relations"
+ SOV_CHI_help:0 "Chinese Relations"
