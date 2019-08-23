@@ -14,6 +14,346 @@ focus_tree = {
 
 	continuous_focus_position = { x = 20 y = 1200 }
 
+
+focus = {
+		id = JAP_Join_The_Axis
+		icon = GFX_Join_Axis
+		prerequisite = { focus = JAP_Nichiro_Senso_two_Electric_Boogaloo}
+		prerequisite = { focus = Jap_The_Irony}
+		x = 1
+		y = 1
+		relative_position_id = Jap_The_Irony
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			MAN = {
+				716 = {
+					limit = {
+						is_fully_controlled_by = PREV
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf1
+				}
+				527 = {
+					limit = {
+						is_fully_controlled_by = PREV
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf2
+				}
+			}
+		}
+	}
+
+
+focus = {
+		id = JAP_Nichiro_Senso_two_Electric_Boogaloo
+		icon = GFX_Electric_Boogaloo
+		prerequisite = { focus = JAP_Siberian_Infastructure_Plan}
+		x = 0
+		y = 1
+		relative_position_id = JAP_Siberian_Infastructure_Plan
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			MAN = {
+				716 = {
+					limit = {
+						is_fully_controlled_by = PREV
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf1
+				}
+				527 = {
+					limit = {
+						is_fully_controlled_by = PREV
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf2
+				}
+			}
+		}
+	}
+
+
+focus = {
+		id = JAP_The_Setting_Sun
+		icon = GFX_The_Setting_Sun
+		mutually_exclusive = { focus = JAP_The_Rising_Sun }
+		available = { 439 = {is_owned_by = Jap}
+		336 = {is_owned_by = Jap}
+		335 = {is_owned_by = Jap}
+		285 = {is_owned_by = Jap}
+		327 = {is_owned_by = Jap}
+		422 = {is_owned_by = Jap}
+		672 = {is_owned_by = Jap}
+		334 = {is_owned_by = Jap}
+		333 = {is_owned_by = Jap}
+		}
+		x = 17
+		y = 5
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				NOT = { has_dlc = "Waking the Tiger" }
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = JAP_Siberian_Infastructure_Plan
+		icon = GFX_Siberia_Rail
+		prerequisite = { focus = JAP_The_Setting_Sun}
+		x = 0
+		y = 1
+		relative_position_id = JAP_The_Setting_Sun
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			MAN = {
+				716 = {
+					limit = {
+						is_fully_controlled_by = PREV
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf1
+				}
+				527 = {
+					limit = {
+						is_fully_controlled_by = PREV
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf2
+				}
+			}
+		}
+	}
+
+
+focus = {
+		id = JAP_The_Rising_Sun
+		icon = GFX_The_Rising_Sun
+		mutually_exclusive = { focus = JAP_The_Setting_Sun }
+		available = { 439 = {is_owned_by = Jap}
+		336 = {is_owned_by = Jap}
+		335 = {is_owned_by = Jap}
+		285 = {is_owned_by = Jap}
+		327 = {is_owned_by = Jap}
+		422 = {is_owned_by = Jap}
+		672 = {is_owned_by = Jap}
+		334 = {is_owned_by = Jap}
+		333 = {is_owned_by = Jap}
+		}
+		x = 15
+		y = 5
+		offset = {
+			x = -5
+			y = 0
+			trigger = {
+				NOT = { has_dlc = "Waking the Tiger" }
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 150
+		}
+	}
+focus = {
+		id = JAP_Forward_Operating_Base
+		icon = GFX_Forward_Operating_Base
+		prerequisite = { focus = JAP_The_Rising_Sun }
+		x = 0
+		y = 1
+		relative_position_id = JAP_The_Rising_Sun
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			MAN = {
+				716 = {
+					limit = {
+						is_fully_controlled_by = PREV
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf1
+				}
+				527 = {
+					limit = {
+						is_fully_controlled_by = PREV
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+					set_state_flag = JAP_expand_manchurian_railways_Inf2
+				}
+			}
+		}
+	}
+focus = {
+		id = Jap_The_Irony
+		icon = GFX_Jap_Nuke
+		prerequisite = { focus = JAP_Forward_Operating_Base}
+		
+		x = 0
+		y = 1
+		relative_position_id = JAP_Forward_Operating_Base
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+
 	focus = {
 		id = JAP_purge_the_kodoha_faction
 		icon = GFX_Goal_Purge_The_Kodoha_Faction
@@ -59,7 +399,7 @@ focus_tree = {
 		id = JAP_liaison_conference
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = JAP_purge_the_kodoha_faction }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = JAP_purge_the_kodoha_faction
 
@@ -249,7 +589,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_intervene_in_china
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -317,16 +657,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = Jap_Integrate_Chinese_Industry
-				bonus = 1
-				uses = 2
-				technology = excavation1
-				technology = excavation2
-				technology = excavation3
-				technology = excavation4
-				technology = excavation5
-			}
+			add_ideas = JAP_Chinese_Industry
 		}
 
 		ai_will_do = {
@@ -679,7 +1010,7 @@ focus_tree = {
 			336 = {
 				add_resource = {
 					type = oil
-					amount = 50
+					amount = 20
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -727,13 +1058,13 @@ focus_tree = {
 			671 = {
 				add_resource = {
 					type = steel
-					amount = 75
+					amount = 35
 				}
 			}
 			671 = {
 				add_resource = {
 					type = oil
-					amount = 25
+					amount = 10
 				}
 			}
 			if = {
@@ -752,7 +1083,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_purge_the_kodoha_faction }
 		mutually_exclusive = { focus = JAP_guide_the_zaibatsus }
 		relative_position_id = JAP_purge_the_kodoha_faction
-		x = 1
+		x = 2
 		y = 1
 
 		cost = 10
@@ -1278,7 +1609,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 4
+		cost = 3
 
 		ai_will_do = {
 			factor = 2
@@ -1289,6 +1620,11 @@ focus_tree = {
 					type = steel
 					amount = 30
 				}
+			}
+			MAN = { add_autonomy_ratio = {
+					value = -0.05
+				}
+				
 			}
 		}
 	}
@@ -1301,22 +1637,28 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_expand_the_showa_steel_works
 
-		cost = 4
+		cost = 3
 
 		completion_reward = {
+			
 			715 = {
-
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
+				add_resource = {
+					type = oil
+					amount = 10
 				}
+			}
+
+			715 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 5
 					instant_build = yes
 				}
+			}
+			MAN = { add_autonomy_ratio = {
+					value = -0.05
+				}
+				
 			}
 		}
 
@@ -1332,14 +1674,36 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_manchurian_industrial_development_company
 
-		cost = 5
+		cost = 4
 
 		completion_reward = {
+
+			715 = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+			}
+
+			715 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+
+	
+
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = industry
+			}
+			MAN = { add_autonomy_ratio = {
+					value = -0.05
+				}
+				
 			}
 		}
 
@@ -1414,7 +1778,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 4
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -1526,20 +1890,25 @@ focus_tree = {
 
 		completion_reward = {
 			609 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			745 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
+			}
+			745 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			MAN = { add_autonomy_ratio = {
+					value = -0.1
+				}
+				
 			}
 		}
 	}
@@ -1568,10 +1937,10 @@ focus_tree = {
 		focus = {
 		id = JAP_further_research
 		icon = GFX_focus_research
-		prerequisite = { focus = JAP_Annex_Manchuria }
-		x = 0
+		prerequisite = { focus = JAP_intervene_in_china }
+		x = -2
 		y = 1
-		relative_position_id = JAP_Annex_Manchuria
+		relative_position_id = JAP_intervene_in_china
 		
 		cost = 5
 		
@@ -1808,8 +2177,8 @@ focus_tree = {
 		id = JAP_armored_divisions
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = JAP_supremacy_of_technology }
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = JAP_supremacy_of_technology
 
 		cost = 10
@@ -1939,7 +2308,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_army_expansion_law
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
