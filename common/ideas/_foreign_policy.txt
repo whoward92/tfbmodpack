@@ -6,6 +6,11 @@ ideas = {
 		expansion_policy = {
 					
 			available = {
+				OR = {
+					original_tag = GER
+					original_tag = ITA
+				}
+
 			}
 					
 			picture = expansionism_policy
@@ -25,6 +30,13 @@ ideas = {
 		imperialism_policy = {
 			
 			available = {
+				OR = {
+					original_tag = JAP
+					original_tag = ENG
+					original_tag = ITA
+					original_tag = FRA
+				}
+
 			}
 			
 			picture = imperialism_policy
@@ -45,6 +57,10 @@ ideas = {
 		isolationism_policy = {
 			
 			available = {
+				OR = {
+					original_tag = USA
+				}
+				
 			}
 			
 			picture = isolationalism_policy
@@ -64,6 +80,8 @@ ideas = {
 		internationalism_policy = {
 		
 			available = {
+				original_tag = SOV
+				has_government = communism
 			}
 		
 			picture = internationalism_policy

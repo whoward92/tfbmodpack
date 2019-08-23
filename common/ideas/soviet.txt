@@ -60,10 +60,11 @@ ideas = {
 			}
 
 			modifier = {
-				industry_repair_factor = 1.0
-				consumer_goods_factor = -0.1
-				training_time_factor = -0.7
+				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.05
 				global_building_slots_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
 			}
 		}
 
@@ -324,11 +325,7 @@ ideas = {
 
 			equipment_bonus = {
 				mechanized_equipment = {
-					build_cost_ic = -0.15
-					instant = yes
-				}
-				amphibious_mechanized_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.05
 					instant = yes
 				}
 			}
