@@ -80,6 +80,7 @@ add_ideas = {
 	closed_economy
 	standard_mobilization
 	internationalism_policy
+	SOV_Isolated_Economy
 }
 
 1939.1.1 = {

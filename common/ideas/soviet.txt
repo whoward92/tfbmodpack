@@ -46,6 +46,23 @@ ideas = {
 			}
 		}
 
+		SOV_Spainish_gold = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+			picture = sov_spanish_gold
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+
 		SOV_industrial_relocations = {
 			removal_cost = -1
 
@@ -310,6 +327,21 @@ ideas = {
 			}
 		}
 
+		SOV_Isolated_Economy = {
+			allowed = { always = yes }
+
+			removal_cost = -1
+
+			picture = saf_soviet_advisers
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.10
+			}
+		}
+
 		SOV_mecha = {
 			allowed = {
 				always = no
@@ -338,11 +370,11 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = generic_infantry_bonus
+			picture = FRA_army_of_aggression_focus
 			
 			modifier = {
 				acclimatization_cold_climate_gain_factor = 0.5
-				winter_attrition_factor = -0.10
+				winter_attrition_factor = -0.25
 			}
 		}
 				
