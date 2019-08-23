@@ -243,7 +243,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_develop_chinese_resources
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_chinese_resources
 		prerequisite = { focus = JAP_intervene_in_china }
 		x = 0
 		y = 1
@@ -307,7 +307,7 @@ focus_tree = {
 
 	focus = {
 		id = Jap_Integrate_Chinese_Industry
-		icon = GFX_goal_generic_production
+		icon = GFX_integrate_china
 		prerequisite = { focus = JAP_develop_chinese_resources }
 		x = 0
 		y = 1
@@ -354,7 +354,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_strike_south_doctrine
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_South_Doctrine
 		prerequisite = { focus = JAP_greater_east_asian_co_prosperity_sphere }
 		prerequisite = { focus = JAP_liaison_conference }
 		x = 0
@@ -435,7 +435,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_bypass_the_philippines
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_Prepare_Strike_South
 		prerequisite = { focus = JAP_non_aggression_pact_with_the_soviet_union }
 		x = 0
 		y = 1
@@ -641,7 +641,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_exploit_the_southern_resource_area
-		icon = GFX_goal_generic_construction2
+		icon = GFX_Southern_Resource
 		prerequisite = { focus = JAP_coal_liquification }
 		x = 0
 		y = 1
@@ -950,7 +950,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_coal_liquification
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_goal_generic_japan_oil
 		prerequisite = { focus = JAP_nationalize_war_industry }
 		x = -1
 		y = 5
@@ -1082,7 +1082,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_national_defense_state
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_National_Defence
 		prerequisite = { focus = JAP_nationalize_war_industry }
 		prerequisite = { focus = JAP_national_research_policy }
 		x = 8
@@ -1272,7 +1272,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_expand_the_showa_steel_works
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_Showa_Steel
 		prerequisite = { focus = JAP_the_manchurian_project }
 		x = 2
 		y = 1
@@ -1295,7 +1295,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_manchurian_industrial_development_company
-		icon = GFX_goal_generic_construction
+		icon = GFX_Manchuria_Industrial
 		prerequisite = { focus = JAP_expand_the_showa_steel_works }
 		x = 0
 		y = 1
@@ -1326,7 +1326,7 @@ focus_tree = {
 
 		focus = {
 		id = JAP_Krupp_Investment
-		icon = GFX_goal_generic_construction
+		icon = GFX_Krupp_Invest
 		prerequisite = { focus = JAP_manchurian_industrial_development_company }
 		x = 0
 		y = 1
@@ -1408,7 +1408,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_expand_manchurian_railways
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_Manchuria_Railway
 		prerequisite = { focus = JAP_the_manchurian_project }
 		x = -2
 		y = 1
@@ -1511,7 +1511,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_japanese_settlement
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_Jap_Settle
 		prerequisite = { focus = JAP_heavy_industry_development }
 		prerequisite = { focus = JAP_light_industry_development }
 		x = 0
@@ -1546,7 +1546,7 @@ focus_tree = {
 
 		focus = {
 		id = JAP_Annex_Manchuria
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_Annex_Manchuria
 		prerequisite = { focus = JAP_japanese_settlement }
 		x = 0
 		y = 1
@@ -2177,7 +2177,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_unified_fighter_development
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_The_Ki43
 		prerequisite = { focus = JAP_agility_focus }
 		mutually_exclusive = { focus = JAP_the_zero }
 		x = 0

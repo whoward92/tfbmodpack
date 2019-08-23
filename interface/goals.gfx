@@ -1,6 +1,62 @@
 spriteTypes = {	
 
+SpriteType = {
+	name = "GFX_The_Ki43"
+	texturefile = "gfx/interface/goals/The_Ki43.dds"			
+	}	
 
+SpriteType = {
+	name = "GFX_Krupp_Invest"
+	texturefile = "gfx/interface/goals/Krupp_Invest.dds"			
+	}	
+
+SpriteType = {
+	name = "GFX_Manchuria_Industrial"
+	texturefile = "gfx/interface/goals/Manchuria_Industrial.dds"			
+	}	
+
+SpriteType = {
+	name = "GFX_Showa_Steel"
+	texturefile = "gfx/interface/goals/Showa_Steel.dds"			
+	}	
+
+SpriteType = {
+	name = "GFX_Annex_Manchuria"
+	texturefile = "gfx/interface/goals/Annex_Manchuria.dds"			
+	}	
+
+SpriteType = {
+	name = "GFX_Jap_Settle"
+	texturefile = "gfx/interface/goals/Jap_Settle.dds"			
+	}	
+
+SpriteType = {
+	name = "GFX_Manchuria_Railway"
+	texturefile = "gfx/interface/goals/Manchuria_Railway.dds"			
+	}	
+
+
+SpriteType = {
+	name = "GFX_National_Defence"
+	texturefile = "gfx/interface/goals/National_Defence.dds"			
+	}	
+
+
+SpriteType = {
+	name = "GFX_Southern_Resource"
+	texturefile = "gfx/interface/goals/Southern_Resource.dds"			
+	}	
+
+SpriteType = {
+	name = "GFX_Prepare_Strike_South"
+	texturefile = "gfx/interface/goals/Prepare_Strike_South.dds"			
+	}	
+
+
+SpriteType = {
+	name = "GFX_South_Doctrine"
+	texturefile = "gfx/interface/goals/south_doctrine.dds"			
+	}	
 
 SpriteType = {
 	name = "GFX_Annex_Siam"
@@ -21,6 +77,16 @@ SpriteType = {
 SpriteType = {
 	name = "GFX_Marco_Polo"
 	texturefile = "gfx/interface/goals/Marco_Polo.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_chinese_resources"
+	texturefile = "gfx/interface/goals/chinese_resources.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_integrate_china"
+	texturefile = "gfx/interface/goals/integrate_china.dds"			
 	}	
 
 
