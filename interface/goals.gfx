@@ -1,6 +1,42 @@
 spriteTypes = {	
 
 SpriteType = {
+	name = "GFX_Join_Axis"
+	texturefile = "gfx/interface/goals/Join_Axis.dds"			
+	}	
+
+SpriteType = {
+	name = "GFX_Electric_Boogaloo"
+	texturefile = "gfx/interface/goals/Electric_Boogaloo.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Siberia_Rail"
+	texturefile = "gfx/interface/goals/Siberia_Rail.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Jap_Nuke"
+	texturefile = "gfx/interface/goals/Jap_Nuke.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Forward_Operating_Base"
+	texturefile = "gfx/interface/goals/Forward_Operating_Base.dds"			
+	}	
+
+
+SpriteType = {
+	name = "GFX_The_Setting_Sun"
+	texturefile = "gfx/interface/goals/The_Setting_Sun.dds"			
+	}	
+
+SpriteType = {
+	name = "GFX_The_Rising_Sun"
+	texturefile = "gfx/interface/goals/The_Rising_Sun.dds"			
+	}	
+
+SpriteType = {
 	name = "GFX_The_Ki43"
 	texturefile = "gfx/interface/goals/The_Ki43.dds"			
 	}	
