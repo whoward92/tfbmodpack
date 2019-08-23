@@ -18,8 +18,7 @@ focus_tree = {
 focus = {
 		id = JAP_Join_The_Axis
 		icon = GFX_Join_Axis
-		prerequisite = { focus = JAP_Nichiro_Senso_two_Electric_Boogaloo}
-		prerequisite = { focus = Jap_The_Irony}
+		prerequisite = { focus = JAP_Nichiro_Senso_two_Electric_Boogaloo focus = Jap_The_Irony }
 		x = 1
 		y = 1
 		relative_position_id = Jap_The_Irony
