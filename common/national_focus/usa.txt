@@ -126,7 +126,7 @@ focus_tree = {
 		}
 
 		available = {
-			congress_medium_support_trigger = yes
+			#congress_medium_support_trigger = yes
 			has_government = democratic
 			date > 1938.1.1
 		}
@@ -148,7 +148,7 @@ focus_tree = {
 		completion_reward = {
 			USA_great_depression_level_down = yes
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
-			USA_congress_medium_opposition = yes
+			#USA_congress_medium_opposition = yes
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
 		}
@@ -168,7 +168,7 @@ focus_tree = {
 		}
 
 		available = {
-			congress_medium_support_trigger = yes
+			#congress_medium_support_trigger = yes
 			has_government = democratic
 			not = { has_country_flag = USA_great_depression_cooldown }
 		}
@@ -191,7 +191,7 @@ focus_tree = {
 			USA_great_depression_level_down = yes
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
-			USA_congress_medium_opposition = yes
+			#USA_congress_medium_opposition = yes
 		}
 	}
 	focus = {
@@ -208,7 +208,7 @@ focus_tree = {
 		}
 
 		available = {
-			congress_medium_support_trigger = yes
+			#congress_medium_support_trigger = yes
 			has_government = democratic
 			not = { has_country_flag = USA_great_depression_cooldown }
 		}
@@ -230,7 +230,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			USA_congress_medium_opposition = yes
+			#USA_congress_medium_opposition = yes
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -378,7 +378,6 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available = {
-			congress_high_support_trigger = yes 
 			has_government = democratic
 			OR = {
 			date > 1939.1.1
@@ -421,7 +420,6 @@ focus_tree = {
 			else = {
 				add_political_power = 150 #refund if already at civilian economy
 			}
-			USA_congress_medium_opposition = yes
 			if = {
 				limit = {
 					has_war_support < 0.4
@@ -468,7 +466,7 @@ focus_tree = {
 				limit = {
 					has_war_support < 0.4
 				}
-				USA_congress_small_opposition = yes
+				#USA_congress_small_opposition = yes
 			}
 		}
 	}
@@ -694,8 +692,12 @@ focus_tree = {
 		}
 
 		available = {
-			congress_low_support_trigger = yes
 			democratic > 0.95
+			OR = {
+			date > 1939.1.1
+			# Historical Date is 4th November 1939
+			threat > 0.4 
+			}
 		}
 		
 		bypass = {
@@ -714,7 +716,6 @@ focus_tree = {
 				limit = {
 					has_war_support < 0.4
 				}
-				USA_congress_small_support = yes
 			}
 			custom_effect_tooltip = USA_lend_lease_act_neutrality_tt
 			hidden_effect = {
@@ -736,14 +737,15 @@ focus_tree = {
 		}
 
 		available = {
+			date = 1940.3.11 
 			if = {
 				limit = {
 					has_war_support > 0.4
 				}
-				congress_medium_support_trigger = yes
+				#congress_medium_support_trigger = yes
 			}
 			else = {
-				congress_high_support_trigger = yes
+				#congress_high_support_trigger = yes
 			}
 			democratic > 0.95
 			custom_trigger_tooltip = {
@@ -808,24 +810,24 @@ focus_tree = {
 					has_war_support > 0.6
 					has_war = no
 				}
-				USA_congress_small_support = yes
+				#USA_congress_small_support = yes
 			}
 			else_if = {
 				limit = {
 					has_war_support > 0.4
 					has_war = no
 				}
-				USA_congress_small_opposition = yes
+				#USA_congress_small_opposition = yes
 			}
 			else_if = {
 				limit = {
 					has_war_support < 0.4
 					has_war = no
 				}
-				USA_congress_large_opposition = yes
+				#USA_congress_large_opposition = yes
 			}
 			else = {
-				USA_congress_medium_opposition = yes
+				#USA_congress_medium_opposition = yes
 			}
 		}
 	}
@@ -1433,10 +1435,7 @@ focus_tree = {
 					threat < 0.5
 					has_war = no
 				}
-				congress_high_support_trigger = yes
-			}
-			else = {
-				congress_low_support_trigger = yes
+				date = 1940.9.16 #September 16, 1940
 			}
 		}
 		
@@ -1466,12 +1465,6 @@ focus_tree = {
 					has_war_support < 0.1
 				}
 				set_war_support = 0.1
-			}
-			if = {
-				limit = {
-					has_war_support < 0.4 
-				}
-				USA_congress_medium_opposition = yes
 			}
 		}
 	}
@@ -2140,10 +2133,7 @@ focus_tree = {
 					threat < 0.5
 					has_war = no
 				}
-				congress_high_support_trigger = yes
-			}
-			else = {
-				congress_low_support_trigger = yes
+				date = 1940.8.19 #July 19, 1940
 			}
 			controls_state = 378
 			controls_state = 358
@@ -2181,7 +2171,6 @@ focus_tree = {
 				limit = {
 					 has_war_support < 0.4 
 				}
-				USA_congress_medium_opposition = yes
 			}
 			if = { 
 				limit = { 
