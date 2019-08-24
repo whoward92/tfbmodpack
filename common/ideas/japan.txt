@@ -2,6 +2,86 @@ ideas = {
 
 	country = {
 
+JAP_Nichiro_Senso = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_hirohito
+			
+			modifier = {
+				conscription = 0.02
+				
+			
+		}
+}
+
+			JAP_Siberia_Infastructure = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_hirohito
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+				production_speed_air_base_factor = 0.25
+			
+		}
+}
+
+			JAP_Forward_Operation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_hirohito
+			
+			modifier = {
+				production_speed_naval_base_factor = 0.25
+				production_speed_air_base_factor = 0.25
+			
+		}
+}
+
+			JAP_The_Setting_Sun = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_hirohito
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+
+				supply_consumption_factor = -0.25
+			
+		}
+}
 
 			JAP_The_Rising_Sun = {
 			allowed = {
@@ -17,7 +97,7 @@ ideas = {
 			picture = jap_hirohito
 			
 			modifier = {
-				production_speed_dockyard_factor = 0.1
+				industrial_capacity_dockyard = 0.1
 			
 			}
 			equipment_bonus = {

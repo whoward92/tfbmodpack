@@ -35,40 +35,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-			MAN = {
-				716 = {
-					limit = {
-						is_fully_controlled_by = PREV
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-					set_state_flag = JAP_expand_manchurian_railways_Inf1
-				}
-				527 = {
-					limit = {
-						is_fully_controlled_by = PREV
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-					set_state_flag = JAP_expand_manchurian_railways_Inf2
-				}
-			}
+			 GER = { add_to_faction = JAP }
 		}
 	}
 
@@ -87,40 +54,8 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-			MAN = {
-				716 = {
-					limit = {
-						is_fully_controlled_by = PREV
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-					set_state_flag = JAP_expand_manchurian_railways_Inf1
-				}
-				527 = {
-					limit = {
-						is_fully_controlled_by = PREV
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-					set_state_flag = JAP_expand_manchurian_railways_Inf2
-				}
-			}
+			add_ideas = JAP_Nichiro_Senso
+			add_war_support = 0.1
 		}
 	}
 
@@ -173,7 +108,7 @@ focus = {
 		}
 
 		completion_reward = {
-			add_ideas = JAP_The_Rising_Sun
+			add_ideas = JAP_The_Setting_Sun
 		}
 	}
 
@@ -191,40 +126,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-			MAN = {
-				716 = {
-					limit = {
-						is_fully_controlled_by = PREV
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-					set_state_flag = JAP_expand_manchurian_railways_Inf1
-				}
-				527 = {
-					limit = {
-						is_fully_controlled_by = PREV
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-					set_state_flag = JAP_expand_manchurian_railways_Inf2
-				}
-			}
+			add_ideas = JAP_Siberia_Infastructure
 		}
 	}
 
@@ -294,40 +196,8 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-			MAN = {
-				716 = {
-					limit = {
-						is_fully_controlled_by = PREV
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-					set_state_flag = JAP_expand_manchurian_railways_Inf1
-				}
-				527 = {
-					limit = {
-						is_fully_controlled_by = PREV
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-					set_state_flag = JAP_expand_manchurian_railways_Inf2
-				}
-			}
+			add_ideas = JAP_Forward_Operation
+			JAP = { transfer_state = 649 }
 		}
 	}
 focus = {
