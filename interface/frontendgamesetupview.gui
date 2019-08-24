@@ -165,9 +165,8 @@ guiTypes = {
 	}
 	
 	## Minor Country Medium Flag Selection
-	### country entry
 	containerWindowType = {
-		name = "country_entry_mini"
+		name = "country_entry_medium"
 					
 		iconType = {
 			name = "country_flag"
@@ -186,24 +185,24 @@ guiTypes = {
 	}
 	
 	## Minor Country Small Flag Selection
-	#containerWindowType = {
-	#	name = "country_entry_mini"
-	#
-	#	iconType = {
-	#		name = "country_flag"
-	#		quadTextureSprite ="GFX_flag_small2"
-	#		position = { x = 8 y = 7 }
-	#		Orientation = "UPPER_LEFT"
-	#		allwaystransparent = yes
-	#	}
+	containerWindowType = {
+		name = "country_entry_mini"
+	
+		iconType = {
+			name = "country_flag"
+			quadTextureSprite ="GFX_flag_small2"
+			position = { x = 8 y = 7 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
 
-	#	buttonType = {
-	#		name = "country"	
-	#		quadTextureSprite = "GFX_mini_country_selector"
-	#		position = { x = 0 y = 0 }
-	#		clicksound = click_checkbox
-	#	}		
-	#}
+		buttonType = {
+			name = "country"	
+			quadTextureSprite = "GFX_mini_country_selector"
+			position = { x = 0 y = 0 }
+			clicksound = click_checkbox
+		}		
+	}
 	
 	
 	### LOAD GAME
