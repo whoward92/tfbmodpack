@@ -299,7 +299,9 @@ ideas = {
 	}	
 
 	# TECHNOLOGY
+	tank_manufacturer = {
 
+	}
 	naval_manufacturer = { 
 		
 		designer = yes
@@ -314,7 +316,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = 0.10
 			}
 			
 			# submarine and defence ship production
@@ -339,7 +341,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = 0.10
 			}
 			
 			traits = { light_aircraft_manufacturer_2 }
@@ -352,7 +354,22 @@ ideas = {
 			cost = 100
 		}
 	}
-	
+	materiel_manufacturer = {
+		fin_sako = {
+
+			picture = generic_infantry_equipment_manufacturer_3
+
+			allowed = {
+				original_TAG = FIN
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+	}
 	industrial_concern = {
 				
 		fin_nokia = {
@@ -366,7 +383,7 @@ ideas = {
 
 			
 			research_bonus = {
-				electronics = 0.15
+				electronics = 0.10
 			}
 			
 			traits = { fin_nokia_company }
@@ -386,7 +403,7 @@ ideas = {
 
 			
 			research_bonus = {
-				industry = 0.15
+				industry = 0.10
 			}
 			
 			traits = { construction_company }
@@ -407,7 +424,7 @@ ideas = {
 
 			
 			research_bonus = {
-				industry = 0.15
+				industry = 0.10
 			}
 			
 			traits = { fin_resource_company }
