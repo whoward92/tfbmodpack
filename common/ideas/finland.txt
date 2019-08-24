@@ -26,33 +26,39 @@ ideas = {
 
 	political_advisor = {
 
-		
-		FIN_ralf_torngren = {
-
-			picture = generic_political_advisor_europe_1
-
+		FIN_juho_niukkanen = {
+			#minister of defense (1937 - 40)
+			picture = generic_army_europe_2		
 			allowed = {
 				original_tag = FIN
 			}
-			
-			traits = { ideological_crusader }
+
+			traits = { army_chief_defensive_2 }
 		}
 
-		FIN_ake_henrik_gartz = {
-
-			picture = generic_political_advisor_europe_2
-				
+		FIN_mauno_pekkala = {
+			#minister of finance (1939 - 1942)
+			picture = generic_air_europe_3	
 			allowed = {
 				original_tag = FIN
 			}
-			
-			traits = { captain_of_industry }
+
+			traits = { financial_expert }
 		}
 
-		FIN_antti_hackzell = {
+		FIN_ernst_von_born = {
+			#minister of interior (1939 - 1941) stern guy, right-leaning, member of the Peace Group, who wanted peace with the Soviets
+			picture = generic_air_europe_2	
+			allowed = {
+				original_tag = FIN
+			}
 
-			picture = generic_political_advisor_europe_3
-			
+			traits = { prince_of_terror }
+		}
+
+		FIN_vaino_tanner = {
+			#held multiple roles, mostly industry/finances related (1937 - 1944) neccesary for gaining Winter War Spirit, is imprisoned at the end of Continuation War.
+			picture = generic_air_europe_1
 			allowed = {
 				original_tag = FIN
 			}
@@ -293,7 +299,9 @@ ideas = {
 	}	
 
 	# TECHNOLOGY
+	tank_manufacturer = {
 
+	}
 	naval_manufacturer = { 
 		
 		designer = yes
@@ -308,12 +316,12 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = 0.10
 			}
 			
 			# submarine and defence ship production
 			
-			traits = { naval_manufacturer }
+			traits = { coastal_defence_naval_manufacturer }
 			cost = 100
 		}
 	}
@@ -333,10 +341,10 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = 0.10
 			}
 			
-			traits = { light_aircraft_manufacturer }
+			traits = { light_aircraft_manufacturer_2 }
 			
 			# assembled Junkers, fast bombers
 		
@@ -346,4 +354,84 @@ ideas = {
 			cost = 100
 		}
 	}
+	materiel_manufacturer = {
+		fin_sako = {
+
+			picture = generic_infantry_equipment_manufacturer_3
+
+			allowed = {
+				original_TAG = FIN
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+	}
+	industrial_concern = {
+				
+		fin_nokia = {
+
+			picture = generic_electronics_concern_1
+
+			allowed = {
+				original_TAG = FIN
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { fin_nokia_company }
+			
+			modifier = {
+			}
+		}
+		
+		fin_vr = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_TAG = FIN
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { construction_company }
+			
+			modifier = {
+			}
+		}
+		
+		fin_outokumpu = {
+			
+			picture = generic_industrial_concern_2
+
+			
+			allowed = {
+				original_TAG = FIN
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { fin_resource_company }
+			
+			modifier = {
+				
+			}
+		}
+	}	
 }

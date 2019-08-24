@@ -2976,19 +2976,19 @@ guiTypes = {
 			iconType = {
 				name ="air_superiority_bg"
 				spriteType = "GFX_strategic_destruction_bg"
-				position = { x=170 y=33 }
+				position = { x=80 y=33 }
 			}			
 				
 			iconType = {
 				name ="battlefield_destruction_bg"
 				spriteType = "GFX_battlefield_destruction_bg"
-				position = { x=720 y=33 }
+				position = { x=595 y=33 }
 			}	
 	
 			iconType = {
 				name ="operational_destruction_bg"
 				spriteType = "GFX_operational_destruction_bg"
-				position = { x=1250 y=33 }
+				position = { x=1100 y=33 }
 			}
 	
 #			iconType = {
@@ -2999,7 +2999,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "strategic_destruction_title"
-				position = { x = 170 y = 35 }
+				position = { x = 80 y = 35 }
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
 				text = "TITLE_STRATEGIC_DESTRUCTION"
@@ -3011,7 +3011,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "strategic_destruction_desc"
-				position = { x = 190 y = 70 }
+				position = { x = 108 y = 70 }
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
 				text = "STRATEGIC_DESTRUCTION_DESC"
@@ -3023,7 +3023,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "battlefield_support_title"
-				position = { x = 720 y = 35 }
+				position = { x = 605 y = 35 }
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
 				text = "TITLE_BATTLEFIELD_SUPPORT"
@@ -3035,7 +3035,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "battlefield_support_desc"
-				position = { x = 740 y = 70 }
+				position = { x = 620 y = 70 }
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
 				text = "BATTLEFIELD_SUPPORT_DESC"
@@ -3047,7 +3047,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "operational_integrity_title"
-				position = { x = 1250 y = 35 }
+				position = { x = 1105 y = 35 }
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
 				text = "TITLE_OPERATIONAL_INTEGRITY"
@@ -3059,7 +3059,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "operational_integrity_desc"
-				position = { x = 1275 y = 82 }
+				position = { x = 1120 y = 82 }
 				font = "hoi_20b"
 				borderSize = {x = 0 y = 4}
 				text = "OPERATIONAL_INTEGRITY_DESC"
@@ -3097,7 +3097,7 @@ guiTypes = {
 			gridboxtype = {
 				#strategic_destruction_tree Needs to be named after first tech (air_superiority)
 				name = "air_superiority_tree"
-				position = { x=180 y=172 }
+				position = { x=80 y=172 }
 				size = { width = 400 height = 1050 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"

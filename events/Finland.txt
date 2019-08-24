@@ -301,3 +301,155 @@ country_event = {
 		name = finland.9.a
 	}
 }
+
+# Election of 1937
+country_event = {
+	id = finland.10
+	title = finland.10.t
+	desc = finland.10.d
+	picture = GFX_report_event_chamberlain
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FIN
+		has_government = neutrality
+		date > 1937.2.25
+		has_country_leader = {
+			name = "Pehr Evind Svinhufvud"
+			ruling_only = yes
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+
+	option = {
+		name = finland.10.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Kyösti Kallio"
+			desc = "POLITICS_KYÖSTI_KALLIO_DESC"
+			picture = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
+			expire = "1940.12.19"
+			ideology = centrism
+			traits = {
+				anti_communist stout_defender
+			}
+		}
+	}
+}
+
+# Kyosti dies
+country_event = {
+	id = finland.11
+	title = finland.11.t
+	desc = finland.11.d
+	picture = GFX_report_event_chamberlain
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FIN
+		has_government = neutrality
+		date > 1940.12.18
+		has_country_leader = {
+			name = "Kyösti Kallio"
+			ruling_only = yes
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = {
+		name = finland.11.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Risto Ryti"
+			desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
+			picture = "Portrait_Finland_Risto_Heikki_Ryti.dds"
+			expire = "1944.8.4"
+			ideology = centrism
+			traits = { likes_germany financial_expert }
+		}
+	}
+}
+
+# Resignation of Risto Ryti
+country_event = {
+	id = finland.12
+	title = finland.12.t
+	desc = finland.12.d
+	picture = GFX_report_event_chamberlain
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FIN
+		has_government = neutrality
+		date > 1944.8.3
+		has_country_leader = {
+			name = "Risto Ryti"
+			picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			ruling_only = yes
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = {
+		name = finland.12.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Carl Gustaf Emil Mannerheim"
+			picture = "portrait_fin_carl_mannerheim.dds"
+			expire = "1946.3.11"
+			ideology = centrism
+			traits = {}
+		}
+	}
+}
+# Resignation of Mannerheim
+country_event = {
+	id = finland.13
+	title = finland.13.t
+	desc = finland.13.d
+	picture = GFX_report_event_chamberlain
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FIN
+		has_government = neutrality
+		date > 1944.8.3
+		has_country_leader = {
+			name = "Carl Gustaf Emil Mannerheim"
+			ruling_only = yes
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = {
+		name = finland.13.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Juho Kusti Paasikivi"
+			picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			expire = "1965.1.1"
+			ideology = centrism
+			traits = {}
+		}
+	}
+}
