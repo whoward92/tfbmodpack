@@ -2,6 +2,38 @@ ideas = {
 
 	country = {
 
+
+			JAP_The_Rising_Sun = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_hirohito
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+			
+			}
+			equipment_bonus = {
+		carrier = {
+			naval_range = 0.5
+		}
+		capital_ship = {
+			naval_range = 0.5
+		}
+		screen_ship = {
+			naval_range = 0.5
+		}
+	}
+		}
+
+
 		JAP_Chinese_Industry = {
 			allowed = {
 				always = no

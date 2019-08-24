@@ -19,6 +19,12 @@ focus = {
 		id = JAP_Join_The_Axis
 		icon = GFX_Join_Axis
 		prerequisite = { focus = JAP_Nichiro_Senso_two_Electric_Boogaloo focus = Jap_The_Irony }
+		available = {
+		OR = {219 = {is_owned_by = Jap}
+		 361 = {is_owned_by = Jap}
+		  126 = {is_owned_by = Jap}}
+		}
+		
 		x = 1
 		y = 1
 		relative_position_id = Jap_The_Irony
@@ -132,6 +138,7 @@ focus = {
 		672 = {is_owned_by = Jap}
 		334 = {is_owned_by = Jap}
 		333 = {is_owned_by = Jap}
+		629 = {is_owned_by = Jap}
 		}
 		x = 17
 		y = 5
@@ -166,8 +173,7 @@ focus = {
 		}
 
 		completion_reward = {
-			add_stability = 0.1
-			add_political_power = 150
+			add_ideas = JAP_The_Rising_Sun
 		}
 	}
 
@@ -236,6 +242,7 @@ focus = {
 		672 = {is_owned_by = Jap}
 		334 = {is_owned_by = Jap}
 		333 = {is_owned_by = Jap}
+		629 = {is_owned_by = Jap}
 		}
 		x = 15
 		y = 5
@@ -270,8 +277,7 @@ focus = {
 		}
 
 		completion_reward = {
-			add_stability = 0.1
-			add_political_power = 150
+			add_ideas = JAP_The_Rising_Sun
 		}
 	}
 focus = {
