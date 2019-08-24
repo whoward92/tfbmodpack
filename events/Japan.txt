@@ -626,3 +626,71 @@ country_event = {
 		}
 	}
 }
+
+# Forced Peace with China
+country_event = {
+	id = japan.100
+	title = japan.100.t
+	desc = japan.100.d
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+
+	trigger = {
+		controls_state = 605
+        controls_state = 748
+    	controls_state = 603
+	}
+	
+	option = {
+		name = japan.100.a
+		
+		JAP = {
+
+			CHI = { white_peace = JAP }
+			puppet = CHI
+
+			hidden_effect = {
+				transfer_state = 608
+            	transfer_state = 614
+            	transfer_state = 597
+            	transfer_state = 598
+            	transfer_state = 607
+            	transfer_state = 606
+    	    	transfer_state = 613
+            	transfer_state = 749
+            	transfer_state = 596
+            	transfer_state = 595
+            	transfer_state = 600
+            	transfer_state = 620
+            	transfer_state = 602
+            	transfer_state = 750
+            	transfer_state = 744
+            	transfer_state = 605
+            	transfer_state = 748
+            	transfer_state = 603
+        		transfer_state = 743
+			}
+			
+		}
+
+		CHI = {
+			diplomatic_relation = { 
+        	    country = JAP 
+                relation = non_aggression_pact
+			}
+
+			set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+			}
+						
+			set_popularities = {
+						fascism = 100
+						democratic = 0
+						communism = 0
+						neutrality = 0
+			}
+		}
+	}
+}
