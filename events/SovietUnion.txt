@@ -348,6 +348,12 @@ country_event = {
 	
 	option = {
 		name = soviet.13.a
+
+		diplomatic_relation = {
+			country = FIN
+			relation = non_aggression_pact
+			active = no
+		}
 		create_wargoal = {
 			type = take_state
 			target = FIN

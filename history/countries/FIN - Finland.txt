@@ -1,4 +1,7 @@
-﻿capital = 111
+﻿###
+### Portrait of Pehr taken from Road to 56
+###
+capital = 111
 
 oob = "FIN_1936"
 if = {
@@ -115,7 +118,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Pehr Evind Svinhufvud"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = "gfx/leaders/FIN/Portrait_Fin_PE_svinhufvud.dds"
 	expire = "1937.3.1"
 	ideology = liberalism
 	traits = {
@@ -183,7 +186,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Pehr Evind Svinhufvud"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = "gfx/leaders/FIN/Portrait_Fin_PE_svinhufvud.dds"
 	expire = "1937.3.1"
 	ideology = centrism
 	traits = {
@@ -195,6 +198,8 @@ create_country_leader = {
 
 add_ideas = {
 	sisu
+	ghost_civil_war
+	fin_lotta_svard
 }
 
 create_field_marshal = {
