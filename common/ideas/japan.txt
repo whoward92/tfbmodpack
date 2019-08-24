@@ -3,7 +3,7 @@ ideas = {
 	country = {
 
 
-			JAP_The_Rising_Sun = {
+		JAP_The_Rising_Sun = {
 			allowed = {
 				always = no
 			}
@@ -21,16 +21,16 @@ ideas = {
 			
 			}
 			equipment_bonus = {
-		carrier = {
-			naval_range = 0.5
-		}
-		capital_ship = {
-			naval_range = 0.5
-		}
-		screen_ship = {
-			naval_range = 0.5
-		}
-	}
+				carrier = {
+					naval_range = 0.5
+				}
+				capital_ship = {
+					naval_range = 0.5
+				}
+				screen_ship = {
+					naval_range = 0.5
+				}
+			}
 		}
 
 
