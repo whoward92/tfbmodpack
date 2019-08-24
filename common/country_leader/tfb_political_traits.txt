@@ -1,0 +1,26 @@
+leader_traits = {
+	likes_germany = {
+		random = no
+		ai_strategy = {
+			type = befriend
+			id = "GER"			
+			value = 200
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	likes_sweden = {
+		random = no
+		ai_strategy = {
+			type = befriend
+			id = "SWE"			
+			value = 200
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

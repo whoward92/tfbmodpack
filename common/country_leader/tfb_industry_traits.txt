@@ -1,0 +1,20 @@
+leader_traits = {
+    fin_resource_company = {
+        sprite = 10
+        random = no
+        local_resources_factor = 0.15
+
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    fin_nokia_company = {
+        sprite = 10
+        random = no
+        decryption_factor = 0.1
+        encryption_factor = 0.1
+        ai_will_do = {
+            factor = 2
+        }
+    }
+}
