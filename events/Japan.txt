@@ -670,6 +670,18 @@ country_event = {
             	transfer_state = 748
             	transfer_state = 603
         		transfer_state = 743
+				transfer_state = 621
+				transfer_state = 615
+				transfer_state = 622
+				transfer_state = 746
+				transfer_state = 593
+				transfer_state = 592
+				transfer_state = 599
+				transfer_state = 594
+				transfer_state = 591
+				transfer_state = 747
+				transfer_state = 325
+
 			}
 			
 		}
@@ -691,6 +703,23 @@ country_event = {
 						communism = 0
 						neutrality = 0
 			}
+
+			hidden_effect = {
+				transfer_state = 753
+				transfer_state = 283
+				transfer_state = 754
+				transfer_state = 616
+				transfer_state = 756
+				transfer_state = 755
+				transfer_state = 604
+				transfer_state = 760
+				transfer_state = 759
+				transfer_state = 287
+				transfer_state = 619
+				transfer_state = 617
+				transfer_state = 618
+			}
+			
 		}
 	}
 }
