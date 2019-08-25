@@ -646,78 +646,39 @@ country_event = {
 		name = japan.100.a
 		
 		JAP = {
-
-			CHI = { white_peace = JAP }
-			puppet = CHI
-
 			hidden_effect = {
-				transfer_state = 608
-            	transfer_state = 614
-            	transfer_state = 597
-            	transfer_state = 598
-            	transfer_state = 607
-            	transfer_state = 606
-    	    	transfer_state = 613
-            	transfer_state = 749
-            	transfer_state = 596
-            	transfer_state = 595
-            	transfer_state = 600
-            	transfer_state = 620
-            	transfer_state = 602
-            	transfer_state = 750
-            	transfer_state = 744
-            	transfer_state = 605
-            	transfer_state = 748
-            	transfer_state = 603
-        		transfer_state = 743
-				transfer_state = 621
-				transfer_state = 615
-				transfer_state = 622
-				transfer_state = 746
-				transfer_state = 593
-				transfer_state = 592
-				transfer_state = 599
-				transfer_state = 594
-				transfer_state = 591
-				transfer_state = 747
-				transfer_state = 325
+				annex_country = { target = SIK transfer_troops = no }
+				annex_country = { target = CHI transfer_troops = no }
+				annex_country = { target = YUN transfer_troops = no }
+				annex_country = { target = CGX transfer_troops = no }
+				annex_country = { target = PRC transfer_troops = no }
+				annex_country = { target = SHX transfer_troops = no }
 
-			}
-			
-		}
+				remove_equipment_from_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = JAP
+				}
 
-		CHI = {
-			diplomatic_relation = { 
-        	    country = JAP 
-                relation = non_aggression_pact
-			}
+				USA = {
+					country_event = { id = panay_incident.1 }
+				}	
 
-			set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
-			}
-						
-			set_popularities = {
-						fascism = 100
-						democratic = 0
-						communism = 0
-						neutrality = 0
-			}
+				army_experience = 1000
+				air_experience = 1000
+				navy_experience = 1000
 
-			hidden_effect = {
-				transfer_state = 753
-				transfer_state = 283
-				transfer_state = 754
-				transfer_state = 616
-				transfer_state = 756
-				transfer_state = 755
-				transfer_state = 604
-				transfer_state = 760
-				transfer_state = 759
-				transfer_state = 287
-				transfer_state = 619
-				transfer_state = 617
-				transfer_state = 618
+				SOV = { 
+					army_experience = 1000
+					air_experience  = 300
+						}
+				GER = { 
+					air_experience  = 300
+						}
+				ITA = { 
+					air_experience  = 300
+				}
+
 			}
 			
 		}

@@ -737,7 +737,6 @@ focus_tree = {
 		}
 
 		available = {
-			date = 1940.3.11 
 			if = {
 				limit = {
 					has_war_support > 0.4
@@ -1435,7 +1434,6 @@ focus_tree = {
 					threat < 0.5
 					has_war = no
 				}
-				date = 1940.9.16 #September 16, 1940
 			}
 		}
 		
@@ -2133,7 +2131,6 @@ focus_tree = {
 					threat < 0.5
 					has_war = no
 				}
-				date = 1940.8.19 #July 19, 1940
 			}
 			controls_state = 378
 			controls_state = 358
