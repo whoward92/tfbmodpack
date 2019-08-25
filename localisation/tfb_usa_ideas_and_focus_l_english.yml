@@ -1,0 +1,19 @@
+﻿l_english:
+  ## Ideas
+ USA_hoover_dam:0 "BCPA"
+ USA_legislation_being_drafted:0 "Legislation being drafted"
+ USA_giant_sleeps_idea:0 "Giant Sleeps"
+ USA_giant_sleeps_idea_2:0 "Giant Sleeps"
+ USA_giant_sleeps_idea_3:0 "Giant Sleeps"
+ USA_merchant_marine_act:0 "Merchant Marine Act"
+ USA_marine_corps:0 "USA Marine Corps"
+ 
+ ## Focus's
+
+ USA_finish_hoover_dam:"Finish Hoover Dam"
+ USA_merchant_marine_act:0 "Merchant Marine Act"
+
+ ## ToolTips
+
+ USA_great_depression_cooldown_tfb_tt:0 "Once this law is passed, it will take §Y645 days§! until further New Deal legislation is completed and ready to be signed.\n" 
+ USA_limited_intervention_tfb_tt:0 "Passing this law will §Rresult in a weaker late-game economy§!, but §Gwill allow you to help the allies earlier with lend-lease.§!\n\n"
