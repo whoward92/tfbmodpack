@@ -1,0 +1,42 @@
+USA_congress = {
+	USA_amend_the_budget = {
+		icon = ger_mefo_bills
+		available = {
+			has_political_power > 1
+		}
+		visible = {has_government = democratic }
+		cost = 40
+		days_remove = 90
+		days_re_enable = 275
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power > -23.43
+				factor = 0
+			}
+		}
+		modifier = { consumer_goods_factor = -0.03 }
+		remove_effect = {
+		}
+	}
+	USA_research_grants = {
+		icon = ger_mefo_bills
+		available = {
+			has_political_power > 1
+		}
+		visible = {has_government = democratic }
+		cost = 40
+		days_remove = 90
+		days_re_enable = 275
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power > -23.43
+				factor = 0
+			}
+		}
+		modifier = { research_speed_factor = 0.05 }
+		remove_effect = {
+		}
+	}	
+}
