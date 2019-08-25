@@ -353,7 +353,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_greater_east_asian_co_prosperity_sphere
 
-		cost = 1
+		cost = 10
 
 		available = {
 			is_puppet = no
