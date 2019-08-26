@@ -90,7 +90,7 @@ SpriteType = {
 
 
 SpriteType = {
-	name = "GFX_GFX_South_Doctrine"
+	name = "GFX_South_Doctrine"
 	texturefile = "gfx/interface/goals/South_Doctrine.dds"			
 	}	
 
