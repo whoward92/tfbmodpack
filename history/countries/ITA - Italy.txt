@@ -86,7 +86,6 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 
 # DIPLOMACY / WAR 36
@@ -219,7 +218,7 @@ if = {
 }
 
 
-set_convoys = 200
+set_convoys = 600
 
 set_politics = {
 	ruling_party = fascism
