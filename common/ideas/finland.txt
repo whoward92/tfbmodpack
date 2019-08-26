@@ -23,8 +23,28 @@ ideas = {
 			}
 		}
 
-		ghost_civil_war = {
+		FIN_spirit_of_winter_war = {
+			allowed = {
+				always = no
+				has_government = neutrality
+				has_war = yes
+			}
+
+			allowed_civil_war = {
+			}
+			removal_cost = -1
 			
+			modifier = {
+
+				conscription = 0.015
+				stability_factor = 0.2
+				war_support_factor = 0.2
+
+			}
+		}
+
+		FIN_ghost_civil_war = {
+			picture = prc_low_popular_support3
 			allowed = {
 				always = no
 				has_government = neutrality
@@ -40,13 +60,15 @@ ideas = {
 			modifier = {
 
 				conscription = -0.01
-				stability_factor = -0.1
+				stability_factor = -0.2
+				
 
 			}
 		}
 
-		fin_lotta_svard = {
+		FIN_lotta_svard = {
 
+			picture = generic_victors_of_ww1
 			allowed = {
 				always = no
 			}
@@ -59,12 +81,68 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				casualty_trickleback = 0.05
-				experience_loss_factor = -0.025
+				conscription = 0.03
 			}
 
 		}
 
+		FIN_acquire_planes = {
+
+			picture = generic_license_production
+
+			removal_cost = -1
+			
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				license_air_purchase_cost = -0.25
+			}
+		}
+		FIN_build_planes = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_air_payment
+
+
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.25 instant = yes
+				}
+				CAS_equipment = {
+					build_cost_ic = -0.25 instant = yes
+				}
+				tac_bomber_equipment = {
+					build_cost_ic = -0.25 instant = yes
+				}
+				strat_bomber_equipment = {
+					build_cost_ic = -0.25 instant = yes
+				}
+				nav_bomber_equipment = {
+					build_cost_ic = -0.25 instant = yes
+				}
+			}
+		}
+		FIN_mass_consciption = {
+			picture = eng_imperial_conscription
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+			modifier = {
+				conscription = 0.025
+				conscription_factor = 0.1
+			}
+		}
 	}
 
 	political_advisor = {

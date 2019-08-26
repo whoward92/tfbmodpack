@@ -301,7 +301,6 @@ country_event = {
 		name = finland.9.a
 	}
 }
-
 # Election of 1937
 country_event = {
 	id = finland.10
@@ -395,7 +394,6 @@ country_event = {
 		date > 1944.8.3
 		has_country_leader = {
 			name = "Risto Ryti"
-			picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 			ruling_only = yes
 		}
 	}	
@@ -450,6 +448,29 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = centrism
 			traits = {}
+		}
+	}
+}
+#Removal of Ghost of Civil War
+country_event = {
+	id = finland.14
+	title = finland.14.t
+	desc = finland.14.d
+	picture = GFX_report_event_soviet_tanks
+	fire_only_once = yes
+	trigger = {
+		tag = FIN
+		has_war = yes
+		has_idea = FIN_ghost_civil_war
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = finland.14.a
+		swap_ideas = {
+			remove_idea = FIN_ghost_civil_war
+			add_idea = FIN_spirit_of_winter_war
 		}
 	}
 }

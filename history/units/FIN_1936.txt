@@ -274,7 +274,20 @@ units = {
 	}
 }
 	
-### No air units (first formed Jan-1938) ###
+air_wings = {
+	111 = { 
+		### 15 english fighters
+		fighter_equipment_0 = {
+			owner = "ENG" 
+			amount = 15
+		}
+		### 15 Blackburn Ripons
+		naval_bomber1 = {
+			owner = "ENG" 
+			amount = 15
+		}
+	}
+}
 
 ### Starting Production ###
 instant_effect = {
@@ -295,5 +308,14 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.35
 		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = convoy
+			creator = "FIN" 
+		}
+		requested_factories = 1
+		progress = 0.50
+		amount = 1
 	}
 }

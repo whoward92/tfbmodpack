@@ -2127,6 +2127,67 @@ technologies = {
 			bicycle_battalion
 		}		
 	}
+	### Ski Troops for Finland
+	ski_troops = {
 
+		research_cost = 1
+		start_year = 1936
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+
+
+		#If you change these
+		#Change the custom tooltip too: ski_troops
+		infantry = {
+			forest = {
+				acclimatization_cold_climate_gain_factor = 0.20
+				defense = 0.15
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+		mountaineers = {
+			forest = {
+				acclimatization_cold_climate_gain_factor = 0.20
+				defense = 0.15
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+		jaeger = {
+			forest = {
+				acclimatization_cold_climate_gain_factor = 0.20
+				defense = 0.15
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+	}
+	### Lotta Svard for Finland
+	womens_hospitals = {
+
+		research_cost = 1
+		start_year = 1936
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+
+
+		#If you change these
+		#Change the custom tooltip too: womens_hospitals
+  		category_front_line = {
+			casualty_trickleback = 0.05
+			experience_loss_factor = -0.025
+		  }
+
+	}
 
 }

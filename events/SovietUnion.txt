@@ -358,8 +358,39 @@ country_event = {
 			type = take_state
 			target = FIN
 			generator = { 146 }
-		}				
+		}
 		hidden_effect = {
+			FIN = {
+				start_civil_war = {
+					ideology = communism
+					size = 0
+					capital = 146
+					states = 146
+
+				}
+				random_other_country = {
+					limit = { original_tag = FIN has_government = communism }
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+					SOV = {
+						puppet = PREV
+					}
+					create_country_leader = {
+						name = "Otto Wille Kuusinen"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+						expire = "1965.1.1"
+						ideology = stalinism
+					}
+					set_popularities = {
+						democratic = 0
+						fascism = 0
+						communism = 100
+					}
+				}
+				set_state_controller = 146
+			}
 			SOV = {
 				country_event = { days = 1 id = news.12 }				
 			}
@@ -2341,7 +2372,6 @@ country_event = {
 		}
 	}
 }
-
 #create Polish peoples army
 #country_event = {
 #	id = soviet.336
