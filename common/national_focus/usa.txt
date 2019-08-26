@@ -54,7 +54,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_continue_the_new_deal
-		icon = GFX_focus_generic_self_management
+		icon = GFX_goal_government_icon
 		x = 4
 		y = 0
 		offset = {
@@ -170,7 +170,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_fair_labour_standards_act
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_goal_OTT_constitution
 		x = 0
 		y = 2
 		prerequisite = { focus = USA_agricultural_adjustment_act }
@@ -1408,6 +1408,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = USA_war_department
+			army_experience = 100
 		}
 	}
 	focus = {
@@ -1865,9 +1866,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = light_fighter
-				category = cat_heavy_fighter
 			}
 			add_ideas = air_war_plans_division_focus
 		}
@@ -2114,7 +2114,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 15
 
 		ai_will_do = {
 			factor = 1
@@ -2141,18 +2141,18 @@ focus_tree = {
 
 		complete_tooltip = {
 			378 = { 
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = dockyard
-					level = 8
+					level = 6
 					instant_build = yes
 				}
 			}
 			358 = { 
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = dockyard
-					level = 8
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -2204,6 +2204,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = USA_maritime_commission
 		icon = GFX_goal_generic_production2
@@ -2235,6 +2236,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_merchant_marine_act
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = USA_two_ocean_navy_act }
+		x = -1
+		y = 1
+		relative_position_id = USA_two_ocean_navy_act
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = USA_merchant_marine_act
+		}
+	}
+
+	focus = {
 		id = USA_magic
 		icon = GFX_goal_generic_radar
 		x = 0
@@ -2261,25 +2281,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = USA_magic
-		}
-	}
-	
-	focus = {
-		id = USA_merchant_marine_act
-		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = USA_magic }
-		x = 0
-		y = 1
-		relative_position_id = USA_magic
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = liberty_ships_focus
 		}
 	}
 

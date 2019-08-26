@@ -411,13 +411,60 @@ focus = {
 			#unlock_decision_tooltip = JAP_china_step_up_war_effort
 
 			hidden_effect = {
-				annex_country = { target = SIK transfer_troops = no }
-				annex_country = { target = CHI transfer_troops = no }
-				annex_country = { target = YUN transfer_troops = no }
-				annex_country = { target = GXC transfer_troops = no }
-				annex_country = { target = PRC transfer_troops = no }
-				annex_country = { target = SHX transfer_troops = no }
-				annex_country = { target = XSM transfer_troops = no }
+				#annex_country = { target = SIK transfer_troops = no }
+				#annex_country = { target = CHI transfer_troops = no }
+				#annex_country = { target = YUN transfer_troops = no }
+				#annex_country = { target = GXC transfer_troops = no }
+				#annex_country = { target = PRC transfer_troops = no }
+				#annex_country = { target = SHX transfer_troops = no }
+				#annex_country = { target = XSM transfer_troops = no }
+
+				# China Land
+				transfer_state = 608
+				transfer_state = 614
+				transfer_state = 597
+				transfer_state = 743
+				transfer_state = 598
+				transfer_state = 613
+				transfer_state = 606
+				transfer_state = 749
+				transfer_state = 596
+				transfer_state = 600
+				transfer_state = 595
+
+				# Guangxi Clique Land
+				transfer_state = 593
+				transfer_state = 592
+				transfer_state = 599
+				transfer_state = 594
+				transfer_state = 591
+
+				# Yunnan Land
+				transfer_state = 325
+				transfer_state = 747
+
+				CHI = {
+
+					add_ideas = trade_unionism
+
+					annex_country = { target = SIK transfer_troops = no }
+					annex_country = { target = PRC transfer_troops = no }
+					annex_country = { target = SHX transfer_troops = no }
+					annex_country = { target = XSM transfer_troops = no }
+
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+
+					set_popularities = {
+								fascism = 0
+								democratic = 0
+								communism = 0
+								neutrality = 100
+					}
+				}
+
 			}
 				
 
