@@ -1,7 +1,40 @@
 spriteTypes = {	
 
 SpriteType = {
-		name = "GFX_Join_Axis"
+		name = "GFX_South_Doctrine_shine"
+		texturefile = "gfx/interface/goals/South_Doctrine.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/South_Doctrine.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/South_Doctrine.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}	
+
+
+SpriteType = {
+		name = "GFX_Join_Axis_shine"
 		texturefile = "gfx/interface/goals/Join_Axis.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -33,7 +66,7 @@ SpriteType = {
 	}	
 
 SpriteType = {
-		name = "GFX_Electric_Boogaloo"
+		name = "GFX_Electric_Boogaloo_shine"
 		texturefile = "gfx/interface/goals/Electric_Boogaloo.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -65,7 +98,7 @@ SpriteType = {
 	}	
 
 SpriteType = {
-		name = "GFX_Siberia_Rail"
+		name = "GFX_Siberia_Rail_shine"
 		texturefile = "gfx/interface/goals/Siberia_Rail.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -98,7 +131,7 @@ SpriteType = {
 
 
 SpriteType = {
-		name = "GFX_Jap_Nuke"
+		name = "GFX_Jap_Nuke_shine"
 		texturefile = "gfx/interface/goals/Jap_Nuke.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -130,7 +163,7 @@ SpriteType = {
 	}	
 
 SpriteType = {
-		name = "GFX_Forward_Operating_Base"
+		name = "GFX_Forward_Operating_Base_shine"
 		texturefile = "gfx/interface/goals/Forward_Operating_Base.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -228,7 +261,7 @@ SpriteType = {
 
 
 SpriteType = {
-		name = "GFX_The_Ki43"
+		name = "GFX_The_Ki43_shine"
 		texturefile = "gfx/interface/goals/The_Ki43.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -260,7 +293,7 @@ SpriteType = {
 	}
 
 SpriteType = {
-		name = "GFX_Krupp_Invest"
+		name = "GFX_Krupp_Invest_shine"
 		texturefile = "gfx/interface/goals/Krupp_Invest.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -422,7 +455,7 @@ SpriteType = {
 
 
 SpriteType = {
-		name = "GFX_Manchuria_Railway"
+		name = "GFX_Manchuria_Railway_shine"
 		texturefile = "gfx/interface/goals/Manchuria_Railway.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -454,7 +487,7 @@ SpriteType = {
 	}	
 
 SpriteType = {
-		name = "GFX_National_Defence"
+		name = "GFX_National_Defence_shine"
 		texturefile = "gfx/interface/goals/National_Defence.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -487,7 +520,7 @@ SpriteType = {
 
 
 SpriteType = {
-		name = "GFX_Southern_Resource"
+		name = "GFX_Southern_Resource_shine"
 		texturefile = "gfx/interface/goals/Southern_Resource.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
