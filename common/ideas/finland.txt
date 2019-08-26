@@ -68,7 +68,7 @@ ideas = {
 
 		FIN_lotta_svard = {
 
-			picture = generic_victors_of_ww1
+			picture = Lotta_Spirit_Svard
 			allowed = {
 				always = no
 			}

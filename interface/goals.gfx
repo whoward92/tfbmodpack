@@ -8815,6 +8815,10 @@ SpriteType = {
 		name = "GFX_focus_attack_greece"
 		texturefile = "gfx/interface/goals/focus_attack_greece.tga"
 	}
+	SpriteType = {
+    name = "GFX_Lotta_Svard"
+    texturefile = "gfx/interface/goals/Lotta_Svard.dds"
+    }
 }
 
 }
