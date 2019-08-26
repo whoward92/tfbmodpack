@@ -152,24 +152,22 @@ focus_tree = {
 				111 = {
 					set_building_level = {
 						type = bunker
-						level = 3
+						level = 1
 						instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_border = yes
-							level < 3
 						}
 					}
 				}
 				150 = {
 					set_building_level = {
 						type = bunker
-						level = 3
+						level = 1
 						instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_border = yes
-							level < 3
 						}
 					}
 				}
@@ -224,36 +222,34 @@ focus_tree = {
 			}
 			hidden_effect = {
 				111 = {
-					set_building_level = {
+					add_building_construction = {
 						type = bunker
-						level = 6
+						level = 1
 						instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_border = yes
-							level < 6
 						}
 					}
 				}
 				150 = {
-					set_building_level = {
+					add_building_construction = {
 						type = bunker
-						level = 6
+						level = 1
 						instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_border = yes
-							level < 6
 						}
 					}
 				}
 				148 = {
-					set_building_level = { type = bunker level = 6 province = { id = 6045 level < 6 } instant_build = yes }
-					set_building_level = { type = bunker level = 6 province = { id = 3156 level < 6 } instant_build = yes }
-					set_building_level = { type = bunker level = 6 province = { id = 11030 level < 6 } instant_build = yes }
-					set_building_level = { type = bunker level = 6 province = { id = 6128 level < 6 } instant_build = yes }
-					set_building_level = { type = bunker level = 6 province = { id = 3158 level < 6 } instant_build = yes }
-					set_building_level = { type = bunker level = 6 province = { id = 3097 level < 6 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 6045 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 3156 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 11030 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 6128 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 3158 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 3097 } instant_build = yes }
 				}
 			}
 		}
@@ -298,36 +294,34 @@ focus_tree = {
 			}
 			hidden_effect = {
 				111 = {
-					set_building_level = {
+					add_building_construction = {
 						type = bunker
-						level = 9
+						level = 1
 						instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_border = yes
-							level < 9
 						}
 					}
 				}
 				150 = {
-					set_building_level = {
+					add_building_construction = {
 						type = bunker
-						level = 9
+						level = 1
 						instant_build = yes
 						province = {
 							all_provinces = yes
 							limit_to_border = yes
-							level < 9
 						}
 					}
 				}
 				148 = {
-					set_building_level = { type = bunker level = 9 province = { id = 6045 level < 9 } instant_build = yes }
-					set_building_level = { type = bunker level = 9 province = { id = 3156 level < 9 } instant_build = yes }
-					set_building_level = { type = bunker level = 9 province = { id = 11030 level < 9 } instant_build = yes }
-					set_building_level = { type = bunker level = 9 province = { id = 6128 level < 9 } instant_build = yes }
-					set_building_level = { type = bunker level = 9 province = { id = 3158 level < 9 } instant_build = yes }
-					set_building_level = { type = bunker level = 9 province = { id = 3097 level < 9 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 6045 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 3156 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 11030 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 6128 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 3158 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 3097 } instant_build = yes }
 				}
 			}
 		}
