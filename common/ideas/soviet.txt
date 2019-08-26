@@ -1935,6 +1935,10 @@ ideas = {
 				original_tag = SOV
 			}
 
+			available = {
+				has_completed_focus = SOV_MiG_Fighters
+			}
+
 						
 			research_bonus = {
 				air_equipment = 0.10

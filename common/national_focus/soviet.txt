@@ -1552,7 +1552,7 @@ focus_tree = {
 		}
 		x = 24
 		y = 0
-		cost = 1
+		cost = 30
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1575,11 +1575,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			#custom_effect_tooltip = SOV_great_purge_tt
-			
-			add_timed_idea = {
-				idea = officers_purged
-				days = 1460
-			}
+			add_ideas = officers_purged
 		}
 	}
 
