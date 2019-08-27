@@ -330,7 +330,7 @@ focus_tree = {
 		id = FIN_expand_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
 		relative_position_id = FIN_expand_mannerheim_line1
-		x = -4½
+		x = -4
 		y = 0
 
 		cost = 10
@@ -364,6 +364,55 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+	focus = {
+		id = FIN_torpedo_destroyer
+		icon = GFX_focus_generic_destroyer
+		prerequisite = { focus = FIN_expand_navy }
+		relative_position_id = FIN_expand_navy
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = fin_destroyer_bonus
+				bonus = 1
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = fin_torpedo_bonus
+				bonus = 1
+				uses = 1
+				technology = basic_torpedo
+				technology = improved_ship_torpedo_launcher
+				technology = advanced_ship_torpedo_launcher
+				technology = modern_ship_torpedo_launcher
+			}
+			
 		}
 	}
 	focus = {
@@ -641,7 +690,7 @@ focus_tree = {
 				}
 			}
 			add_tech_bonus = {
-				name = aa
+				name = fin_aa_bonus
 				bonus = 1
 				ahead_reduction = 0.5
 				uses = 1
@@ -682,7 +731,7 @@ focus_tree = {
 				}
 			}
 			add_tech_bonus = {
-				name = aa
+				name = fin_aa_bonus
 				bonus = 1
 				ahead_reduction = 1
 				uses = 1
@@ -723,7 +772,7 @@ focus_tree = {
 				}
 			}
 			add_tech_bonus = {
-				name = aa
+				name = fin_aa_bonus
 				bonus = 1
 				ahead_reduction = 1
 				uses = 1
@@ -890,6 +939,32 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+	focus = {
+		id = FIN_university
+		icon = GFX_focus_research
+		prerequisite = { focus = FIN_is_railroads }
+		relative_position_id = FIN_is_railroads
+		x = 0
+		y = 1
+
+		cost = 10
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {

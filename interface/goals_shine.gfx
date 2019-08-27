@@ -25350,10 +25350,6 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-    name = "GFX_Lotta_Svard"
-    texturefile = "gfx/interface/goals/Lotta_Svard.dds"
-    }
-	SpriteType = {
         name = "GFX_Lotta_Svard_shine"
         texturefile = "gfx/interface/goals/Lotta_Svard.dds"
         effectFile = "gfx/FX/buttonstate.lua"
@@ -25369,6 +25365,7 @@ SpriteType = {
             animationrotationoffset = { x = 0.0 y = 0.0 }
             animationtexturescale = { x = 1.0 y = 1.0 } 
         }
+
         animation = {
             animationmaskfile = "gfx/interface/goals/Lotta_Svard.dds"
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file

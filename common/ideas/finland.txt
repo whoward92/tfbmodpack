@@ -68,7 +68,7 @@ ideas = {
 
 		FIN_lotta_svard = {
 
-			picture = Lotta_Spirit_Svard
+			picture = Lotta_Svard
 			allowed = {
 				always = no
 			}
