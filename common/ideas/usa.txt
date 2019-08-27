@@ -178,6 +178,24 @@ ideas = {
 			}
 		}
 
+		USA_giant_wakes = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+		
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+
 		USA_neutrality_act = {
 			picture = generic_production_bonus
 			
