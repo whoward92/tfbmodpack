@@ -574,23 +574,87 @@ focus_tree = {
 
 
 		completion_reward = {
-			ENG = {
-				send_equipment = {
-					target = FIN
-					type = nav_bomber_equipment
-					amount = 15
+			custom_effect_tooltip = fin_planes_tt
+			###Newest (until 1940) Dutch fighter
+			if = {
+				limit = {
+					HOL = {
+						has_tech = fighter_equipment_2
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_2
+					amount = 40
+					producer = HOL
 				}
 			}
-			HOL = {
-				send_equipment = {
-					target = FIN
-					type = fighter_equipment
-					amount = 40
+			else_if = {
+				limit = {
+					HOL = {
+						has_tech = fighter_equipment_1
+					}
 				}
-				send_equipment = {
-					target = FIN
-					type = CAS_equipment
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_1
+					amount = 40
+					producer = HOL
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 40
+					producer = HOL
+				}
+			}
+			###Newest (until 1940) Dutch CAS
+			if = {
+				limit = {
+					HOL = {
+						has_tech = CAS_equipment_2
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = CAS_equipment_2
 					amount = 65
+					producer = HOL
+				}
+			}
+			else = {
+				limit = {
+					HOL = {
+						has_tech = CAS_equipment_1
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = CAS_equipment_1
+					amount = 65
+					producer = HOL
+				}
+			}
+			###Newest (until 1940) English naval bomber
+			if = {
+				limit = {
+					ENG = {
+						has_tech = naval_bomber2
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = naval_bomber2
+					amount = 15
+					producer = ENG
+				}
+			}
+			else = {
+				limit = {
+					ENG = {
+						has_tech = naval_bomber1
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = naval_bomber1
+					amount = 15
+					producer = ENG
 				}
 			}
 		}
@@ -622,37 +686,158 @@ focus_tree = {
 
 
 		completion_reward = {
-			ENG = {
-				send_equipment = {
-					target = FIN
-					type = fighter_equipment
+			custom_effect_tooltip = fin_planes_tt
+			###Newest (until 1940) English fighter
+			if = {
+				limit = {
+					ENG = {
+						has_tech = fighter_equipment_2
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_2
 					amount = 50
+					producer = ENG
 				}
-				send_equipment = {
-					target = FIN
-					type = CAS_equipment
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						has_tech = fighter_equipment_1
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_1
+					amount = 50
+					producer = ENG
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 50
+					producer = ENG
+				}
+			}
+			###Newest (until 1940) English CAS
+			if = {
+				limit = {
+					ENG = {
+						has_tech = CAS_equipment_2
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = CAS_equipment_2
 					amount = 12
+					producer = ENG
 				}
 			}
-			FRA = {
-				send_equipment = {
-					target = FIN
-					type = fighter_equipment
+			else = {
+				limit = {
+					ENG = {
+						has_tech = CAS_equipment_1
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = CAS_equipment_1
+					amount = 12
+					producer = ENG
+				}
+			}
+			###Newest (until 1940) French fighter
+			if = {
+				limit = {
+					FRA = {
+						has_tech = fighter_equipment_2
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_2
 					amount = 30
+					producer = FRA
 				}
 			}
-			USA = {
-				send_equipment = {
-					target = FIN
-					type = fighter_equipment
+			else_if = {
+				limit = {
+					FRA = {
+						has_tech = fighter_equipment_1
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_1
+					amount = 30
+					producer = FRA
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 30
+					producer = FRA
+				}
+			}
+			###Newest (until 1940) US fighter
+			if = {
+				limit = {
+					USA = {
+						has_tech = fighter_equipment_2
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_2
 					amount = 45
+					producer = USA
 				}
 			}
-			ITA = {
-				send_equipment = {
-					target = FIN
-					type = fighter_equipment
+			else_if = {
+				limit = {
+					USA = {
+						has_tech = fighter_equipment_1
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_1
+					amount = 45
+					producer = USA
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 45
+					producer = USA
+				}
+			}
+			###Newest (until 1940) Italian fighter
+			if = {
+				limit = {
+					ITA = {
+						has_tech = fighter_equipment_2
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_2
 					amount = 10
+					producer = ITA
+				}
+			}
+			else_if = {
+				limit = {
+					ITA = {
+						has_tech = fighter_equipment_1
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_1
+					amount = 10
+					producer = ITA
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 10
+					producer = ITA
 				}
 			}
 		}
@@ -805,46 +990,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FIN_focus_ski_troops
-		icon = GFX_goal_generic_special_forces
+		id = FIN_enlist_more
+		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = FIN_what_we_need }
 		relative_position_id = FIN_what_we_need
 		x = -2
-		y = 1
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = FIN_focus_ski_troops_effect
-			hidden_effect = { set_technology = { ski_troops = 1 } }
-		}
-	}
-	focus = {
-		id = FIN_enlist_more
-		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = FIN_focus_ski_troops }
-		relative_position_id = FIN_focus_ski_troops
-		x = 0
 		y = 1
 
 		cost = 10
@@ -876,7 +1026,10 @@ focus_tree = {
 	focus = {
 		id = FIN_focus_lotta_svard
 		icon = GFX_Lotta_Svard
-		prerequisite = { focus = FIN_enlist_more }
+		prerequisite = { 
+			focus = FIN_enlist_more
+			focus = FIN_is_railroads
+		}
 		relative_position_id = FIN_enlist_more
 		x = 0
 		y = 1
@@ -907,6 +1060,44 @@ focus_tree = {
 			add_ideas = FIN_lotta_svard
 			custom_effect_tooltip = FIN_lotta_svard_effect
 			hidden_effect = { set_technology = { womens_hospitals = 1 } }
+		}
+	}
+	focus = {
+		id = FIN_focus_ski_troops
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { 
+			focus = FIN_focus_lotta_svard
+			focus = FIN_university
+		}
+		relative_position_id = FIN_focus_lotta_svard
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = FIN_focus_ski_troops_effect
+			hidden_effect = { set_technology = { ski_troops = 1 } }
 		}
 	}
 	focus = {
@@ -944,7 +1135,12 @@ focus_tree = {
 	focus = {
 		id = FIN_university
 		icon = GFX_focus_research
-		prerequisite = { focus = FIN_is_railroads }
+		prerequisite = { 
+			focus = FIN_enlist_more
+			focus = FIN_is_railroads
+			focus = FIN_is_industry
+
+		 }
 		relative_position_id = FIN_is_railroads
 		x = 0
 		y = 1
@@ -965,6 +1161,42 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = FIN_land_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { 
+			focus = FIN_focus_lotta_svard
+			focus = FIN_university
+			focus = FIN_is_factory
+		}
+
+		relative_position_id = FIN_university
+		x = 0
+		y = 1
+
+		cost = 10
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fin_land_doctrine_bonus
+				bonus = 1
+				uses = 3
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1003,7 +1235,10 @@ focus_tree = {
 	focus = {
 		id = FIN_is_factory
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = FIN_is_industry }
+		prerequisite = { 
+			focus = FIN_is_industry 
+			focus = FIN_is_railroads
+		}
 		relative_position_id = FIN_is_industry
 		x = 0
 		y = 1
@@ -1038,6 +1273,74 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+			}
+		}
+	}
+	focus = {
+		id = FIN_anti_tank_focus
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { 
+			focus = FIN_is_factory 
+			focus = FIN_university
+
+		}
+		relative_position_id = FIN_is_factory
+		x = 0
+		y = 1
+
+		cost = 10
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fin_land_doctrine_bonus
+				bonus = 1
+				uses = 3
+				category = cat_anti_tank
+			}
+		}
+	}
+	focus = {
+		id = FIN_elite_jaegers
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = FIN_focus_ski_troops }
+		prerequisite = { focus = FIN_land_doctrine }
+		prerequisite = { focus = FIN_anti_tank_focus }
+		relative_position_id = FIN_land_doctrine
+		x = 0
+		y = 1
+
+		cost = 10
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fin_land_doctrine_bonus
+				bonus = 1
+				uses = 3
+				category = cat_anti_tank
 			}
 		}
 	}
