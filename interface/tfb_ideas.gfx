@@ -224,4 +224,11 @@ spriteTypes = {
 		name = "GFX_idea_CAN_quebec_resistance"
 		texturefile = "gfx/interface/ideas/CAN_anti_conscription.dds"
 	}
+	
+	#Finland
+	
+	SpriteType = {
+    name = "GFX_idea_Lotta_Svard"
+    texturefile = "gfx/interface/ideas/Lotta_Spirit_Svard.dds"
+    }
 }

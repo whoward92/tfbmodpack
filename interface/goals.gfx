@@ -1,6 +1,12 @@
 spriteTypes = {	
 
 SpriteType = {
+	name = "GFX_Lotta_Svard"
+	texturefile = "gfx/interface/goals/Lotta_Svard.dds"			
+	}
+
+
+SpriteType = {
 	name = "GFX_Join_Axis"
 	texturefile = "gfx/interface/goals/Join_Axis.dds"			
 	}	
@@ -8815,6 +8821,7 @@ SpriteType = {
 		name = "GFX_focus_attack_greece"
 		texturefile = "gfx/interface/goals/focus_attack_greece.tga"
 	}
+	
 }
 
 }

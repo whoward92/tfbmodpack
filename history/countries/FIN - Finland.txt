@@ -55,10 +55,12 @@ set_convoys = 5
 add_ideas = {
 	limited_conscription
 }
-
-diplomatic_relation = { 
-	country = SOV
-	relation = non_aggression_pact 
+1934.4.7 = {
+	#The Soviet-Finnish non agression pact was signed in 1932, and extended to 1945 in 1934
+	diplomatic_relation = { 
+		country = SOV
+		relation = non_aggression_pact 
+	}
 }
 set_politics = {
 	ruling_party = neutrality
@@ -69,8 +71,8 @@ set_politics = {
 set_popularities = {
 	democratic = 10
 	fascism = 10
-	communism = 1
-	neutrality = 79
+	communism = 0
+	neutrality = 80
 }
 
 1939.1.1 = {
@@ -198,8 +200,7 @@ create_country_leader = {
 
 add_ideas = {
 	sisu
-	ghost_civil_war
-	fin_lotta_svard
+	FIN_ghost_civil_war
 }
 
 create_field_marshal = {
@@ -255,29 +256,6 @@ if = {
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Vetehinen Class"								
-		type = ship_hull_submarine_1
-		name_group = FIN_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_mine_layer_sub
-		}
-	}
-	create_equipment_variant = {
-		name = "Vesikko Class"								
-		type = ship_hull_submarine_1
-		name_group = FIN_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
 		name = "Väinämöinen Class"				
@@ -345,6 +323,5 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = yes
 	}
 }

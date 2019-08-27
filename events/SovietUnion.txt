@@ -358,7 +358,7 @@ country_event = {
 			type = take_state
 			target = FIN
 			generator = { 146 }
-		}				
+		}
 		hidden_effect = {
 			SOV = {
 				country_event = { days = 1 id = news.12 }				
@@ -2341,7 +2341,6 @@ country_event = {
 		}
 	}
 }
-
 #create Polish peoples army
 #country_event = {
 #	id = soviet.336
