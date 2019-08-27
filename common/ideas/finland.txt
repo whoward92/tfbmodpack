@@ -24,6 +24,7 @@ ideas = {
 		}
 
 		FIN_spirit_of_winter_war = {
+			picture = generic_infantry_bonus
 			allowed = {
 				always = no
 				has_government = neutrality
@@ -363,7 +364,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			traits = { army_regrouping_3 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -421,7 +422,27 @@ ideas = {
 
 	# TECHNOLOGY
 	tank_manufacturer = {
+		
+		designer = yes
 
+		FIN_vickers = {
+			#Vickers produced tanks in Finland
+			allowed = {
+				original_TAG = ENG
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer }
+			
+			modifier = {
+			}
+			cost = 100
+		}
 	}
 	naval_manufacturer = { 
 		
@@ -440,9 +461,28 @@ ideas = {
 				naval_equipment = 0.10
 			}
 			
-			# submarine and defence ship production
+			# submarine and coastal defence ship production
 			
 			traits = { coastal_defence_naval_manufacturer }
+			cost = 100
+		}
+
+		siltarakennus = {
+			
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = FIN
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			# destroyers and minelayers
+			
+			traits = { convoy_escort_naval_manufacturer }
 			cost = 100
 		}
 	}
@@ -489,6 +529,20 @@ ideas = {
 			}
 			
 			traits = { infantry_equipment_manufacturer }
+		}
+		fin_valtion_kivaar = {
+
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				original_TAG = FIN
+			}
+			
+			research_bonus = {
+				artillery_equipment = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
 		}
 	}
 	industrial_concern = {

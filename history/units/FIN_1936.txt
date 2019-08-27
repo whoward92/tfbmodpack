@@ -282,7 +282,7 @@ air_wings = {
 			amount = 15
 		}
 		### 15 Blackburn Ripons
-		naval_bomber1 = {
+		nav_bomber_equipment_1 = {
 			owner = "ENG" 
 			amount = 15
 		}

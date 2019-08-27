@@ -13,7 +13,7 @@ focus_tree = {
 	default = no
 
 	
-	continuous_focus_position = { x = 50 y = 1600 }
+	continuous_focus_position = { x = 10 y = 800 }
 	focus = {
 		id = FIN_expand_mannerheim_line1
 		icon = GFX_goal_generic_fortify_city
@@ -125,6 +125,7 @@ focus_tree = {
 			FIN = { controls_state = 111 }
 			FIN = { controls_state = 150 }
 			FIN = { controls_state = 148 }
+			FIN = { controls_state = 722 }
 		}
 
 		bypass = {
@@ -137,16 +138,16 @@ focus_tree = {
 
 		completion_reward = {
 			111 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_111
+				custom_effect_tooltip = FIN_salpa_line_tt_111
 			}
 			150 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_150
+				custom_effect_tooltip = FIN_salpa_line_tt_150
 			}
 			148 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_148
+				custom_effect_tooltip = FIN_salpa_line_tt_148
+			}
+			722 = {
+				custom_effect_tooltip = FIN_salpa_line_tt_111
 			}
 			hidden_effect = {
 				111 = {
@@ -176,8 +177,11 @@ focus_tree = {
 					add_building_construction = { type = bunker level = 1 province = { id = 3156 } instant_build = yes }
 					add_building_construction = { type = bunker level = 1 province = { id = 11030 } instant_build = yes }
 					add_building_construction = { type = bunker level = 1 province = { id = 6128 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3158 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3097 } instant_build = yes }
+				}
+				722 = {
+					add_building_construction = { type = bunker level = 1 province = { id = 6183 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 6012 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 9140 } instant_build = yes }
 				}
 			}
 		}
@@ -197,6 +201,7 @@ focus_tree = {
 			FIN = { controls_state = 111 }
 			FIN = { controls_state = 150 }
 			FIN = { controls_state = 148 }
+			FIN = { controls_state = 722 }
 		}
 
 		bypass = {
@@ -209,16 +214,16 @@ focus_tree = {
 
 		completion_reward = {
 			111 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_111
+				custom_effect_tooltip = FIN_salpa_line_tt_111
 			}
 			150 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_150
+				custom_effect_tooltip = FIN_salpa_line_tt_150
 			}
 			148 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_148
+				custom_effect_tooltip = FIN_salpa_line_tt_148
+			}
+			722 = {
+				custom_effect_tooltip = FIN_salpa_line_tt_111
 			}
 			hidden_effect = {
 				111 = {
@@ -248,8 +253,11 @@ focus_tree = {
 					add_building_construction = { type = bunker level = 1 province = { id = 3156 } instant_build = yes }
 					add_building_construction = { type = bunker level = 1 province = { id = 11030 } instant_build = yes }
 					add_building_construction = { type = bunker level = 1 province = { id = 6128 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3158 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3097 } instant_build = yes }
+				}
+				722 = {
+					add_building_construction = { type = bunker level = 1 province = { id = 6183 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 6012 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 9140 } instant_build = yes }
 				}
 			}
 		}
@@ -269,6 +277,7 @@ focus_tree = {
 			FIN = { controls_state = 111 }
 			FIN = { controls_state = 150 }
 			FIN = { controls_state = 148 }
+			FIN = { controls_state = 722 }
 		}
 
 		bypass = {
@@ -281,16 +290,16 @@ focus_tree = {
 
 		completion_reward = {
 			111 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_111
+				custom_effect_tooltip = FIN_salpa_line_tt_111
 			}
 			150 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_150
+				custom_effect_tooltip = FIN_salpa_line_tt_150
 			}
 			148 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_148
+				custom_effect_tooltip = FIN_salpa_line_tt_148
+			}
+			722 = {
+				custom_effect_tooltip = FIN_salpa_line_tt_111
 			}
 			hidden_effect = {
 				111 = {
@@ -320,8 +329,11 @@ focus_tree = {
 					add_building_construction = { type = bunker level = 1 province = { id = 3156 } instant_build = yes }
 					add_building_construction = { type = bunker level = 1 province = { id = 11030 } instant_build = yes }
 					add_building_construction = { type = bunker level = 1 province = { id = 6128 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3158 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3097 } instant_build = yes }
+				}
+				722 = {
+					add_building_construction = { type = bunker level = 1 province = { id = 6183 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 6012 } instant_build = yes }
+					add_building_construction = { type = bunker level = 1 province = { id = 9140 } instant_build = yes }
 				}
 			}
 		}
@@ -368,7 +380,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_torpedo_destroyer
-		icon = GFX_focus_generic_destroyer
+		icon = GFX_goal_generic_destroyer2
 		prerequisite = { focus = FIN_expand_navy }
 		relative_position_id = FIN_expand_navy
 		x = 0
@@ -579,7 +591,7 @@ focus_tree = {
 			if = {
 				limit = {
 					HOL = {
-						has_tech = fighter_equipment_2
+						has_tech = fighter2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -591,7 +603,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					HOL = {
-						has_tech = fighter_equipment_1
+						has_tech = fighter1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -611,7 +623,7 @@ focus_tree = {
 			if = {
 				limit = {
 					HOL = {
-						has_tech = CAS_equipment_2
+						has_tech = CAS2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -623,7 +635,7 @@ focus_tree = {
 			else = {
 				limit = {
 					HOL = {
-						has_tech = CAS_equipment_1
+						has_tech = CAS1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -640,7 +652,7 @@ focus_tree = {
 					}
 				}
 				add_equipment_to_stockpile = {
-					type = naval_bomber2
+					type = nav_bomber_equipment_2
 					amount = 15
 					producer = ENG
 				}
@@ -652,7 +664,7 @@ focus_tree = {
 					}
 				}
 				add_equipment_to_stockpile = {
-					type = naval_bomber1
+					type = nav_bomber_equipment_1
 					amount = 15
 					producer = ENG
 				}
@@ -691,7 +703,7 @@ focus_tree = {
 			if = {
 				limit = {
 					ENG = {
-						has_tech = fighter_equipment_2
+						has_tech = fighter2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -703,7 +715,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					ENG = {
-						has_tech = fighter_equipment_1
+						has_tech = fighter1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -723,7 +735,7 @@ focus_tree = {
 			if = {
 				limit = {
 					ENG = {
-						has_tech = CAS_equipment_2
+						has_tech = CAS2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -735,7 +747,7 @@ focus_tree = {
 			else = {
 				limit = {
 					ENG = {
-						has_tech = CAS_equipment_1
+						has_tech = CAS1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -748,7 +760,7 @@ focus_tree = {
 			if = {
 				limit = {
 					FRA = {
-						has_tech = fighter_equipment_2
+						has_tech = fighter2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -760,7 +772,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					FRA = {
-						has_tech = fighter_equipment_1
+						has_tech = fighter1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -780,7 +792,7 @@ focus_tree = {
 			if = {
 				limit = {
 					USA = {
-						has_tech = fighter_equipment_2
+						has_tech = fighter2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -792,7 +804,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					USA = {
-						has_tech = fighter_equipment_1
+						has_tech = fighter1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -812,7 +824,7 @@ focus_tree = {
 			if = {
 				limit = {
 					ITA = {
-						has_tech = fighter_equipment_2
+						has_tech = fighter2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -824,7 +836,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					ITA = {
-						has_tech = fighter_equipment_1
+						has_tech = fighter1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -1193,7 +1205,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = fin_land_doctrine_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 3
 				category = land_doctrine
 			}
@@ -1305,7 +1317,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = fin_land_doctrine_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 3
 				category = cat_anti_tank
 			}
@@ -1336,11 +1348,43 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = fin_land_doctrine_bonus
-				bonus = 1
-				uses = 3
-				category = cat_anti_tank
+			custom_effect_tooltip = FIN_elite_jaegers_tt
+			hidden_effect = {
+				#Actually enable jaegers
+				set_technology = { jaegers = 1 }
+				division_template = {
+					#This will become a 5x2 jaeger division with an engineer, recon, art and at support battalions
+					name = "Jaeger Battalion"
+					priority = 2
+					division_names_group = FIN_JAE_01
+					regiments = {
+						jaeger = { x = 0 y = 0 }
+						jaeger = { x = 0 y = 1 }
+						jaeger = { x = 0 y = 2 }
+						jaeger = { x = 0 y = 3 }
+						jaeger = { x = 0 y = 4 }
+
+	    	   		 	jaeger = { x = 1 y = 0 }
+						jaeger = { x = 1 y = 1 }
+						jaeger = { x = 1 y = 2 }
+						jaeger = { x = 1 y = 3 }
+						jaeger = { x = 1 y = 4 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }  
+						recon = { x = 0 y = 1 }  
+						artillery = { x = 0 y = 2 }  
+						anti_tank = { x = 0 y = 3 }
+					}
+				}
+
+				random_owned_controlled_state = {
+					prioritize = { 111 }
+					create_unit = {
+						division = "division_template = \"Jaeger Battalion\" start_experience_factor = 2.0"
+						owner = FIN
+					}
+				}
 			}
 		}
 	}
