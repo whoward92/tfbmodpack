@@ -428,7 +428,7 @@ ideas = {
 		FIN_vickers = {
 			#Vickers produced tanks in Finland
 			allowed = {
-				original_TAG = ENG
+				original_TAG = FIN
 			}
 			
 
