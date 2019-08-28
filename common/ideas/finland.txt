@@ -102,6 +102,23 @@ ideas = {
 				license_air_purchase_cost = -0.25
 			}
 		}
+		FIN_idea_more_industry = {
+
+			picture = generic_production_bonus
+
+			removal_cost = -1
+			
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
 		FIN_build_planes = {
 			allowed = {
 				always = no

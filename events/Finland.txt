@@ -152,7 +152,7 @@ country_event = {
 			}
 			add_equipment_to_stockpile = {
 				type = fighter_equipment_2
-				amount = 25u
+				amount = 25
 				producer = SWE
 			}
 		}
@@ -177,32 +177,34 @@ country_event = {
 		}
 		#Swedish volunteers
 		division_template = {
-			name = "Swedish Volunteers"
-			priority = 2
-			division_names_group = FIN_SWE_01
-			regiments = {
-				infantry = { x = 0 y = 0 }
-				infantry = { x = 0 y = 1 }
-				infantry = { x = 0 y = 2 }
-			}
-			support = {
-				artillery = { x = 0 y = 0 }  
-				anti_tank = { x = 0 y = 1 }  
-			}
-		}
+            name = "Swedish Volunteers"
+            priority = 2
+            is_locked = yes
+            division_names_group = FIN_SWE_01
+            regiments = {
+                infantry = { x = 0 y = 0 }
+                infantry = { x = 0 y = 1 }
+                infantry = { x = 0 y = 2 }
+                infantry = { x = 0 y = 3 }
+                infantry = { x = 0 y = 4 }
+                infantry = { x = 1 y = 0 }
+                infantry = { x = 1 y = 1 }
+                infantry = { x = 1 y = 2 }
+                infantry = { x = 1 y = 3 }
+                infantry = { x = 1 y = 4 }
+            }
+            support = {
+                artillery = { x = 0 y = 0 }
+                anti_tank = { x = 0 y = 1 } 
+                signal_company = { x = 0 y = 2 } 
+            }
+        }
+
 
 		random_owned_controlled_state = {
 			prioritize = { 111 }
 			create_unit = {
-				division = "name = \"I. stridsgruppen\" division_template = \"Swedish Volunteers\" start_experience_factor = 1.0"
-				owner = FIN
-			}
-			create_unit = {
-				division = "name = \"II. stridsgruppen\" division_template = \"Swedish Volunteers\" start_experience_factor = 1.0"
-				owner = FIN
-			}
-			create_unit = {
-				division = "name = \"III. stridsgruppen\" division_template = \"Swedish Volunteers\" start_experience_factor = 1.0"
+				division = "name = \"Stridsgruppen\" division_template = \"Swedish Volunteers\" start_experience_factor = 1.0"
 				owner = FIN
 			}
 			

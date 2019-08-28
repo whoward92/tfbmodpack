@@ -45,19 +45,15 @@ focus_tree = {
 	}
 	
 	focus = {
+		#Southern Salpa Line
 		id = FIN_salpa_line1
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = FIN_elite_jaegers }
-		prerequisite = { focus = FIN_focus_lotta_svard }
-		prerequisite = { focus = FIN_anti_tank_focus }
-		relative_position_id = FIN_elite_jaegers
-		x = 0
+		prerequisite = { focus = FIN_ww_over }
+		relative_position_id = FIN_salpa_line2
+		x = -1
 		y = 1
 		cost = 10
 
-		available = {
-			NOT = { FIN = { controls_state = 146 } }
-		}
 		
 		available = {
 			FIN = { controls_state = 111 }
@@ -102,13 +98,12 @@ focus_tree = {
 		}
 	}
 	focus = {
+		#Eastern Salpa Line
 		id = FIN_salpa_line2
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = FIN_elite_jaegers }
-		prerequisite = { focus = FIN_focus_lotta_svard }
-		prerequisite = { focus = FIN_anti_tank_focus }
-		relative_position_id = FIN_elite_jaegers
-		x = 2
+		prerequisite = { focus = FIN_ww_over }
+		relative_position_id = FIN_ww_over
+		x = -2
 		y = 1
 		cost = 10
 
@@ -151,13 +146,12 @@ focus_tree = {
 		}
 	}
 	focus = {
+		#Western Salpa Line
 		id = FIN_salpa_line3
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = FIN_elite_jaegers }
-		prerequisite = { focus = FIN_focus_lotta_svard }
-		prerequisite = { focus = FIN_anti_tank_focus }
-		relative_position_id = FIN_elite_jaegers
-		x = -2
+		prerequisite = { focus = FIN_ww_over }
+		relative_position_id = FIN_salpa_line2
+		x = 1
 		y = 1
 		cost = 10
 
@@ -353,7 +347,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = FIN_what_we_need }
 		relative_position_id = FIN_what_we_need
-		x = 3
+		x = 4
 		y = 1
 
 		cost = 10
@@ -390,10 +384,10 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_adopt_four_finger_formation
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = FIN_create_air_force }
 		relative_position_id = FIN_create_air_force
-		x = 2
+		x = 1
 		y = 1
 
 		cost = 10
@@ -424,11 +418,61 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = FIN_expand_air_fields
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = FIN_adopt_four_finger_formation }
+		relative_position_id = FIN_adopt_four_finger_formation
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+			148 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			149 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			150 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
 		id = FIN_aquire_more_planes
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = FIN_create_air_force }
 		relative_position_id = FIN_create_air_force
-		x = 0
+		x = -1
 		y = 1
 
 		cost = 10
@@ -866,7 +910,7 @@ focus_tree = {
 		prerequisite = { focus = FIN_expand_mannerheim_line }
 		relative_position_id = FIN_expand_mannerheim_line
 		x = -1
-		y = 1
+		y = 2
 
 		cost = 10
 
@@ -940,7 +984,7 @@ focus_tree = {
 		}
 		relative_position_id = FIN_expand_mannerheim_line
 		x = 0
-		y = 2
+		y = 1
 
 		cost = 10
 
@@ -1034,7 +1078,7 @@ focus_tree = {
 		prerequisite = { focus = FIN_expand_mannerheim_line }
 		relative_position_id = FIN_expand_mannerheim_line
 		x = 1
-		y = 1
+		y = 2
 
 		cost = 10
 		available = {
@@ -1227,6 +1271,56 @@ focus_tree = {
 					}
 				}
 			}
+		}
+	}
+	focus = {
+		id = FIN_ww_over
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = FIN_focus_lotta_svard }
+		prerequisite = { focus = FIN_elite_jaegers }
+		prerequisite = { focus = FIN_anti_tank_focus }
+		relative_position_id = FIN_elite_jaegers
+		x = 0
+		y = 2
+
+		cost = 10
+		available = {
+			NOT = { FIN = { controls_state = 146 } }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = FIN_more_industry
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = FIN_ww_over }
+		relative_position_id = FIN_ww_over
+		x = 2
+		y = 1
+
+		cost = 10
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = FIN_idea_more_industry
 		}
 	}
 }
