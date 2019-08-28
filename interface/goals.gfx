@@ -1,6 +1,122 @@
 spriteTypes = {	
 
 SpriteType = {
+	name = "GFX_Glory_Carrier"
+	texturefile = "gfx/interface/goals/Glory_Carrier.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Prince_Wales"
+	texturefile = "gfx/interface/goals/Prince_Wales.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Britannia_Rules"
+	texturefile = "gfx/interface/goals/Britannia_Rules.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Crown_Colony_Class"
+	texturefile = "gfx/interface/goals/Crown_Colony_Class.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Battle_Class"
+	texturefile = "gfx/interface/goals/Battle_Class.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Royal_Marines"
+	texturefile = "gfx/interface/goals/Royal_Marines.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Royal_Navy"
+	texturefile = "gfx/interface/goals/Royal_Navy.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fund_Gloster"
+	texturefile = "gfx/interface/goals/Fund_Gloster.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_The_Spitfire"
+	texturefile = "gfx/interface/goals/The_Spitfire.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fund_De_Haviland"
+	texturefile = "gfx/interface/goals/Fund_De_Haviland.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fund_Blackburn"
+	texturefile = "gfx/interface/goals/Fund_Blackburn.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fund_Supermarine"
+	texturefile = "gfx/interface/goals/Fund_Supermarine.dds"			
+	}
+
+
+SpriteType = {
+	name = "GFX_Specification_F10"
+	texturefile = "gfx/interface/goals/Specification_F10.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Royal_Air_Force"
+	texturefile = "gfx/interface/goals/Royal_Air_Force.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_General_Rearm"
+	texturefile = "gfx/interface/goals/General_Rearm.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_S_A_S"
+	texturefile = "gfx/interface/goals/S_A_S.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Royal_Tank"
+	texturefile = "gfx/interface/goals/Royal_Tank.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Armoured_Corps"
+	texturefile = "gfx/interface/goals/Armoured_Corps.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Royal_Artillery"
+	texturefile = "gfx/interface/goals/Royal_Artillery.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Casualty_Avoidance"
+	texturefile = "gfx/interface/goals/Casualty_Avoidance.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_B_S_A"
+	texturefile = "gfx/interface/goals/B_S_A.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Royal_Ordnance"
+	texturefile = "gfx/interface/goals/Royal_Ordnance.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Limited_Rearm"
+	texturefile = "gfx/interface/goals/Limited_Rearm.dds"			
+	}	
+
+SpriteType = {
 	name = "GFX_Join_Axis"
 	texturefile = "gfx/interface/goals/Join_Axis.dds"			
 	}	
