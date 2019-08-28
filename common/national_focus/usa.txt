@@ -367,6 +367,7 @@ focus_tree = {
 				technology = advanced_rubber_processing
 				technology = modern_rubber_processing
 			}
+			add_ideas = USA_synthetic_rubber_program
 		}
 	}
 #   ### #   # ### ### ### ###      ### #  # ### ### ###  #   # ### #  # ### ###  ##  #  # 
@@ -379,6 +380,7 @@ focus_tree = {
 		id = USA_limited_intervention
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = USA_continue_the_new_deal }
+		mutually_exclusive = { focus = USA_neutrality_act }
 		continue_if_invalid = yes
 		x = 0
 		y = 1
@@ -393,9 +395,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			OR = {
-				JAP = { has_war_with = CHI }
-				JAP = { controls_state = 608 }
-				JAP = { controls_state = 613 }				
+				JAP = { has_completed_focus = JAP_intervene_in_china }			
 			}
 			has_political_power > 25 
 			has_government = democratic
@@ -477,6 +477,10 @@ focus_tree = {
 
 		available = {
 			has_government = democratic
+			OR = {
+				has_war_with = GER
+				has_war_with = ITA
+			}
 		}
 		
 		bypass = {
@@ -546,12 +550,9 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				OR = {
+			OR = {
 					has_war_with = JAP
-					has_war_with = CHI
 				}
-			}
 		}
 		
 		bypass = {
@@ -647,6 +648,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		prerequisite = { focus = USA_continue_the_new_deal }
+		mutually_exclusive = { focus = USA_limited_intervention }
 		relative_position_id = USA_continue_the_new_deal
 		cost = 10
 
@@ -743,6 +745,12 @@ focus_tree = {
 
 		available = {
 			democratic > 0.95
+			
+			OR = {
+					has_war_with = JAP
+					has_war_with = GER
+				}
+			
 			custom_trigger_tooltip = {
 				tooltip = USA_lend_lease_act_neutrality_tt
 			}
@@ -978,7 +986,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = USA_giant_wakes
-			add_ideas = war_economy
+			add_ideas = civilian_economy
 			add_political_power = 200
 			#if = {
 			#	limit = {
@@ -1001,12 +1009,13 @@ focus_tree = {
 			#}
 		}
 	}
+
 	focus = {
 		id = USA_wartime_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = USA_the_giant_wakes }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = USA_the_giant_wakes
 		cost = 10
 		ai_will_do = {
@@ -1017,9 +1026,52 @@ focus_tree = {
 			democratic > 0.95
 		}
 		completion_reward = {
+			add_ideas = war_economy
 			add_ideas = wartime_industry_focus
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
+		}
+	}
+
+	focus = {
+		id = USA_war_production_board
+		icon = GFX_goal_generic_annexation
+		prerequisite = { focus = USA_wartime_industry }
+		relative_position_id = USA_wartime_industry
+		x = 0
+		y = 1
+		cost = 10 
+		available_if_capitulated = yes 
+		available = {
+			has_war = yes
+		}
+		completion_reward = {
+			swap_ideas = { 
+				remove_idea = USA_OPM
+				add_idea = USA_WPB
+			}
+			random_owned_controlled_state = {
+				prioritize = { 382 }
+					limit = {
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 382 }
+					limit = {
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+			}
 		}
 	}
 	
@@ -1522,7 +1574,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_louisiana_maneuvers
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = land_doctrine
 			}
 		}

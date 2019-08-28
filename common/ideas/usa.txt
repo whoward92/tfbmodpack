@@ -215,6 +215,26 @@ ideas = {
 				guarantee_tension = 0.5
 			}
 		}
+
+		USA_WPB = {
+			allowed = { 
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			picture = generic_central_management
+			
+			modifier = {
+				industrial_capacity_factory = 0.08
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+
 		# version if player went down limited intervention
 		USA_lend_lease_act_li = {
 			picture = generic_production_bonus
@@ -632,6 +652,27 @@ ideas = {
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
+
+		USA_synthetic_rubber_program = {
+			
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.50
+			}
+		}	
+
 		USA_national_employment_strategy = {
 			picture = man_five_year_plan_industry
 			allowed = {
@@ -757,7 +798,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				conversion_cost_civ_to_mil_factor= -0.5
+				production_speed_arms_factory_factor = 0.10
 			}
 		}
 	
