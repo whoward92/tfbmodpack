@@ -15,7 +15,7 @@ focus_tree = {
 	
 	continuous_focus_position = { x = 10 y = 800 }
 	focus = {
-		id = FIN_expand_mannerheim_line1
+		id = FIN_expand_mannerheim_line
 		icon = GFX_goal_generic_fortify_city
 		x = 4
 		y = 0
@@ -36,83 +36,17 @@ focus_tree = {
 
 		completion_reward = {
 			146 = {
-				add_building_construction = { type = bunker level = 1 province = { id = 9100  } instant_build = yes }
-				add_building_construction = { type = bunker level = 1 province = { id = 9105  } instant_build = yes }
+				add_building_construction = { type = bunker level = 3 province = { id = 9100  } instant_build = yes }
+				add_building_construction = { type = bunker level = 3 province = { id = 9105  } instant_build = yes }
 			}
 		}
 	}
 	
 	focus = {
-		id = FIN_expand_mannerheim_line2
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = FIN_expand_mannerheim_line1 }
-		relative_position_id = FIN_expand_mannerheim_line1
-		x = 0
-		y = 1
-		cost = 10
-
-		available = {
-			date > 1937.6.15
-		}
-		
-		available = {
-			FIN = { controls_state = 146 }
-		}
-
-		bypass = {
-
-			NOT = { FIN = { controls_state = 146 } }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			146 = {
-				add_building_construction = { type = bunker level = 1 province = { id = 9100  } instant_build = yes }
-				add_building_construction = { type = bunker level = 1 province = { id = 9105  } instant_build = yes }
-			}
-		}
-	}
-	focus = {
-		id = FIN_expand_mannerheim_line3
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = FIN_expand_mannerheim_line2 }
-		relative_position_id = FIN_expand_mannerheim_line2
-		x = 0
-		y = 1
-		cost = 10
-
-		available = {
-			date > 1939.1.1
-		}
-		
-		available = {
-			FIN = { controls_state = 146 }
-		}
-
-		bypass = {
-
-			NOT = { FIN = { controls_state = 146 } }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			146 = {
-				add_building_construction = { type = bunker level = 1 province = { id = 9100  } instant_build = yes }
-				add_building_construction = { type = bunker level = 1 province = { id = 9105  } instant_build = yes }
-			}
-		}
-	}
-	focus = {
 		id = FIN_salpa_line1
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = FIN_expand_mannerheim_line3 }
-		relative_position_id = FIN_expand_mannerheim_line3
+		prerequisite = { focus = FIN_expand_mannerheim_line }
+		relative_position_id = FIN_expand_mannerheim_line
 		x = 0
 		y = 1
 		cost = 10
@@ -341,8 +275,8 @@ focus_tree = {
 	focus = {
 		id = FIN_expand_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
-		relative_position_id = FIN_expand_mannerheim_line1
-		x = -4
+		relative_position_id = FIN_expand_mannerheim_line
+		x = -3
 		y = 0
 
 		cost = 10
@@ -383,7 +317,7 @@ focus_tree = {
 		icon = GFX_goal_generic_destroyer2
 		prerequisite = { focus = FIN_expand_navy }
 		relative_position_id = FIN_expand_navy
-		x = 0
+		x = -1
 		y = 1
 
 		cost = 10
@@ -431,9 +365,9 @@ focus_tree = {
 		id = FIN_expand_sea_defenses
 		icon = GFX_focus_generic_coastal_fort
 		prerequisite = { focus = FIN_expand_navy }
-		prerequisite = { focus = FIN_expand_mannerheim_line1 }
+		prerequisite = { focus = FIN_expand_mannerheim_line }
 		relative_position_id = FIN_expand_navy
-		x = 2
+		x = 1
 		y = 1
 
 		cost = 10
@@ -489,7 +423,7 @@ focus_tree = {
 	focus = {
 		id = FIN_create_air_force
 		icon = GFX_goal_generic_air_production
-		relative_position_id = FIN_expand_mannerheim_line1
+		relative_position_id = FIN_expand_mannerheim_line
 		x = 4
 		y = 0
 
@@ -858,8 +792,8 @@ focus_tree = {
 		id = FIN_expand_aa1
 		icon = GFX_focus_generic_air_defense
 		prerequisite = { focus = FIN_create_air_force }
-		prerequisite = { focus = FIN_expand_mannerheim_line1 }
-		relative_position_id = FIN_expand_mannerheim_line1
+		prerequisite = { focus = FIN_expand_mannerheim_line }
+		relative_position_id = FIN_expand_mannerheim_line
 		x = 2
 		y = 1
 
@@ -899,7 +833,6 @@ focus_tree = {
 		id = FIN_expand_aa2
 		icon = GFX_focus_generic_air_defense
 		prerequisite = { focus = FIN_expand_aa1 }
-		prerequisite = { focus = FIN_expand_mannerheim_line2 }
 		relative_position_id = FIN_expand_aa1
 		x = 0
 		y = 1
@@ -930,7 +863,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = fin_aa_bonus
 				bonus = 1
-				ahead_reduction = 1
 				uses = 1
 				technology = antiair2
 			}
@@ -940,7 +872,6 @@ focus_tree = {
 		id = FIN_expand_aa3
 		icon = GFX_focus_generic_air_defense
 		prerequisite = { focus = FIN_expand_aa2 }
-		prerequisite = { focus = FIN_expand_mannerheim_line3 }
 		relative_position_id = FIN_expand_aa2
 		x = 0
 		y = 1
@@ -971,7 +902,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = fin_aa_bonus
 				bonus = 1
-				ahead_reduction = 1
 				uses = 1
 				technology = antiair3
 			}
