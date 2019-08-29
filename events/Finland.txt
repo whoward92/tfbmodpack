@@ -74,6 +74,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+		#Refuse to help the Finns
 		name = finland.3.a
 
 		ai_chance = {
@@ -97,6 +98,7 @@ country_event = {
 	}
 
 	option = {
+		#Help the Finns
 		name = finland.3.b
 
 		ai_chance = {
@@ -109,41 +111,6 @@ country_event = {
 				}
 			}
 		}
-
-		trigger = {
-			AND = {
-				has_war = no
-				NOT = {
-					has_government = communism
-				}
-			}	
-			has_manpower > 8402
-		}
-		add_manpower = -8402
-		if = {
-			limit = {
-				has_equipment = {
-					infantry_equipment > 500
-				}
-			}
-			send_equipment = {
-				target = FIN
-				type = infantry_equipment
-				amount = 500
-			}
-		}
-		if = {
-			limit = {
-				has_equipment = {
-					artillery_equipment > 250
-				}
-			}
-			send_equipment = {
-				target = FIN
-				type = artillery_equipment
-				amount = 250
-			}
-		}
 		FIN = {
 			country_event = { id = finland.5 days = 3 }
 		}
@@ -152,6 +119,7 @@ country_event = {
 }
 
 country_event = {
+	#Sweden refuses help
 	id = finland.4
 	title = finland.4.t
 	desc = finland.4.d
@@ -165,6 +133,7 @@ country_event = {
 }
 
 country_event = {
+	#Sweden helps out
 	id = finland.5
 	title = finland.5.t
 	desc = finland.5.d
@@ -174,35 +143,71 @@ country_event = {
 
 	option = {
 		name = finland.5.a
-		add_manpower = 8402
-		effect_tooltip = {
-			SWE = {
-				add_manpower = -8402
-				if = {
-					limit = {
-						has_equipment = {
-							infantry_equipment > 500
-						}
-					}
-					send_equipment = {
-						target = FIN
-						type = infantry_equipment
-						amount = 500
-					}
-				}
-				if = {
-					limit = {
-						has_equipment = {
-							artillery_equipment > 250
-						}
-					}
-					send_equipment = {
-						target = FIN
-						type = artillery_equipment
-						amount = 250
-					}
+		###Newest (until 1940) Swedish fighters
+		if = {
+			limit = {
+				SWE = {
+					has_tech = fighter2
 				}
 			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_2
+				amount = 25
+				producer = SWE
+			}
+		}
+		else_if = {
+			limit = {
+				SWE = {
+					has_tech = fighter1
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_1
+				amount = 25
+				producer = SWE
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 25
+				producer = SWE
+			}
+		}
+		#Swedish volunteers
+		division_template = {
+            name = "Swedish Volunteers"
+            priority = 2
+            is_locked = yes
+            division_names_group = FIN_SWE_01
+            regiments = {
+                infantry = { x = 0 y = 0 }
+                infantry = { x = 0 y = 1 }
+                infantry = { x = 0 y = 2 }
+                infantry = { x = 0 y = 3 }
+                infantry = { x = 0 y = 4 }
+                infantry = { x = 1 y = 0 }
+                infantry = { x = 1 y = 1 }
+                infantry = { x = 1 y = 2 }
+                infantry = { x = 1 y = 3 }
+                infantry = { x = 1 y = 4 }
+            }
+            support = {
+                artillery = { x = 0 y = 0 }
+                anti_tank = { x = 0 y = 1 } 
+                signal_company = { x = 0 y = 2 } 
+            }
+        }
+
+
+		random_owned_controlled_state = {
+			prioritize = { 111 }
+			create_unit = {
+				division = "name = \"Stridsgruppen\" division_template = \"Swedish Volunteers\" start_experience_factor = 1.0"
+				owner = FIN
+			}
+			
 		}
 	}
 }
@@ -306,7 +311,7 @@ country_event = {
 	id = finland.10
 	title = finland.10.t
 	desc = finland.10.d
-	picture = GFX_report_event_chamberlain
+	picture = GFX_report_event_finnish_letter
 
 	fire_only_once = yes
 
@@ -346,7 +351,7 @@ country_event = {
 	id = finland.11
 	title = finland.11.t
 	desc = finland.11.d
-	picture = GFX_report_event_chamberlain
+	picture = GFX_report_event_finnish_letter
 
 	fire_only_once = yes
 
@@ -384,14 +389,15 @@ country_event = {
 	id = finland.12
 	title = finland.12.t
 	desc = finland.12.d
-	picture = GFX_report_event_chamberlain
+	picture = GFX_report_event_finnish_letter
 
 	fire_only_once = yes
 
 	trigger = {
 		tag = FIN
 		has_government = neutrality
-		date > 1944.8.3
+		has_war_with = SOV
+		surrender_progress > 0.25
 		has_country_leader = {
 			name = "Risto Ryti"
 			ruling_only = yes
@@ -413,6 +419,9 @@ country_event = {
 			ideology = centrism
 			traits = {}
 		}
+		hidden_effect = {
+			country_event = { days = 1 id = finland.15 }
+		}
 	}
 }
 # Resignation of Mannerheim
@@ -420,7 +429,7 @@ country_event = {
 	id = finland.13
 	title = finland.13.t
 	desc = finland.13.d
-	picture = GFX_report_event_chamberlain
+	picture = GFX_report_event_finnish_letter
 
 	fire_only_once = yes
 
@@ -471,6 +480,73 @@ country_event = {
 		swap_ideas = {
 			remove_idea = FIN_ghost_civil_war
 			add_idea = FIN_spirit_of_winter_war
+		}
+	}
+}
+#Finland Changes sides - Moscow Armistice
+country_event = {
+	id = finland.15
+	title = finland.15.t
+	desc = finland.15.d
+	picture = GFX_report_event_soviet_tanks
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		#Fight on alongside Germany
+		name = finland.15.a 
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		#Make peace with Soviets
+		name = finland.15.b
+		ai_chance = { factor = 100 }
+		SOV = {
+			country_event = { days = 1 id = soviet.63 }
+		}
+	}
+}
+country_event = {
+	#Soviets agree to terms - Moscow Armistice 
+	id = finland.16
+	title = finland.16.t
+	desc = finland.16.d
+	picture = GFX_report_event_soviet_tanks
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = finland.16.a
+		white_peace = SOV
+		country_event = { days = 7 id = finland.18 }
+	}
+}
+country_event = {
+	#Soviets declines - Moscow Armistice
+	id = finland.17
+	title = finland.17.t
+	desc = finland.17.d
+	picture = GFX_report_event_soviet_tanks
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = finland.17.a
+	}
+}
+country_event = {
+	#declare war on Germany - Lapland war
+	id = finland.18
+	title = finland.18.t
+	desc = finland.18.d
+	picture = GFX_report_event_soviet_tanks
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = finland.18.a
+		ENG = {
+			add_to_faction = FIN
 		}
 	}
 }

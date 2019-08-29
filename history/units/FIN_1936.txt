@@ -282,7 +282,7 @@ air_wings = {
 			amount = 15
 		}
 		### 15 Blackburn Ripons
-		naval_bomber1 = {
+		nav_bomber_equipment_1 = {
 			owner = "ENG" 
 			amount = 15
 		}
@@ -311,7 +311,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = convoy
+			type = convoy_1
 			creator = "FIN" 
 		}
 		requested_factories = 1

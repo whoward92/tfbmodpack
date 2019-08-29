@@ -13,12 +13,14 @@ focus_tree = {
 	default = no
 
 	
-	continuous_focus_position = { x = 50 y = 1600 }
+	continuous_focus_position = { x = 10 y = 1200 }
 	focus = {
-		id = FIN_expand_mannerheim_line1
+		id = FIN_expand_mannerheim_line
 		icon = GFX_goal_generic_fortify_city
-		x = 4
-		y = 0
+		prerequisite = { focus = FIN_university }
+		relative_position_id = FIN_university
+		x = 0
+		y = 1
 		cost = 10
 
 		
@@ -36,95 +38,26 @@ focus_tree = {
 
 		completion_reward = {
 			146 = {
-				add_building_construction = { type = bunker level = 1 province = { id = 9100  } instant_build = yes }
-				add_building_construction = { type = bunker level = 1 province = { id = 9105  } instant_build = yes }
+				add_building_construction = { type = bunker level = 3 province = { id = 9100  } instant_build = yes }
+				add_building_construction = { type = bunker level = 3 province = { id = 9105  } instant_build = yes }
 			}
 		}
 	}
 	
 	focus = {
-		id = FIN_expand_mannerheim_line2
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = FIN_expand_mannerheim_line1 }
-		relative_position_id = FIN_expand_mannerheim_line1
-		x = 0
-		y = 1
-		cost = 10
-
-		available = {
-			date > 1937.6.15
-		}
-		
-		available = {
-			FIN = { controls_state = 146 }
-		}
-
-		bypass = {
-
-			NOT = { FIN = { controls_state = 146 } }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			146 = {
-				add_building_construction = { type = bunker level = 1 province = { id = 9100  } instant_build = yes }
-				add_building_construction = { type = bunker level = 1 province = { id = 9105  } instant_build = yes }
-			}
-		}
-	}
-	focus = {
-		id = FIN_expand_mannerheim_line3
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = FIN_expand_mannerheim_line2 }
-		relative_position_id = FIN_expand_mannerheim_line2
-		x = 0
-		y = 1
-		cost = 10
-
-		available = {
-			date > 1939.1.1
-		}
-		
-		available = {
-			FIN = { controls_state = 146 }
-		}
-
-		bypass = {
-
-			NOT = { FIN = { controls_state = 146 } }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			146 = {
-				add_building_construction = { type = bunker level = 1 province = { id = 9100  } instant_build = yes }
-				add_building_construction = { type = bunker level = 1 province = { id = 9105  } instant_build = yes }
-			}
-		}
-	}
-	focus = {
+		#Southern Salpa Line
 		id = FIN_salpa_line1
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = FIN_expand_mannerheim_line3 }
-		relative_position_id = FIN_expand_mannerheim_line3
-		x = 0
+		prerequisite = { focus = FIN_ww_over }
+		relative_position_id = FIN_salpa_line2
+		x = -1
 		y = 1
 		cost = 10
 
-		available = {
-			NOT = { FIN = { controls_state = 146 } }
-		}
 		
 		available = {
 			FIN = { controls_state = 111 }
 			FIN = { controls_state = 150 }
-			FIN = { controls_state = 148 }
 		}
 
 		bypass = {
@@ -137,22 +70,16 @@ focus_tree = {
 
 		completion_reward = {
 			111 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_111
+				custom_effect_tooltip = FIN_salpa_line_tt_9
 			}
 			150 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_150
-			}
-			148 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_148
+				custom_effect_tooltip = FIN_salpa_line_tt_9
 			}
 			hidden_effect = {
 				111 = {
 					set_building_level = {
 						type = bunker
-						level = 1
+						level = 3
 						instant_build = yes
 						province = {
 							all_provinces = yes
@@ -161,40 +88,26 @@ focus_tree = {
 					}
 				}
 				150 = {
-					set_building_level = {
-						type = bunker
-						level = 1
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_border = yes
-						}
-					}
-				}
-				148 = {
-					add_building_construction = { type = bunker level = 1 province = { id = 6045 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3156 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 11030 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 6128 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3158 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3097 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 139 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 3030 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 9181 } instant_build = yes }
 				}
 			}
 		}
 	}
 	focus = {
+		#Eastern Salpa Line
 		id = FIN_salpa_line2
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = FIN_salpa_line1 }
-		relative_position_id = FIN_salpa_line1
-		x = 0
+		prerequisite = { focus = FIN_ww_over }
+		relative_position_id = FIN_ww_over
+		x = -2
 		y = 1
 		cost = 10
 
 		available = {
 		}
 		available = {
-			FIN = { controls_state = 111 }
 			FIN = { controls_state = 150 }
 			FIN = { controls_state = 148 }
 		}
@@ -208,67 +121,41 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			111 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_111
-			}
 			150 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_150
+				custom_effect_tooltip = FIN_salpa_line_tt_15
 			}
 			148 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_148
+				custom_effect_tooltip = FIN_salpa_line_tt_3
 			}
 			hidden_effect = {
-				111 = {
-					add_building_construction = {
-						type = bunker
-						level = 1
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_border = yes
-						}
-					}
-				}
 				150 = {
-					add_building_construction = {
-						type = bunker
-						level = 1
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_border = yes
-						}
-					}
+					add_building_construction = { type = bunker level = 3 province = { id = 6210 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 3185 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 7 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 6134 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 3037 } instant_build = yes }
 				}
 				148 = {
-					add_building_construction = { type = bunker level = 1 province = { id = 6045 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3156 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 11030 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 6128 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3158 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3097 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 6045 } instant_build = yes }
 				}
 			}
 		}
 	}
 	focus = {
+		#Western Salpa Line
 		id = FIN_salpa_line3
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = FIN_salpa_line2 }
+		prerequisite = { focus = FIN_ww_over }
 		relative_position_id = FIN_salpa_line2
-		x = 0
+		x = 1
 		y = 1
 		cost = 10
 
 		available = {
 		}
 		available = {
-			FIN = { controls_state = 111 }
-			FIN = { controls_state = 150 }
 			FIN = { controls_state = 148 }
+			FIN = { controls_state = 722 }
 		}
 
 		bypass = {
@@ -280,48 +167,22 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			111 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_111
-			}
-			150 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_150
-			}
 			148 = {
-
-			custom_effect_tooltip = FIN_salpa_line_tt_148
+				custom_effect_tooltip = FIN_salpa_line_tt_9
+			}
+			722 = {
+				custom_effect_tooltip = FIN_salpa_line_tt_9
 			}
 			hidden_effect = {
-				111 = {
-					add_building_construction = {
-						type = bunker
-						level = 1
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_border = yes
-						}
-					}
-				}
-				150 = {
-					add_building_construction = {
-						type = bunker
-						level = 1
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_border = yes
-						}
-					}
-				}
 				148 = {
-					add_building_construction = { type = bunker level = 1 province = { id = 6045 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3156 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 11030 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 6128 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3158 } instant_build = yes }
-					add_building_construction = { type = bunker level = 1 province = { id = 3097 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 3156 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 11030 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 6128 } instant_build = yes }
+				}
+				722 = {
+					add_building_construction = { type = bunker level = 3 province = { id = 6183 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 6012 } instant_build = yes }
+					add_building_construction = { type = bunker level = 3 province = { id = 9140 } instant_build = yes }
 				}
 			}
 		}
@@ -329,9 +190,10 @@ focus_tree = {
 	focus = {
 		id = FIN_expand_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
-		relative_position_id = FIN_expand_mannerheim_line1
+		prerequisite = { focus = FIN_what_we_need }
+		relative_position_id = FIN_what_we_need
 		x = -4
-		y = 0
+		y = 1
 
 		cost = 10
 
@@ -368,10 +230,10 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_torpedo_destroyer
-		icon = GFX_focus_generic_destroyer
+		icon = GFX_goal_generic_destroyer2
 		prerequisite = { focus = FIN_expand_navy }
 		relative_position_id = FIN_expand_navy
-		x = 0
+		x = 1
 		y = 1
 
 		cost = 10
@@ -419,10 +281,10 @@ focus_tree = {
 		id = FIN_expand_sea_defenses
 		icon = GFX_focus_generic_coastal_fort
 		prerequisite = { focus = FIN_expand_navy }
-		prerequisite = { focus = FIN_expand_mannerheim_line1 }
+		prerequisite = { focus = FIN_expand_mannerheim_line }
 		relative_position_id = FIN_expand_navy
-		x = 2
-		y = 1
+		x = 0
+		y = 4
 
 		cost = 10
 
@@ -477,9 +339,10 @@ focus_tree = {
 	focus = {
 		id = FIN_create_air_force
 		icon = GFX_goal_generic_air_production
-		relative_position_id = FIN_expand_mannerheim_line1
+		prerequisite = { focus = FIN_what_we_need }
+		relative_position_id = FIN_what_we_need
 		x = 4
-		y = 0
+		y = 1
 
 		cost = 10
 
@@ -515,10 +378,10 @@ focus_tree = {
 	}
 	focus = {
 		id = FIN_adopt_four_finger_formation
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = FIN_create_air_force }
 		relative_position_id = FIN_create_air_force
-		x = 2
+		x = 1
 		y = 1
 
 		cost = 10
@@ -549,11 +412,61 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = FIN_expand_air_fields
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = FIN_adopt_four_finger_formation }
+		relative_position_id = FIN_adopt_four_finger_formation
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+			148 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			149 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			150 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
 		id = FIN_aquire_more_planes
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = FIN_create_air_force }
 		relative_position_id = FIN_create_air_force
-		x = 0
+		x = -1
 		y = 1
 
 		cost = 10
@@ -579,7 +492,7 @@ focus_tree = {
 			if = {
 				limit = {
 					HOL = {
-						has_tech = fighter_equipment_2
+						has_tech = fighter2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -591,7 +504,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					HOL = {
-						has_tech = fighter_equipment_1
+						has_tech = fighter1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -611,7 +524,7 @@ focus_tree = {
 			if = {
 				limit = {
 					HOL = {
-						has_tech = CAS_equipment_2
+						has_tech = CAS2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -623,7 +536,7 @@ focus_tree = {
 			else = {
 				limit = {
 					HOL = {
-						has_tech = CAS_equipment_1
+						has_tech = CAS1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -640,7 +553,7 @@ focus_tree = {
 					}
 				}
 				add_equipment_to_stockpile = {
-					type = naval_bomber2
+					type = nav_bomber_equipment_2
 					amount = 15
 					producer = ENG
 				}
@@ -652,7 +565,7 @@ focus_tree = {
 					}
 				}
 				add_equipment_to_stockpile = {
-					type = naval_bomber1
+					type = nav_bomber_equipment_1
 					amount = 15
 					producer = ENG
 				}
@@ -691,7 +604,7 @@ focus_tree = {
 			if = {
 				limit = {
 					ENG = {
-						has_tech = fighter_equipment_2
+						has_tech = fighter2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -703,7 +616,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					ENG = {
-						has_tech = fighter_equipment_1
+						has_tech = fighter1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -723,7 +636,7 @@ focus_tree = {
 			if = {
 				limit = {
 					ENG = {
-						has_tech = CAS_equipment_2
+						has_tech = CAS2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -735,7 +648,7 @@ focus_tree = {
 			else = {
 				limit = {
 					ENG = {
-						has_tech = CAS_equipment_1
+						has_tech = CAS1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -748,7 +661,7 @@ focus_tree = {
 			if = {
 				limit = {
 					FRA = {
-						has_tech = fighter_equipment_2
+						has_tech = fighter2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -760,7 +673,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					FRA = {
-						has_tech = fighter_equipment_1
+						has_tech = fighter1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -780,7 +693,7 @@ focus_tree = {
 			if = {
 				limit = {
 					USA = {
-						has_tech = fighter_equipment_2
+						has_tech = fighter2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -792,7 +705,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					USA = {
-						has_tech = fighter_equipment_1
+						has_tech = fighter1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -812,7 +725,7 @@ focus_tree = {
 			if = {
 				limit = {
 					ITA = {
-						has_tech = fighter_equipment_2
+						has_tech = fighter2
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -824,7 +737,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					ITA = {
-						has_tech = fighter_equipment_1
+						has_tech = fighter1
 					}
 				}
 				add_equipment_to_stockpile = {
@@ -846,9 +759,9 @@ focus_tree = {
 		id = FIN_expand_aa1
 		icon = GFX_focus_generic_air_defense
 		prerequisite = { focus = FIN_create_air_force }
-		prerequisite = { focus = FIN_expand_mannerheim_line1 }
-		relative_position_id = FIN_expand_mannerheim_line1
-		x = 2
+		prerequisite = { focus = FIN_expand_mannerheim_line }
+		relative_position_id = FIN_expand_mannerheim_line
+		x = 4
 		y = 1
 
 		cost = 10
@@ -887,7 +800,6 @@ focus_tree = {
 		id = FIN_expand_aa2
 		icon = GFX_focus_generic_air_defense
 		prerequisite = { focus = FIN_expand_aa1 }
-		prerequisite = { focus = FIN_expand_mannerheim_line2 }
 		relative_position_id = FIN_expand_aa1
 		x = 0
 		y = 1
@@ -918,7 +830,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = fin_aa_bonus
 				bonus = 1
-				ahead_reduction = 1
 				uses = 1
 				technology = antiair2
 			}
@@ -928,7 +839,6 @@ focus_tree = {
 		id = FIN_expand_aa3
 		icon = GFX_focus_generic_air_defense
 		prerequisite = { focus = FIN_expand_aa2 }
-		prerequisite = { focus = FIN_expand_mannerheim_line3 }
 		relative_position_id = FIN_expand_aa2
 		x = 0
 		y = 1
@@ -959,7 +869,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = fin_aa_bonus
 				bonus = 1
-				ahead_reduction = 1
 				uses = 1
 				technology = antiair3
 			}
@@ -968,7 +877,7 @@ focus_tree = {
 	focus = {
 		id = FIN_what_we_need
 		icon = GFX_goal_generic_propaganda
-		x = 14
+		x = 4
 		y = 0
 		cost = 10
 		available = {
@@ -992,10 +901,10 @@ focus_tree = {
 	focus = {
 		id = FIN_enlist_more
 		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = FIN_what_we_need }
-		relative_position_id = FIN_what_we_need
-		x = -2
-		y = 1
+		prerequisite = { focus = FIN_expand_mannerheim_line }
+		relative_position_id = FIN_expand_mannerheim_line
+		x = -1
+		y = 2
 
 		cost = 10
 
@@ -1028,11 +937,10 @@ focus_tree = {
 		icon = GFX_Lotta_Svard
 		prerequisite = { 
 			focus = FIN_enlist_more
-			focus = FIN_is_railroads
 		}
 		relative_position_id = FIN_enlist_more
 		x = 0
-		y = 1
+		y = 2
 
 		cost = 10
 
@@ -1066,10 +974,9 @@ focus_tree = {
 		id = FIN_focus_ski_troops
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { 
-			focus = FIN_focus_lotta_svard
-			focus = FIN_university
+			focus = FIN_expand_mannerheim_line
 		}
-		relative_position_id = FIN_focus_lotta_svard
+		relative_position_id = FIN_expand_mannerheim_line
 		x = 0
 		y = 1
 
@@ -1135,15 +1042,11 @@ focus_tree = {
 	focus = {
 		id = FIN_university
 		icon = GFX_focus_research
-		prerequisite = { 
-			focus = FIN_enlist_more
-			focus = FIN_is_railroads
-			focus = FIN_is_industry
-
-		 }
+		prerequisite = { focus = FIN_is_industry }
+		prerequisite = { focus = FIN_is_factory }
 		relative_position_id = FIN_is_railroads
 		x = 0
-		y = 1
+		y = 2
 
 		cost = 10
 		available = {
@@ -1166,15 +1069,10 @@ focus_tree = {
 	focus = {
 		id = FIN_land_doctrine
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { 
-			focus = FIN_focus_lotta_svard
-			focus = FIN_university
-			focus = FIN_is_factory
-		}
-
-		relative_position_id = FIN_university
-		x = 0
-		y = 1
+		prerequisite = { focus = FIN_expand_mannerheim_line }
+		relative_position_id = FIN_expand_mannerheim_line
+		x = 1
+		y = 2
 
 		cost = 10
 		available = {
@@ -1193,7 +1091,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = fin_land_doctrine_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 3
 				category = land_doctrine
 			}
@@ -1202,9 +1100,9 @@ focus_tree = {
 	focus = {
 		id = FIN_is_industry
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = FIN_what_we_need }
-		relative_position_id = FIN_what_we_need
-		x = 2
+		prerequisite = { focus = FIN_is_railroads }
+		relative_position_id = FIN_is_railroads
+		x = -1
 		y = 1
 
 		cost = 10
@@ -1236,11 +1134,10 @@ focus_tree = {
 		id = FIN_is_factory
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { 
-			focus = FIN_is_industry 
 			focus = FIN_is_railroads
 		}
-		relative_position_id = FIN_is_industry
-		x = 0
+		relative_position_id = FIN_is_railroads
+		x = 1
 		y = 1
 
 		cost = 10
@@ -1279,14 +1176,10 @@ focus_tree = {
 	focus = {
 		id = FIN_anti_tank_focus
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { 
-			focus = FIN_is_factory 
-			focus = FIN_university
-
-		}
-		relative_position_id = FIN_is_factory
+		prerequisite = { focus = FIN_land_doctrine }
+		relative_position_id = FIN_land_doctrine
 		x = 0
-		y = 1
+		y = 2
 
 		cost = 10
 		available = {
@@ -1305,7 +1198,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = fin_land_doctrine_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 3
 				category = cat_anti_tank
 			}
@@ -1315,11 +1208,9 @@ focus_tree = {
 		id = FIN_elite_jaegers
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = FIN_focus_ski_troops }
-		prerequisite = { focus = FIN_land_doctrine }
-		prerequisite = { focus = FIN_anti_tank_focus }
-		relative_position_id = FIN_land_doctrine
+		relative_position_id = FIN_focus_ski_troops
 		x = 0
-		y = 1
+		y = 2
 
 		cost = 10
 		available = {
@@ -1336,11 +1227,346 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = fin_land_doctrine_bonus
-				bonus = 1
-				uses = 3
-				category = cat_anti_tank
+			custom_effect_tooltip = FIN_elite_jaegers_tt
+			hidden_effect = {
+				#Actually enable jaegers
+				set_technology = { jaegers = 1 }
+				division_template = {
+					#This will become a 5x2 jaeger division with an engineer, recon, art and at support battalions
+					name = "Jaeger Battalion"
+					priority = 2
+					division_names_group = FIN_JAE_01
+					regiments = {
+						jaeger = { x = 0 y = 0 }
+						jaeger = { x = 0 y = 1 }
+						jaeger = { x = 0 y = 2 }
+						jaeger = { x = 0 y = 3 }
+						jaeger = { x = 0 y = 4 }
+
+	    	   		 	jaeger = { x = 1 y = 0 }
+						jaeger = { x = 1 y = 1 }
+						jaeger = { x = 1 y = 2 }
+						jaeger = { x = 1 y = 3 }
+						jaeger = { x = 1 y = 4 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }  
+						recon = { x = 0 y = 1 }  
+						artillery = { x = 0 y = 2 }  
+						anti_tank = { x = 0 y = 3 }
+					}
+				}
+
+				random_owned_controlled_state = {
+					prioritize = { 111 }
+					create_unit = {
+						division = "division_template = \"Jaeger Battalion\" start_experience_factor = 2.0"
+						owner = FIN
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = FIN_ww_over
+		icon = GFX_goal_generic_military_sphere
+		x = 14
+		y = 0
+
+		cost = 10
+		available = {
+			NOT = { FIN = { controls_state = 146 } }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = FIN_more_industry
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = FIN_ww_over }
+		relative_position_id = FIN_ww_over
+		x = 2
+		y = 1
+
+		cost = 10
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = FIN_idea_more_industry
+		}
+	}
+	focus = {
+		id = FIN_more_civilian_industry
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = FIN_more_industry }
+		relative_position_id = FIN_more_industry
+		x = -1
+		y = 1
+
+		cost = 10
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			150 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			148 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			722 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FIN_more_civilian_industry
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = FIN_more_industry }
+		relative_position_id = FIN_more_industry
+		x = 1
+		y = 1
+
+		cost = 10
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			148 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			150 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FIN_more_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = FIN_more_industry }
+		relative_position_id = FIN_more_industry
+		x = 1
+		y = 1
+
+		cost = 10
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			148 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			150 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FIN_ger_relations
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = FIN_ww_over }
+		relative_position_id = FIN_ww_over
+		x = 0
+		y = 3
+
+		cost = 10
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_opinion_modifier = { target = GER modifier = huge_increase }
+			GER = { 
+				add_opinion_modifier = { target = ROOT modifier = huge_increase } 
+			}
+		}
+	}
+	focus = {
+		id = FIN_ger_joint_planning
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = FIN_ger_relations }
+		relative_position_id = FIN_ger_relations
+		x = -1
+		y = 1
+
+		cost = 10
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = FIN_ger_joint_planning
+			
+		}
+	}
+	focus = {
+		id = FIN_ger_resource_extraction
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = FIN_ger_relations }
+		relative_position_id = FIN_ger_relations
+		x = 1
+		y = 1
+
+		cost = 10
+
+		available = {
+			FIN = { controls_state = 722 }
+		}
+
+		bypass = {
+			NOT = { FIN = { controls_state = 722 } }
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 722
+			}
+		}
+	}
+	focus = {
+		id = FIN_join_axis
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = FIN_ger_joint_planning }
+		prerequisite = { focus = FIN_ger_resource_extraction }
+		relative_position_id = FIN_ger_relations
+		x = 0
+		y = 2
+
+		cost = 10
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			GER = {
+				add_to_faction = FIN
+			}
+		}
+	}
+	focus = {
+		id = FIN_attack_soviet
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = FIN_join_axis }
+		relative_position_id = FIN_join_axis
+		x = 0
+		y = 1
+
+		cost = 1
+
+		bypass = {
+
+		}
+
+		will_lead_to_war_with = SOV
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			declare_war_on = {
+				target = SOV
+				type = take_core_state
 			}
 		}
 	}

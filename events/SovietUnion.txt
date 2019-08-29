@@ -2341,6 +2341,32 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	#Peace with Finland?
+	id = soviet.63
+	title = soviet.63.t
+	desc = soviet.63.d
+	picture = GFX_report_event_soviet_tanks
+	is_triggered_only = yes
+	
+	option = {
+		#Make peace with Finland
+		name = soviet.63.a
+		set_state_owner = 722
+		FIN = {
+			country_event = { id = finland.16 }
+		}
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		#Destroy them!
+		name = soviet.63.b
+		FIN = {
+			country_event = { id = finland.17 days = 1 }
+		}
+		ai_chance = { factor = 0 }
+	}
+}
 #create Polish peoples army
 #country_event = {
 #	id = soviet.336

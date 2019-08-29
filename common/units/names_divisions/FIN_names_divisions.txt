@@ -607,4 +607,67 @@ FIN_PAR_01 =
 
 		# FIN didn't have any Airborne divisions.  Have independent sequence.
 	}
+} 
+FIN_JAE_01 = {
+	name = "Jaeger Division"
+
+	for_countries = { FIN }
+
+	can_use = { always = yes }
+
+	division_types = { "jaeger" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "Jääkäripataljoona %d"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Jääkäripataljoona %d" }
+		2 = { "Jääkäripataljoona %d" }
+		3 = { "Jääkäripataljoona %d" }
+		4 = { "Jääkäripataljoona %d" }
+		5 = { "Jääkäripataljoona %d" }
+		6 = { "Jääkäripataljoona %d" }
+		7 = { "Jääkäripataljoona %d" }
+		8 = { "Jääkäripataljoona %d" }
+		9 = { "Jääkäripataljoona %d" }
+		10 = { "Jääkäripataljoona %d" }
+		11 = { "Jääkäripataljoona %d" }
+		12 = { "Jääkäripataljoona %d" }
+		13 = { "Jääkäripataljoona %d" }
+		14 = { "Jääkäripataljoona %d" }
+		15 = { "Jääkäripataljoona %d" }
+		16 = { "Jääkäripataljoona %d" }
+		17 = { "Jääkäripataljoona %d" }
+		18 = { "Jääkäripataljoona %d" }
+		19 = { "Jääkäripataljoona %d" }
+		20 = { "Jääkäripataljoona %d" }
+
+		# FIN didn't have any Airborne divisions.  Have independent sequence.
+	}
+}
+FIN_SWE_01 = {
+	name = "Swedish Infantry Volunteers"
+
+	for_countries = { FIN }
+
+	can_use = { always = no }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "%d stridsgruppen"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "I. stridsgruppen" }
+		2 = { "II. stridsgruppen" }
+		3 = { "III. stridsgruppen" }
+	}
 }

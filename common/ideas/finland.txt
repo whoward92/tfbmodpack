@@ -24,6 +24,7 @@ ideas = {
 		}
 
 		FIN_spirit_of_winter_war = {
+			picture = generic_infantry_bonus
 			allowed = {
 				always = no
 				has_government = neutrality
@@ -99,6 +100,42 @@ ideas = {
 			
 			modifier = {
 				license_air_purchase_cost = -0.25
+			}
+		}
+		FIN_idea_more_industry = {
+
+			picture = generic_production_bonus
+
+			removal_cost = -1
+			
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		FIN_ger_joint_planning = {
+
+			picture = german_advisors
+
+			removal_cost = -1
+			
+			cancel  = {
+				has_war_with = GER
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				planning_speed = 0.25
+				max_planning = 0.15
 			}
 		}
 		FIN_build_planes = {
@@ -363,7 +400,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			traits = { army_regrouping_3 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -421,7 +458,31 @@ ideas = {
 
 	# TECHNOLOGY
 	tank_manufacturer = {
+		
+		designer = yes
 
+		FIN_vickers = {
+
+			#Vickers produced tanks in Finland
+
+			picture = vickers_armstrong_eng
+
+			allowed = {
+				original_TAG = FIN
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer }
+			
+			modifier = {
+			}
+			cost = 100
+		}
 	}
 	naval_manufacturer = { 
 		
@@ -440,9 +501,28 @@ ideas = {
 				naval_equipment = 0.10
 			}
 			
-			# submarine and defence ship production
+			# submarine and coastal defence ship production
 			
 			traits = { coastal_defence_naval_manufacturer }
+			cost = 100
+		}
+
+		siltarakennus = {
+			
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = FIN
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			# destroyers and minelayers
+			
+			traits = { convoy_escort_naval_manufacturer }
 			cost = 100
 		}
 	}
@@ -489,6 +569,20 @@ ideas = {
 			}
 			
 			traits = { infantry_equipment_manufacturer }
+		}
+		fin_valtion_kivaar = {
+
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				original_TAG = FIN
+			}
+			
+			research_bonus = {
+				artillery_equipment = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
 		}
 	}
 	industrial_concern = {
