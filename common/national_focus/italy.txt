@@ -1283,7 +1283,6 @@ focus_tree = {
 		available = {
 			has_government = fascism
 			NOT = { has_war_with = GER }
-			FRA = { has_capitulated = yes }
 			GER = {
 				has_government = fascism
 				country_exists = GER

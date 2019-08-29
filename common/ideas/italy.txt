@@ -758,6 +758,7 @@ ideas = {
 		}
 		
 		Gio_Ansaldo_and_C = {
+			picture = generic_naval_manufacturer_1
 			
 			allowed = {
 				original_TAG = ITA
