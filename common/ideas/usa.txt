@@ -83,6 +83,119 @@ ideas = {
 				guarantee_tension = -0.2
 			}
 		}
+
+		USA_hoover_dam = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+
+		USA_legislation_being_drafted = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+
+		USA_giant_sleeps_idea = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 1.00
+				consumer_goods_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_dockyard_factor = -0.15			
+			}
+		}
+
+		USA_giant_sleeps_idea_2 = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+		
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.80
+				consumer_goods_factor = -0.275
+				production_speed_arms_factory_factor = 0.45
+				production_speed_dockyard_factor = 0.70
+				production_factory_efficiency_gain_factor = 0.15 
+			}
+		}
+		
+		USA_giant_sleeps_idea_3 = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+		
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.275
+				production_speed_arms_factory_factor = 0.55
+				production_speed_dockyard_factor = 0.80
+				production_factory_efficiency_gain_factor = 0.30 
+			}
+		}
+
+		USA_giant_wakes = {
+			picture = man_five_year_plan_industry
+			
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+
 		USA_neutrality_act = {
 			picture = generic_production_bonus
 			
@@ -102,6 +215,118 @@ ideas = {
 				guarantee_tension = 0.5
 			}
 		}
+
+		USA_WPB = {
+			allowed = { 
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			picture = generic_central_management
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		USA_operation_torch_idea = {
+
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.15
+				out_of_supply_factor = -0.15
+				special_forces_attack_factor = 0.1
+			}
+		}
+
+		USA_operation_husky_idea = {
+
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.15
+				out_of_supply_factor = -0.15
+				special_forces_attack_factor = 0.1
+				terrain_penalty_reduction = 0.10
+			}
+		}
+
+		USA_operation_overlord_idea = {
+
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.15
+				out_of_supply_factor = -0.15
+				special_forces_attack_factor = 0.1
+			}
+		}
+
+		USA_operation_downfall_idea = {
+
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.15
+				out_of_supply_factor = -0.15
+				special_forces_attack_factor = 0.1
+			}
+		}
+
+		
+
 		# version if player went down limited intervention
 		USA_lend_lease_act_li = {
 			picture = generic_production_bonus
@@ -123,6 +348,7 @@ ideas = {
 				guarantee_tension = -0.2
 			}
 		}
+
 		USA_lend_lease_act_na = {# version if player went down neutrality act
 			picture = generic_production_bonus
 			name = USA_lend_lease_act
@@ -143,6 +369,7 @@ ideas = {
 				guarantee_tension = 0.5
 			}
 		}
+
 		USA_lend_lease_act_dummy = { #dummy version to show effects
 			picture = generic_production_bonus
 			name = USA_lend_lease_act
@@ -160,6 +387,7 @@ ideas = {
 				lend_lease_tension = -1
 			}
 		}
+
 		USA_accumulated_wealth_tax_act = {
 			picture = generic_foreign_capital
 			
@@ -324,7 +552,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_dockyard_factor = 0.1	
+				production_speed_dockyard_factor = 0.2	
 			}
 		}
 		USA_us_air_force = {
@@ -519,6 +747,27 @@ ideas = {
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
+
+		USA_synthetic_rubber_program = {
+			
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_motorized_focus
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.50
+			}
+		}	
+
 		USA_national_employment_strategy = {
 			picture = man_five_year_plan_industry
 			allowed = {
@@ -644,7 +893,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				conversion_cost_civ_to_mil_factor= -0.5
+				production_speed_arms_factory_factor = 0.10
 			}
 		}
 	
@@ -831,7 +1080,30 @@ ideas = {
 			}
 		}
 
-		liberty_ships_focus = {
+		USA_merchant_marine_act = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.25
+				}
+			}
+		}
+
+		USA_marine_corps = {
+
+			picture = idea_tdlra_states_army
 			
 			allowed = {
 				always = no
@@ -845,11 +1117,6 @@ ideas = {
 			
 			modifier = {
 				amphibious_invasion = 0.10
-			}
-			equipment_bonus = {
-				convoy = {
-					build_cost_ic = -0.25
-				}
 			}
 		}
 

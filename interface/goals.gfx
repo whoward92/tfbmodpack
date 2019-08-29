@@ -2043,12 +2043,14 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/goal_autonomism.dds"
 				
 	}
+	
 	SpriteType = {
 		name = "GFX_goal_government_icon"
 		texturefile = "gfx/interface/goals/goal_government_icon.dds"
 				
 	}
-		SpriteType = {
+
+	SpriteType = {
 		name = "GFX_goal_JAP_REF"
 		texturefile = "gfx/interface/goals/goal_JAP_REF.dds"
 				

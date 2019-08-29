@@ -1,0 +1,381 @@
+USA_aid_britain = {
+
+	USA_establish_personal_communication_with_former_naval_person = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_country_flag = blood_toil_tears_sweat_speech
+			ENG = { has_defensive_war = yes }
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			add_opinion_modifier = { target = ENG modifier = USA_special_relationship }
+			reverse_add_opinion_modifier = { target = ENG modifier = USA_special_relationship }
+		}
+	}
+
+	USA_battle_domestic_isolationism = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_country_flag = fight_on_the_beaches_speech
+			ENG = { has_defensive_war = yes }
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		modifier = {
+			war_support_weekly = 0.002
+		}
+
+		days_remove = 180
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+		}
+	}
+	
+	USA_convoy_shipment = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_completed_focus = USA_indirect_help
+			ENG = { has_defensive_war = yes }
+			has_equipment = {
+				convoy > 199
+			}
+		}
+
+		cost = 20
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		days_remove = 35
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			send_equipment = {
+				equipment = convoy
+				amount = 200
+				target = ENG 
+			}	
+			ENG = {
+				country_event = { id = gduevents.6 }
+			}
+		}
+	}
+
+	USA_emergency_arms_deliveries = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_completed_focus = USA_indirect_help
+			ENG = { has_defensive_war = yes }
+			has_equipment = {
+				infantry_equipment_1 > 19999
+			}
+			has_equipment = {
+				artillery_equipment_1 > 499
+			}
+			has_equipment = {
+				support_equipment_1 > 499
+			}
+		}
+
+		cost = 10
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		days_remove = 35
+
+		visible = {
+			has_completed_focus = USA_indirect_help
+			has_war = no
+		}
+
+		complete_effect = {
+			send_equipment = {
+				equipment = infantry_equipment_1
+				amount = 20000
+				target = ENG 
+			}
+			send_equipment = {
+				equipment = artillery_equipment_1
+				amount = 500
+				target = ENG 
+			}
+			send_equipment = {
+				equipment = support_equipment_1
+				amount = 500
+				target = ENG 
+			}
+			ENG = {
+				country_event = { id = gduevents.7 }
+			}
+
+		}
+	}
+	
+	USA_emergency_fighter_deliveries = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_completed_focus = USA_indirect_help
+			ENG = { has_defensive_war = yes }
+			has_equipment = {
+				fighter_equipment > 649
+			}
+		}
+
+		cost = 10
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+
+		days_remove = 35
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			air_experience = 100 
+			send_equipment = {
+				equipment = fighter_equipment 
+				amount = 650
+				target = ENG 
+			}	
+			ENG = {
+				country_event = { id = gduevents.8 }
+			}
+		}
+	}
+	
+	USA_emergency_CAS_deliveries = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_completed_focus = USA_indirect_help
+			ENG = { has_defensive_war = yes }
+			has_equipment = {
+				CAS_equipment > 299
+			}
+		}
+
+		cost = 10
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		days_remove = 35
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			air_experience = 100 
+			send_equipment = {
+				equipment = CAS_equipment 
+				amount = 300
+				target = ENG 
+			}	
+			ENG = {
+				country_event = { id = gduevents.9 }
+			}
+		}
+	}
+	
+	USA_emergency_TACB_deliveries = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_completed_focus = USA_indirect_help
+			ENG = { has_defensive_war = yes }
+			has_equipment = {
+				tac_bomber_equipment > 199
+			}
+		}
+
+		cost = 20
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 60 }
+			}
+			modifier = {
+				factor = 10
+				has_opinion = { target = ENG value > 99 }
+			}
+		}
+
+		days_remove = 35
+
+		visible = {
+			has_war = no
+		}
+
+		complete_effect = {
+			air_experience = 100 
+			send_equipment = {
+				equipment = tac_bomber_equipment 
+				amount = 200
+				target = ENG 
+			}	
+			ENG = {
+				country_event = { id = gduevents.10 }
+			}
+		}
+	}
+
+	USA_arsenal_of_democracy_decision = {
+
+		icon = generic_industry
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			#has_country_flag = mers_el_kebir_raid
+			has_completed_focus = USA_indirect_help
+			ENG = { has_defensive_war = yes }
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_war = no
+		}
+
+		modifier = {
+			war_support_weekly = 0.001
+			industrial_capacity_factory = 0.04
+			industrial_capacity_dockyard = 0.02
+			consumer_goods_factor = -0.02
+		}
+
+		days_remove = 360
+
+		complete_effect = {
+		}
+	}
+}

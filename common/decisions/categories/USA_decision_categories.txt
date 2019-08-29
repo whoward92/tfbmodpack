@@ -12,3 +12,13 @@ USA_congress = {
 
 	priority = 85
 }
+
+USA_aid_britain = {
+
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		has_completed_focus = USA_indirect_help
+	}
+}

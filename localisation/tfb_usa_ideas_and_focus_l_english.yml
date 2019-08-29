@@ -1,0 +1,44 @@
+﻿l_english:
+  ## Ideas
+ USA_hoover_dam:0 "BCPA"
+ USA_legislation_being_drafted:0 "Legislation being drafted"
+ USA_giant_sleeps_idea:0 "Giant Sleeps"
+ USA_giant_sleeps_idea_2:0 "Giant Sleeps"
+ USA_giant_sleeps_idea_3:0 "Giant Sleeps"
+ USA_merchant_marine_act:0 "Merchant Marine Act"
+ USA_marine_corps:0 "USA Marine Corps"
+ USA_giant_wakes:0 "Giant Wakes"
+ USA_synthetic_rubber_program:0 "Synthetic Rubber Program"
+ USA_WPB:0 "War Production Board"
+ USA_operation_torch_idea:0 "Operation Torch"
+ USA_operation_husky_idea:0 "Operation Husky"
+ USA_operation_overlord_idea:0 "Operation Overlord"
+ USA_operation_downfall_idea:0 "Operation Downfall"
+ 
+ ## Focus's
+
+ USA_finish_hoover_dam:"Finish Hoover Dam"
+ USA_merchant_marine_act:0 "Merchant Marine Act"
+ USA_war_production_board:0 "War Production Board"
+ USA_indirect_help:0 "Indirect Assistance"
+ USA_operation_downfall:0 "Operation Downfall"
+ USA_operation_torch:0 "Operation Torch"
+ USA_operation_husky:0 "Operation Husky"
+ USA_operation_overlord:0 "Operation Overlord"
+
+ ## ToolTips
+
+ USA_great_depression_cooldown_tfb_tt:0 "Once this law is passed, it will take §Y645 days§! until further New Deal legislation is completed and ready to be signed.\n" 
+ USA_limited_intervention_tfb_tt:0 "Passing this law will §Rresult in a weaker late-game economy§!, but §Gwill allow you to help the allies earlier with lend-lease.§!\n\n"
+ USA_indirect_help_tt:0 "Unlocks decisions to §Gsend limited aid§! to the allies through the Canadian border.\n\n" 
+
+ ## Decisions
+
+ USA_convoy_shipment:0 "Ship Convoys to Britain" 
+ USA_convoy_shipment_desc:0 "Not even the idiots in Congress will object to us sending the United Kingdom some shipping vessels on credit." 
+ USA_emergency_fighter_deliveries:0 "Fighter Deliveries to Canada"
+ USA_emergency_fighter_deliveries_desc:0 "The acts passed by Congress restrict the shipping of war materials. There's no law against someone buying war material on our soil and then pushing it across the border, though..." 
+ USA_emergency_CAS_deliveries:0 "CAS Deliveries to Canada" 
+ USA_emergency_CAS_deliveries_desc:0 "The acts passed by Congress restrict the shipping of war materials. There's no law against someone buying war material on our soil and then pushing it across the border, though..." 
+ USA_emergency_TACB_deliveries:0 "Tactical Bomber Deliveries to Canada" 
+ USA_emergency_TACB_deliveries_desc:0 "The acts passed by Congress restrict the shipping of war materials. There's no law against someone buying war material on our soil and then pushing it across the border, though... Admittedly, bombers is a bit of a stretch, but hopefully no one notices." 
