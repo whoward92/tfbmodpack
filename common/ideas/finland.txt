@@ -119,6 +119,25 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
+		FIN_ger_joint_planning = {
+
+			picture = german_advisors
+
+			removal_cost = -1
+			
+			cancel  = {
+				has_war_with = GER
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				planning_speed = 0.25
+				max_planning = 0.15
+			}
+		}
 		FIN_build_planes = {
 			allowed = {
 				always = no
@@ -443,7 +462,11 @@ ideas = {
 		designer = yes
 
 		FIN_vickers = {
+
 			#Vickers produced tanks in Finland
+
+			picture = vickers_armstrong_eng
+
 			allowed = {
 				original_TAG = FIN
 			}

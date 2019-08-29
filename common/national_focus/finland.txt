@@ -13,7 +13,7 @@ focus_tree = {
 	default = no
 
 	
-	continuous_focus_position = { x = 10 y = 1600 }
+	continuous_focus_position = { x = 10 y = 1200 }
 	focus = {
 		id = FIN_expand_mannerheim_line
 		icon = GFX_goal_generic_fortify_city
@@ -58,8 +58,6 @@ focus_tree = {
 		available = {
 			FIN = { controls_state = 111 }
 			FIN = { controls_state = 150 }
-			FIN = { controls_state = 148 }
-			FIN = { controls_state = 722 }
 		}
 
 		bypass = {
@@ -110,10 +108,8 @@ focus_tree = {
 		available = {
 		}
 		available = {
-			FIN = { controls_state = 111 }
 			FIN = { controls_state = 150 }
 			FIN = { controls_state = 148 }
-			FIN = { controls_state = 722 }
 		}
 
 		bypass = {
@@ -158,8 +154,6 @@ focus_tree = {
 		available = {
 		}
 		available = {
-			FIN = { controls_state = 111 }
-			FIN = { controls_state = 150 }
 			FIN = { controls_state = 148 }
 			FIN = { controls_state = 722 }
 		}
@@ -1276,7 +1270,7 @@ focus_tree = {
 	focus = {
 		id = FIN_ww_over
 		icon = GFX_goal_generic_military_sphere
-		x = 15
+		x = 14
 		y = 0
 
 		cost = 10
@@ -1349,7 +1343,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			150 = {
+			148 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
@@ -1470,8 +1464,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FIN_ger_
-		icon = GFX_focus_chi_mission_to_germany
+		id = FIN_ger_joint_planning
+		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = FIN_ger_relations }
 		relative_position_id = FIN_ger_relations
 		x = -1
@@ -1489,12 +1483,13 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_ideas = FIN_ger_joint_planning
 			
 		}
 	}
 	focus = {
-		id = FIN_ger_
-		icon = GFX_focus_chi_mission_to_germany
+		id = FIN_ger_resource_extraction
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = FIN_ger_relations }
 		relative_position_id = FIN_ger_relations
 		x = 1
@@ -1502,24 +1497,31 @@ focus_tree = {
 
 		cost = 10
 
-		bypass = {
-
+		available = {
+			FIN = { controls_state = 722 }
 		}
 
+		bypass = {
+			NOT = { FIN = { controls_state = 722 } }
+		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 
 		completion_reward = {
-			
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 722
+			}
 		}
 	}
 	focus = {
 		id = FIN_join_axis
-		icon = GFX_focus_chi_mission_to_germany
-		prerequisite = { focus = FIN_ger_ }
-		prerequisite = { focus = FIN_ger_ }
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = FIN_ger_joint_planning }
+		prerequisite = { focus = FIN_ger_resource_extraction }
 		relative_position_id = FIN_ger_relations
 		x = 0
 		y = 2
@@ -1536,7 +1538,36 @@ focus_tree = {
 
 
 		completion_reward = {
-			
+			GER = {
+				add_to_faction = FIN
+			}
+		}
+	}
+	focus = {
+		id = FIN_attack_soviet
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = FIN_join_axis }
+		relative_position_id = FIN_join_axis
+		x = 0
+		y = 1
+
+		cost = 1
+
+		bypass = {
+
+		}
+
+		will_lead_to_war_with = SOV
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			declare_war_on = {
+				target = SOV
+				type = take_core_state
+			}
 		}
 	}
 }
