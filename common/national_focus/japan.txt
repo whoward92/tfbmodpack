@@ -56,6 +56,13 @@ focus = {
 		completion_reward = {
 			add_ideas = JAP_Nichiro_Senso
 			add_war_support = 0.1
+			
+			
+ 			create_wargoal = {
+ 				type = take_state_focus
+ 				target = SOV
+ 				generator = { 1 }
+ 			}
 		}
 	}
 
