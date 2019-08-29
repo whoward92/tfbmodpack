@@ -424,23 +424,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_category_tooltip = USA_intervention_mandate
-			every_other_country = {
-				limit = {
-					is_major = yes
-					capital_scope = {
-						is_on_continent = europe
-					}
-					not = { has_government = ROOT }
-				}
-				ROOT = {
-					add_ai_strategy = {
-						type = contain
-						id = PREV
-						value = 200
-					}
-				}
-			}
+
 		}
 	}
 
@@ -464,7 +448,22 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = { 
-			
+
+			if = {
+				limit = {
+					EFR = { has_government = fascism }
+				}
+
+				declare_war_on = { 
+					type = puppet_wargoal_focus 
+					target = EFR 
+				}
+			}
+
+			add_timed_idea = {
+				idea = USA_operation_torch_idea
+				days = 45
+			}
 		}
 	}
 
@@ -475,7 +474,7 @@ focus_tree = {
 		relative_position_id = USA_focus_on_europe
 		
 		available = {
-			date > 1940.1.1
+			date > 1941.1.1
 			country_exists = ITA
 			ITA = { has_war_with = ENG }
 		}
@@ -488,7 +487,10 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = { 
-			
+			add_timed_idea = {
+				idea = USA_operation_husky_idea
+				days = 45
+			}
 		}
 	}
 
@@ -499,9 +501,13 @@ focus_tree = {
 		relative_position_id = USA_focus_on_europe
 		
 		available = {
-			date > 1940.1.1
+			date > 1942.1.1
 			country_exists = GER
 			GER = { has_war_with = ENG }
+
+			if = {
+				
+			}
 		}
 
 		available_if_capitulated = yes
@@ -512,7 +518,10 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = { 
-			
+			add_timed_idea = {
+				idea = USA_operation_overlord_idea
+				days = 45
+			}
 		}
 	}
 
@@ -560,16 +569,26 @@ focus_tree = {
 			JAP = { has_completed_focus = JAP_intervene_in_china }			
 			date > 1940.1.1
 			JAP = { has_war_with = ENG }
+			
+			controls_state = 524
+			controls_state = 526
+			controls_state = 645
+			controls_state = 648
+			controls_state = 646
+
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		
 		x = 0
 		y = 1
-		cost = 9
+		cost = 5
 		
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = USA_operation_downfall_idea
+				days = 45
+			}
 		}
 	}
 

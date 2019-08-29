@@ -180,11 +180,11 @@ ideas = {
 
 		USA_giant_wakes = {
 			picture = man_five_year_plan_industry
+			
 			allowed = {
 				always = no
 			}
 		
-
 			allowed_civil_war = {
 				
 			}
@@ -224,6 +224,8 @@ ideas = {
 			allowed_civil_war = {
 				has_government = democratic
 			}
+
+			removal_cost = -1
 			
 			picture = generic_central_management
 			
@@ -234,6 +236,96 @@ ideas = {
 			}
 		}
 
+		USA_operation_torch_idea = {
+
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.15
+				out_of_supply_factor = -0.15
+				special_forces_attack_factor = 0.1
+			}
+		}
+
+		USA_operation_husky_idea = {
+
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.15
+				out_of_supply_factor = -0.15
+				special_forces_attack_factor = 0.1
+				terrain_penalty_reduction = 0.10
+			}
+		}
+
+		USA_operation_overlord_idea = {
+
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.15
+				out_of_supply_factor = -0.15
+				special_forces_attack_factor = 0.1
+			}
+		}
+
+		USA_operation_downfall_idea = {
+
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+		
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.15
+				out_of_supply_factor = -0.15
+				special_forces_attack_factor = 0.1
+			}
+		}
+
+		
 
 		# version if player went down limited intervention
 		USA_lend_lease_act_li = {
@@ -256,6 +348,7 @@ ideas = {
 				guarantee_tension = -0.2
 			}
 		}
+
 		USA_lend_lease_act_na = {# version if player went down neutrality act
 			picture = generic_production_bonus
 			name = USA_lend_lease_act
@@ -276,6 +369,7 @@ ideas = {
 				guarantee_tension = 0.5
 			}
 		}
+
 		USA_lend_lease_act_dummy = { #dummy version to show effects
 			picture = generic_production_bonus
 			name = USA_lend_lease_act
@@ -293,6 +387,7 @@ ideas = {
 				lend_lease_tension = -1
 			}
 		}
+
 		USA_accumulated_wealth_tax_act = {
 			picture = generic_foreign_capital
 			
