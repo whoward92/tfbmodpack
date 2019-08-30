@@ -692,6 +692,9 @@
 ##Custom TFB Localisation
 
  JAP_manchurian_industrial_development_company:0 "Manchurian Industrial Development Company"
+ JAP_Krupp_Investment:0 "Krupp Investment"
+ JAP_Annex_Manchuria:0 "Annex Manchuria"
+ fighter2:0 "Ki-43" 
 
  MAN_pacify_the_countryside:0 "Pacify the Countryside"
  MAN_pacify_the_countryside_desc:0 "Ever since we have come to power, outlaws and rebels have tried to contest our rule in the more remote areas of the country. If we want to be taken seriously as a government, we need to root out these terrorists and show the population that we can enforce our rule."
