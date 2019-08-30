@@ -591,7 +591,8 @@ focus_tree = {
 	focus = {
 		id = ITA_army_primacy
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 7
+		relative_position_id = ITA_ethiopian_war_logistics
+		x = 4
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -655,10 +656,9 @@ focus_tree = {
 	focus = {
 		id = ITA_modernized_army
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = ITA_modernized_artillery }
-		prerequisite = { focus = ITA_industrial_effort }
-		relative_position_id = ITA_modernized_artillery
-		x = 0
+		prerequisite = { focus = ITA_army_primacy }
+		relative_position_id = ITA_army_primacy
+		x = 1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -691,7 +691,8 @@ focus_tree = {
 		icon = GFX_goal_generic_special_forces
 		text = special_forces
 		prerequisite = { focus = ITA_modernized_army }
-		relative_position_id = ITA_modernized_army
+		prerequisite = { focus = ITA_modernized_artillery }
+		relative_position_id = ITA_army_primacy
 		x = 0
 		y = 2
 		cost = 10
@@ -748,7 +749,8 @@ focus_tree = {
 	focus = {
 		id = ITA_mare_nostrum
 		icon = GFX_goal_generic_build_navy
-		x = 12
+		relative_position_id = ITA_air_innovation
+		x = 4
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -779,7 +781,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = naval_doctrine
 			}
 		}
@@ -788,11 +790,9 @@ focus_tree = {
 	focus = {
 		id = ITA_air_innovation
 		icon = GFX_goal_generic_build_airforce
-		text = air_innovation
-		prerequisite = { focus = ITA_army_primacy focus = ITA_mare_nostrum }
 		relative_position_id = ITA_army_primacy
-		x = 1
-		y = 1
+		x = 4
+		y = 0
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -800,21 +800,76 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = air_focus_bypass_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			air_experience = 25
+			every_state = {
+				limit = { has_state_flag = ITA_air_focus_2air }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
 		completion_reward = {
 			air_experience = 25
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1
-				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ITA_air_focus_2air
 			}
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1
-				uses = 2
-				category = air_doctrine
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ITA_air_focus_2air
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ITA_air_focus_2air
 			}
 		}
 	}
@@ -822,9 +877,9 @@ focus_tree = {
 	focus = {
 		id = ITA_carrier_effort
 		icon = GFX_goal_generic_navy_carrier
-		prerequisite = { focus = ITA_mare_nostrum }
-		relative_position_id = ITA_mare_nostrum
-		x = -2
+		prerequisite = { focus = ITA_cruiser_effort }
+		relative_position_id = ITA_cruiser_effort
+		x = 0
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -834,11 +889,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			navy_experience = 25
 			add_tech_bonus = {
 				name = cv_bonus
 				bonus = 1.0
 				uses = 2
 				category = cv_tech
+			}
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1
+				uses = 1
+				category = naval_doctrine
 			}
 		}
 	}
@@ -846,8 +908,8 @@ focus_tree = {
 	focus = {
 		id = ITA_capital_ships
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = ITA_mare_nostrum }
-		relative_position_id = ITA_mare_nostrum
+		prerequisite = { focus = ITA_light_ship_effort }
+		relative_position_id = ITA_light_ship_effort
 		x = 0
 		y = 1
 		cost = 5
@@ -867,23 +929,21 @@ focus_tree = {
 				category = bc_tech
 			}
 			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1.0
-				uses = 2
-				category = cl_tech
-				category = ca_tech
+				name = naval_doctrine_bonus
+				bonus = 1
+				uses = 1
+				category = naval_doctrine
 			}
 		}
 	}
 
 	focus = {
-		id = ITA_bomber_effort
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = ITA_army_primacy }
+		id = ITA_fighter_effort
+		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = ITA_air_innovation }
 		relative_position_id = ITA_air_innovation
-		x = -1
-		y = 2
+		x = 1
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -894,16 +954,77 @@ focus_tree = {
 		completion_reward = {
 
 			add_tech_bonus = {
-				name = ITA_bomber_effort
+				name = fighter_bonus
 				bonus = 1
 				uses = 1
-				technology = tactical_bomber2
+				category = light_fighter
 			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ITA_cas_effort
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = ITA_air_innovation }
+		relative_position_id = ITA_air_innovation
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = ITA_cas_effort
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ITA_bomber_effort
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = ITA_cas_effort }
+		relative_position_id = ITA_cas_effort
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			air_experience = 25
 			add_tech_bonus = {
 				name = ITA_bomber_effort
 				bonus = 1
 				uses = 1
-				technology = CAS2
+				category = tactical_bomber
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = air_doctrine
 			}
 		}
 	}
@@ -912,11 +1033,10 @@ focus_tree = {
 		id = ITA_naval_air_effort
 		icon = GFX_goal_generic_air_naval_bomber
 		text = naval_air_effort
-		prerequisite = { focus = ITA_air_innovation }
-		prerequisite = { focus = ITA_carrier_effort }
-		relative_position_id = ITA_air_innovation
-		x = 1
-		y = 2
+		prerequisite = { focus = ITA_fighter_effort }
+		relative_position_id = ITA_fighter_effort
+		x = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -931,8 +1051,13 @@ focus_tree = {
 				name = ITA_naval_air_effort
 				bonus = 1
 				uses = 1
-				technology = naval_bomber1
-				technology = naval_bomber2
+				category = naval_bomber
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = air_doctrine
 			}
 		}
 	}
@@ -1006,8 +1131,8 @@ focus_tree = {
 	focus = {
 		id = ITA_air_innovation_2
 		icon = GFX_goal_generic_build_airforce
-		text = air_innovation_2
-		prerequisite = { focus = ITA_bomber_effort focus = ITA_naval_air_effort }
+		prerequisite = { focus = ITA_bomber_effort }
+		prerequisite = { focus = ITA_naval_air_effort }
 		relative_position_id = ITA_bomber_effort
 		x = 1
 		y = 1
@@ -1058,7 +1183,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = ITA_mare_nostrum }
 		relative_position_id = ITA_mare_nostrum
-		x = 2
+		x = 1
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1071,26 +1196,25 @@ focus_tree = {
 			add_tech_bonus = {
 				name = dd_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = dd_tech
 			}
 			add_tech_bonus = {
 				name = con_def_bonus
 				bonus = 1.0
 				uses = 1
-				technology = convoy_sailing
-				technology = convoy_sailing_ti
-				technology = convoy_sailing_bs
+				category = naval_doctrine
 			}
 		}
 	}
 
+
 	focus = {
-		id = ITA_escort_effort
-		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = ITA_light_ship_effort }
-		relative_position_id = ITA_light_ship_effort
-		x = 0
+		id = ITA_cruiser_effort
+		icon = GFX_goal_generic_cruiser2
+		prerequisite = { focus = ITA_mare_nostrum }
+		relative_position_id = ITA_mare_nostrum
+		x = -1
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1101,18 +1225,17 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = ITA_escort_effort
-				bonus = 1.0
-				uses = 1
-				category = dd_tech
-			}
-			add_tech_bonus = {
-				name = ITA_escort_effort
+				name = cr_bonus
 				bonus = 1.0
 				uses = 2
-				technology = convoy_escorts
-				technology = convoy_escorts_bs
-				technology = escort_carriers
+				category = cl_tech
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1
+				uses = 1
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1155,6 +1278,12 @@ focus_tree = {
 
 		available = {
 			country_exists = ALB
+			SPA = {
+				has_civil_war = noOR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
 		}
 
 		cost = 10
