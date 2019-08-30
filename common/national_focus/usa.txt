@@ -438,6 +438,7 @@ focus_tree = {
 			date > 1940.1.1
 			country_exists = GER
 			GER = { has_war_with = ENG }
+			country_exists = EFR 
 		}
 
 		available_if_capitulated = yes
