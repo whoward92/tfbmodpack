@@ -464,7 +464,10 @@ focus = {
 				ITA = { 
 					air_experience  = 100
 				}
-				UK = {
+				ENG = {
+					air_experience = 50
+				}
+				USA = {
 					army_experience = 50
 				}
 		}
@@ -2459,7 +2462,7 @@ focus = {
 	focus = {
 		id = JAP_unified_fighter_development
 		icon = GFX_The_Ki43
-		prerequisite = { focus = JAP_agility_focus }
+		prerequisite = { focus = JAP_agility_focus focus = JAP_range_focus}
 		mutually_exclusive = { focus = JAP_the_zero }
 		x = 0
 		y = 2
