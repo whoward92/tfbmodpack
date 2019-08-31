@@ -1,0 +1,22 @@
+on_actions = {
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = { 
+					AND = { 
+						tag = DEN 
+					}
+				}
+            }
+
+            ENG = {
+                transfer_state = 100
+                transfer_state = 337
+            }
+
+            USA = {
+                transfer_state = 101
+            }
+        }
+    }
+}
