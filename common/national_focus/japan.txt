@@ -412,6 +412,7 @@ focus = {
 		completion_reward = {
 			add_ideas = JAP_military_expansion
 			add_stability = 0.1
+			add_threat = 10
 			
 			#add_named_threat = { threat = 1 name = JAP_intervene_in_china }
 			#add_ideas = JAP_intervene_in_china_5
