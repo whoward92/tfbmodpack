@@ -61,7 +61,7 @@ focus = {
 		prerequisite = { focus = fighter_command_focus focus = bomber_command_focus focus = coastal_command_focus }
 		icon = GFX_The_Spitfire
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = bomber_command_focus
 		cost = 10
 		ai_will_do = {
@@ -80,9 +80,8 @@ focus = {
 focus = {
 		id = UK_Casualty_Avoidance
 		icon = GFX_Casualty_Avoidance
-		prerequisite = { focus = limited_rearmament_focus }
-		x = 4
-		y = 2
+		x = 5
+		y = 1
 
 		cost = 10
 
@@ -90,7 +89,6 @@ focus = {
 			factor = 1
 			modifier = {
 				factor = 2
-				has_completed_focus = limited_rearmament_focus
 			}
 		}
 
@@ -125,9 +123,143 @@ focus = {
 		id = Royal_Artillery
 		icon = GFX_Royal_Artillery
 		prerequisite = { focus = UK_Casualty_Avoidance }
-		x = 4
-		y = 3
+		x = -1
+		y = 2
+		relative_position_id = UK_Casualty_Avoidance
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_completed_focus = limited_rearmament_focus
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = Japan_War_Doct
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+			army_experience = 50
+		}
+	}
+
+focus = {
+		id = The_Grenadiers
+		icon = GFX_The_Grenadiers
+		prerequisite = { focus = Coldstream_Guards }
+		prerequisite = { focus = Scottish_Guards }  
+		x = 1
+		y = 1
+		relative_position_id = Scottish_Guards
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_completed_focus = limited_rearmament_focus
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = Japan_War_Doct
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = Coldstream_Guards
+		icon = GFX_Coldstream_Guards
+		prerequisite = { focus = Royal_Armoured_Corps }
+		x = 0
+		y = 1
+		relative_position_id = Royal_Armoured_Corps
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_completed_focus = limited_rearmament_focus
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = Japan_War_Doct
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = Scottish_Guards
+		icon = GFX_Scots_Guards
+		prerequisite = { focus = Royal_Artillery }
+		x = 0
+		y = 1
+		relative_position_id = Royal_Artillery
 		cost = 10
 
 		ai_will_do = {
@@ -168,9 +300,10 @@ focus = {
 	focus = {
 		id = Royal_Tank_Regiment
 		icon = GFX_Royal_Tank
-		prerequisite = { focus = Royal_Armoured_Corps }
-		x = 4
-		y = 5
+		prerequisite = { focus = The_Grenadiers }
+		x = 1
+		y = 1
+		relative_position_id = The_Grenadiers
 
 		cost = 10
 
@@ -209,12 +342,60 @@ focus = {
 		}
 	}
 
+focus = {
+		id = Royal_Tank_Regiment
+		icon = GFX_Royal_Tank
+		prerequisite = { focus = The_Grenadiers }
+		x = -1
+		y = 1
+		relative_position_id = The_Grenadiers
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_completed_focus = limited_rearmament_focus
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = Japan_War_Doct
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+			army_experience = 50
+		}
+	}
+	
+
+
 	focus = {
 		id = Royal_Armoured_Corps
 		icon = GFX_Armoured_Corps
-		prerequisite = { focus = Royal_Artillery }
-		x = 4
-		y = 4
+		prerequisite = { focus = UK_Casualty_Avoidance }
+		x = 1
+		y = 2
+		relative_position_id = UK_Casualty_Avoidance
 
 		cost = 10
 
@@ -256,7 +437,7 @@ focus = {
 	focus = {
 		id = limited_rearmament_focus
 		icon = GFX_Limited_Rearm
-		x = 4
+		x = 0
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -422,7 +603,7 @@ focus = {
 		available_if_capitulated = yes
 		
 		icon = GFX_goal_generic_construct_mil_factory
-		x = -3
+		x = 0
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 10
@@ -506,9 +687,8 @@ focus = {
 		continue_if_invalid = yes
 
 		icon = GFX_General_Rearm
-		x = 6
+		x = 10
 		y = 0
-		relative_position_id = limited_rearmament_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -520,7 +700,7 @@ focus = {
 
 	focus = {
 		id = ENG_special_air_service
-		prerequisite = { focus = Royal_Tank_Regiment }
+		prerequisite = { focus = UK_Casualty_Avoidance }
 		available = { 
 			
 		}
@@ -530,7 +710,7 @@ focus = {
 		icon = GFX_S_A_S
 		x = 0
 		y = 1
-		relative_position_id = Royal_Tank_Regiment
+		relative_position_id = UK_Casualty_Avoidance
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -734,11 +914,11 @@ focus = {
 	}
 	focus = {
 		id = air_rearmament_focus
-		prerequisite = { focus = ENG_chiefs_of_staff_committee }
+		prerequisite = { focus = general_rearmament_focus }
 		icon = GFX_Royal_Air_Force
-		x = -2
+		x = 0
 		y = 1
-		relative_position_id = ENG_chiefs_of_staff_committee
+		relative_position_id = general_rearmament_focus
 		cost = 10
 		ai_will_do = {
 			factor = 3
@@ -959,30 +1139,30 @@ focus = {
 		}
 	}
 
-	focus = {
-		id = ENG_chiefs_of_staff_committee
-		prerequisite = { focus = general_rearmament_focus }
-		available = { 
-			
-		}
-
-		continue_if_invalid = yes
-
-		icon = GFX_focus_eng_chiefs_of_staff_committee
-		x = 0
-		y = 1
-		relative_position_id = general_rearmament_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			army_experience = 10
-			navy_experience = 10
-			air_experience = 10
-			add_ideas = ENG_chiefs_of_staff_committee_idea
-		}
-	}
+#	focus = {
+#		id = ENG_chiefs_of_staff_committee
+#		prerequisite = { focus = general_rearmament_focus }
+#		available = { 
+#			
+#		}
+#
+#		continue_if_invalid = yes
+#
+#		icon = GFX_focus_eng_chiefs_of_staff_committee
+#		x = 0
+#		y = 1
+#		relative_position_id = general_rearmament_focus
+#		cost = 5
+#		ai_will_do = {
+#			factor = 1
+#		}	
+#		completion_reward = {
+#			army_experience = 10
+#			navy_experience = 10
+#			air_experience = 10
+#			add_ideas = ENG_chiefs_of_staff_committee_idea
+#		}
+#	}
 
 	focus = {
 		id = fighter_command_focus
@@ -1150,11 +1330,9 @@ focus = {
 	}
 	focus = {
 		id = naval_rearmament_focus
-		prerequisite = { focus = ENG_chiefs_of_staff_committee }
 		icon = GFX_Royal_Navy
-		x = 3
+		x = 15
 		y = 1
-		relative_position_id = ENG_chiefs_of_staff_committee
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1580,7 +1758,7 @@ focus = {
 			num_subjects > 0
 		} 
 		icon = GFX_goal_generic_national_unity
-		x = 20
+		x = 23
 		y = 0
 		offset = {
 			x = -2

@@ -1,6 +1,21 @@
 spriteTypes = {	
 
 SpriteType = {
+	name = "GFX_Coldstream_Guards"
+	texturefile = "gfx/interface/goals/Coldstream_Guards.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Scots_Guards"
+	texturefile = "gfx/interface/goals/Scots_Guards.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_The_Grenadiers"
+	texturefile = "gfx/interface/goals/The_Grenadiers.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_Glory_Carrier"
 	texturefile = "gfx/interface/goals/Glory_Carrier.dds"			
 	}
