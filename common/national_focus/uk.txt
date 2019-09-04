@@ -13,6 +13,40 @@ focus_tree = {
 	default = no
 
 focus = {
+		id = The_Rigs
+		text = extra_tech_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = Invest_Offshore }
+		x = 0
+		y = 1
+		relative_position_id = Invest_Offshore
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+focus = {
+		id = Invest_Offshore
+		text = extra_tech_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = uk_industrial_focus }
+		x = -2
+		y = 1
+		relative_position_id = uk_industrial_focus
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+focus = {
 		id = integrate_colonial_elite
 		text = extra_tech_slot
 		icon = GFX_focus_research
@@ -646,8 +680,8 @@ focus = {
 		text = extra_tech_slot
 		icon = GFX_focus_research
 		prerequisite = { focus = uk_industrial_focus }
-		x = -1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = uk_industrial_focus
 		cost = 10
 
@@ -761,7 +795,7 @@ focus = {
 		} #at war with major or ger in rhineland or high threat
 		prerequisite = { focus = uk_industrial_focus }
 		icon = GFX_Royal_Ordnance
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = uk_industrial_focus
 		cost = 10

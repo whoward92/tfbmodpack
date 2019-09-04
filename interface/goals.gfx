@@ -1310,7 +1310,7 @@ SpriteType = {
 	}	
 	
 	SpriteType = {
-	name = "GFX_goal_support_fascism"
+	name = "GFX_goal_sup`t_fascism"
 	texturefile = "gfx/interface/goals/goal_generic_support_fascism.dds"			
 	}	
 	
