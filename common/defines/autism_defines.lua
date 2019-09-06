@@ -46,6 +46,14 @@ NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 5
 NDefines.NProduction.ANNEX_FIELD_EQUIPMENT_RATIO = 1.0
 
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 50
+NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 50
+
+NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0				-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
+
 --- Navy
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05 --- THIS IS FOR LAND CAS CAUSE PARADOX BUGGGGZ
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001 --- THIS IS FOR LAND CAS CAUSE PARADOX BUGGGGZ
@@ -69,9 +77,9 @@ NDefines.NMilitary.RECON_SKILL_IMPACT = 8
 NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 160 ---Vanilla 90 makes tanks store more fuel?
 NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.6
 NDefines.NMilitary.LEADER_SKILL_FACTOR = 0.25
-NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999
-NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999
-NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999
+NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9999
+NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9999
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 4
 NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.2
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
@@ -106,8 +114,8 @@ NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 10.0
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 0
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 999
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 999
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
@@ -116,15 +124,15 @@ NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.0
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.0
 
 ---Building
-NDefines.NBuildings.MAX_SHARED_SLOTS = 50 --amount of potential max building slots in a state
-NDefines.NBuildings.INFRA_TO_SUPPLY = 2.5
+NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --amount of potential max building slots in a state
+NDefines.NBuildings.INFRA_TO_SUPPLY = 2.3
 
 ---Air
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0							-- Days to deploy one air wing
 NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.01                        -- Base chance % for ace pilot to be created. Happens only when successfully kill airplane/ship or damage the buildings.
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.2  -- Higher value = more shot down planes base 0.1
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.1	-- 0.1 base Anti Air Gun hit chance
-NDefines.NAir.AIR_WING_MAX_SIZE = 1600
+NDefines.NAir.AIR_WING_MAX_SIZE = 100
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1
 NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.90
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
