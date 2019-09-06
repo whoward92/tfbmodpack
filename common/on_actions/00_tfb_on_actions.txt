@@ -1,46 +1,5 @@
 on_actions = {
-    on_startup = {
-        effect = {
-            ## Gives starting nations some naval XP to begin building templates
 
-            USA = { 
-                navy_experience = 50
-            }
-            ENG = { 
-                navy_experience = 50
-            }
-            ITA = { 
-                navy_experience = 50
-            }
-            GER = { 
-                navy_experience = 50
-            }
-            SOV = { 
-                navy_experience = 50
-            }
-            FRA = { 
-                navy_experience = 50
-            }
-            JAP = { 
-                navy_experience = 100
-            }
-            AST = { 
-                navy_experience = 50
-            }
-            CAN = { 
-                navy_experience = 50
-            }
-            SAF = { 
-                navy_experience = 50
-            }
-            RAJ = { 
-                navy_experience = 50
-            }
-            NZL = { 
-                navy_experience = 50
-            }						
-        }
-    }
     on_capitulation = {
             effect = {		
                 if = {
