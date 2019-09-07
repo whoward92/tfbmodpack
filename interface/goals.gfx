@@ -1,6 +1,72 @@
 spriteTypes = {	
 
 SpriteType = {
+	name = "GFX_Steady_Goes"
+	texturefile = "gfx/interface/goals/Steady_Goes.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Reinforce_Empire"
+	texturefile = "gfx/interface/goals/Reinforce_Empire.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Mediterranean_Bastion"
+	texturefile = "gfx/interface/goals/Mediterranean_Bastion.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Heavy_Tank"
+	texturefile = "gfx/interface/goals/Heavy_Tank.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fortify_East_Asia"
+	texturefile = "gfx/interface/goals/Fortify_East_Asia.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Develop_Raj"
+	texturefile = "gfx/interface/goals/Develop_Raj.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Develop_NewZealand"
+	texturefile = "gfx/interface/goals/Develop_NewZealand.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Develop_Canada"
+	texturefile = "gfx/interface/goals/Develop_Canada.dds"			
+	}
+
+
+SpriteType = {
+	name = "GFX_Develop_Australia"
+	texturefile = "gfx/interface/goals/Develop_Australia.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Cruiser_Tank"
+	texturefile = "gfx/interface/goals/Cruiser_Tank.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Commonwealth_Ties"
+	texturefile = "gfx/interface/goals/Commonwealth_Ties.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Air_Training"
+	texturefile = "gfx/interface/goals/Air_Training.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Develop_SouthAfrica"
+	texturefile = "gfx/interface/goals/Develop_SouthAfrica.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_Coldstream_Guards"
 	texturefile = "gfx/interface/goals/Coldstream_Guards.dds"			
 	}

@@ -363,7 +363,7 @@ focus = {
 
 	focus = {
 		id = UK_Heavy_Focus
-		icon = GFX_Royal_Tank
+		icon = GFX_Heavy_Tank
 		text = UK_Heavy_Focus
 		prerequisite = { focus = The_Grenadiers }
 		mutually_exclusive = { focus = UK_Cruiser_Focus }
@@ -410,7 +410,7 @@ focus = {
 
 focus = {
 		id = UK_Cruiser_Focus
-		icon = GFX_Royal_Tank
+		icon = GFX_Cruiser_Tank
 		prerequisite = { focus = The_Grenadiers }
 		mutually_exclusive = { focus = UK_Heavy_Focus }
 		x = -1
@@ -1846,7 +1846,7 @@ focus = {
 			NOT = { has_government = communism }
 			num_subjects > 0
 		} 
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_Reinforce_Empire
 		x = 23
 		y = 0
 		offset = {
@@ -1886,7 +1886,7 @@ focus = {
 				}
 			}
 		} 
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_Mediterranean_Bastion
 		x = -2
 		y = 1
 		relative_position_id = uk_empire_focus
@@ -2447,7 +2447,7 @@ focus = {
 			}
 		}
 
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_Fortify_East_Asia
 		x = 2
 		y = 1
 		relative_position_id = uk_empire_focus
@@ -2664,7 +2664,7 @@ focus = {
 				NZL = { is_in_faction_with = ENG }
 			}
 		}
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_Commonwealth_Ties
 		x = 0
 		y = 2
 		relative_position_id = uk_colonial_focus
@@ -2709,7 +2709,7 @@ focus = {
 	focus = {
 		id = ENG_british_commonwealth_air_training_plan
 		prerequisite = { focus = uk_commonwealth_focus }
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_Air_Training
 		x = 2
 		y = 2
 		relative_position_id = uk_commonwealth_focus
@@ -2757,7 +2757,7 @@ focus = {
 		available = {
 			is_in_faction_with = RAJ
 		} 
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_Develop_Raj
 		x = -2
 		y = 2
 		relative_position_id = uk_commonwealth_focus
@@ -2943,7 +2943,7 @@ focus = {
 		bypass = {
 			AST = { exists = no }
 		}
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_Develop_Australia
 		x = 0
 		y = 2
 		relative_position_id = uk_commonwealth_focus
@@ -3127,7 +3127,7 @@ focus = {
 		available = {
 			is_in_faction_with = NZL
 		} 
-		icon = GFX_goal_generic_construction
+		icon = GFX_Develop_NewZealand
 		x = 0
 		y = 1
 		relative_position_id = uk_australia_focus
@@ -3294,7 +3294,7 @@ focus = {
 		available = {
 			is_in_faction_with = CAN
 		} 
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_Develop_Canada
 		x = -1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
@@ -3444,7 +3444,7 @@ focus = {
 		available = {
 			is_in_faction_with = SAF
 		} 
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_Develop_SouthAfrica
 		x = 1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
@@ -3871,7 +3871,7 @@ focus = {
 
 		continue_if_invalid = yes
 
-		icon = GFX_goal_support_democracy
+		icon = GFX_Steady_Goes
 
 		x = 30
 		y = 0
