@@ -1,6 +1,31 @@
 spriteTypes = {	
 
 SpriteType = {
+	name = "GFX_Stand_Firm"
+	texturefile = "gfx/interface/goals/Stand_Firm.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_We_Shall_Prevail"
+	texturefile = "gfx/interface/goals/We_Shall_Prevail.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_No_Matter_The_Cost"
+	texturefile = "gfx/interface/goals/No_Matter_The_Cost.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_The_Rigs"
+	texturefile = "gfx/interface/goals/The_Rigs.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Invest_Offshore"
+	texturefile = "gfx/interface/goals/Invest_Offshore.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_Steady_Goes"
 	texturefile = "gfx/interface/goals/Steady_Goes.dds"			
 	}

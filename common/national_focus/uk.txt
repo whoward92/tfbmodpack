@@ -37,7 +37,7 @@ focus = {
 focus = {
 		id = Invest_Offshore
 		text = Invest_Offshore
-		icon = GFX_focus_research
+		icon = GFX_Invest_Offshore
 		prerequisite = { focus = uk_industrial_focus }
 		x = -2
 		y = 1
@@ -4000,7 +4000,7 @@ focus = {
 
 		prerequisite = { focus = ENG_prepare_for_the_inevitable }
 		icon = GFX_goal_generic_construct_military
-		x = 0
+		x = -1
 		y = 1
 		offset = {
 			x = 1
@@ -4032,11 +4032,11 @@ focus = {
 
 		available_if_capitulated = yes
 
-		prerequisite = { focus = ENG_issue_gasmasks }
+		prerequisite = { focus = ENG_prepare_for_the_inevitable }
 		icon = GFX_focus_generic_commonwealth_build_infantry
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = ENG_issue_gasmasks
+		relative_position_id = ENG_prepare_for_the_inevitable
 		cost = 6
 		ai_will_do = {
 			factor = 1
@@ -4056,8 +4056,8 @@ focus = {
 focus = {
 		id = We_Shall_Prevail
 		prerequisite = { focus = Stand_Firm }
-		icon = GFX_focus_research2
-		x = 2
+		icon = GFX_We_Shall_Prevail
+		x = 1
 		y = 1
 		relative_position_id = Stand_Firm
 		cost = 5
@@ -4072,8 +4072,8 @@ focus = {
 focus = {
 		id = No_Matter_The_Cost
 		prerequisite = { focus = Stand_Firm }
-		icon = GFX_focus_research2
-		x = -2
+		icon = GFX_No_Matter_The_Cost
+		x = -1
 		y = 1
 		relative_position_id = Stand_Firm
 		cost = 5
@@ -4102,7 +4102,7 @@ focus = {
 			}
 			}
 		prerequisite = { focus = ENG_military_training_act }
-		icon = GFX_focus_research2
+		icon = GFX_Stand_Firm
 		x = 0
 		y = 1
 		relative_position_id = ENG_military_training_act
