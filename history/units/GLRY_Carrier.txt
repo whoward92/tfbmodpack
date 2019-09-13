@@ -7,7 +7,33 @@ units = {
             name = "Big Gay"
             location = 11064
            ship = { 
-                name = "Béarn" 
+                name = "HMS Glory" 
+                definition = carrier 
+                equipment = { 
+                    ship_hull_carrier_conversion_bb = 
+                        { 
+                            amount = 1 
+                            owner = FRF 
+                            version_name = "Béarn Class" 
+                        } 
+                    } 
+                air_wings = {
+                    cv_fighter_equipment_0 =  { owner = "FRF" amount = 40 }
+                }
+            }
+        }
+    }
+}
+
+units = {
+    fleet = {
+        name = "HMS Glory"
+        naval_base = 11064
+        task_force = { 
+            name = "Big Gay"
+            location = 11064
+           ship = { 
+                name = "HMS Glory" 
                 definition = carrier 
                 equipment = { 
                     ship_hull_carrier_conversion_bb = 
