@@ -1,6 +1,56 @@
 spriteTypes = {	
 
 SpriteType = {
+	name = "GFX_rapid_industry"
+	texturefile = "gfx/interface/goals/rapid_industry.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Regia_Aeronautica"
+	texturefile = "gfx/interface/goals/Regia_Aeronautica.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Libya_Infastructure"
+	texturefile = "gfx/interface/goals/Libya_Infastructure.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Libya_Refinery"
+	texturefile = "gfx/interface/goals/Libya_Refinery.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_libya_oil"
+	texturefile = "gfx/interface/goals/libya_oil.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fund_Fiat"
+	texturefile = "gfx/interface/goals/Fund_Fiat.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fund_Beretta"
+	texturefile = "gfx/interface/goals/Fund_Beretta.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_battle_for_lira"
+	texturefile = "gfx/interface/goals/battle_for_lira.dds"			
+	}
+	
+SpriteType = {
+	name = "GFX_Battle_for_grain"
+	texturefile = "gfx/interface/goals/Battle_for_grain.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_ethiopia_logistic"
+	texturefile = "gfx/interface/goals/ethiopia_logistic.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_Lotta_Svard"
 	texturefile = "gfx/interface/goals/Lotta_Svard.dds"			
 	}
@@ -706,10 +756,7 @@ SpriteType = {
 	
 	### Italy ###
 	
-	SpriteType = {
-	name = "GFX_ITA_ethiopian_war_logistics"
-	texturefile = "gfx/interface/goals/goal_ita_ethiopian_war_logistics.tga"
-	}
+
 	
 	SpriteType = {
 	name = "GFX_ITA_learn_from_the_ethiopian_war"

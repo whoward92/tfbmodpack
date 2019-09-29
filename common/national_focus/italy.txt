@@ -14,98 +14,63 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1200 }
 
-	focus = {
-		id = ITA_ethiopian_war_logistics
-		icon = GFX_goal_generic_position_armies
+	
+focus = {
+		id = ITA_ethiopa_logistic
+		icon = GFX_ethiopia_logistic
+		text = industrial_effort
 		x = 3
 		y = 0
 		cost = 10
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 
 		available_if_capitulated = yes
 
 		bypass = {
-			550 = { NOT = { is_owned_and_controlled_by = ITA } }
-			# Need province based trigger for this to work
-			#550 = {
-			#	NOT = {
-			#		free_building_slots = {
-			#			building = infrastructure
-			#			size > 1
-			#		}
-			#	}
-			#	NOT = {
-			#		free_building_slots = {
-			#			building = naval_base
-			#			size > 2
-			#		}
-			#	}
-			#}
-			559 = { NOT = { is_owned_and_controlled_by = ITA } }
-			# Need province based trigger for this to work
-			#559 = {
-			#	NOT = {
-			#		free_building_slots = {
-			#			building = infrastructure
-			#			size > 1
-			#		}
-			#	}
-			#	NOT = {
-			#		free_building_slots = {
-			#			building = naval_base
-			#			size > 3
-			#		}
-			#	}
-			#}
-		}
-
-		completion_reward = {
-			if = { limit = { 550 = { is_owned_and_controlled_by = ITA } }
-				550 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-				}
-				550 = {
-					add_building_construction = {
-						type = naval_base
-						level = 3
-						province = 12766
-						instant_build = yes
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				NOT = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
 					}
 				}
 			}
+		}
+		
 
-			if = { limit = { 559 = { is_owned_and_controlled_by = ITA } }
-				559 = {
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
+		completion_reward = {
+			157= {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
-      	559 = {
-					add_building_construction = {
-						type = naval_base
-						level = 4
-						province = 12991
-						instant_build = yes
-					}
+			}
+			157 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
 	}
 
-	focus = {
+focus = {
 		id = ITA_industrial_effort
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_Battle_for_grain
 		text = industrial_effort
-		prerequisite = { focus = ITA_ethiopian_war_logistics }
-		relative_position_id = ITA_ethiopian_war_logistics
+		prerequisite = { focus = ITA_rapid_industry }
+		relative_position_id = ITA_rapid_industry
 		x = 1
 		y = 1
 		cost = 10
@@ -130,6 +95,7 @@ focus_tree = {
 				}
 			}
 		}
+		
 
 		completion_reward = {
 			157= {
@@ -153,7 +119,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_industrial_effort_2
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_Fund_Fiat
 		text = industrial_effort_2
 		prerequisite = { focus = ITA_industrial_effort }
 		relative_position_id = ITA_industrial_effort
@@ -203,12 +169,167 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ITA_battle_for_lira
+		icon = GFX_battle_for_lira
+		text = industrial_effort
+		prerequisite = { focus = ITA_rapid_industry }
+		relative_position_id = ITA_rapid_industry
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				NOT = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			157= {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_fund_beretta
+		icon = GFX_Fund_Beretta
+		text = industrial_effort
+		prerequisite = { focus = ITA_battle_for_lira }
+		relative_position_id = ITA_battle_for_lira
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				NOT = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			157= {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = ITA_rapid_industry
+		icon = GFX_rapid_industry
+		text = industrial_effort
+		prerequisite = { focus = ITA_ethiopa_logistic}
+		x = 3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				NOT = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			157= {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			157 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	
+
+	focus = {
 		id = ITA_fortification_effort
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ITA_industrial_effort_2 }
 		relative_position_id = ITA_industrial_effort_2
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -291,8 +412,9 @@ focus_tree = {
 		icon = GFX_focus_research
 		text = extra_tech_slot
 		prerequisite = { focus = ITA_industrial_effort_2 }
+		prerequisite = { focus = ITA_fund_beretta }
 		relative_position_id = ITA_industrial_effort_2
-		x = 1
+		x = -1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -306,120 +428,15 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ITA_italian_highways
-		icon = GFX_goal_generic_construct_infrastructure
-		text = ITA_italian_highways
-		prerequisite = { focus = ITA_extra_tech_slot }
-		relative_position_id = ITA_extra_tech_slot
-		x = 0
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			2 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			117 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			156 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			157 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			158 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			159 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			160 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			161 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			162 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
 
-		}
-	}
 
 
 	focus = {
 		id = ITA_prospect_for_oil
-		icon = GFX_goal_generic_production
+		icon = GFX_libya_oil
 		text = ITA_prospect_for_oil
-		prerequisite = { focus = ITA_italian_highways }
-		relative_position_id = ITA_italian_highways
+		prerequisite = { focus = ITA_extra_tech_slot }
+		relative_position_id = ITA_extra_tech_slot
 		available = {
 			ITA = {
 				controls_state = 662
@@ -427,7 +444,7 @@ focus_tree = {
 		}
 
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -446,7 +463,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_libyan_refineries
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_Libya_Refinery
 		text = ITA_libyan_refineries
 		prerequisite = { focus = ITA_prospect_for_oil }
 		relative_position_id = ITA_prospect_for_oil
@@ -487,7 +504,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_libyan_infrastructure
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_Libya_Infastructure
 		text = ITA_libyan_infrastructure
 		prerequisite = { focus = ITA_prospect_for_oil }
 		relative_position_id = ITA_prospect_for_oil
@@ -591,9 +608,8 @@ focus_tree = {
 	focus = {
 		id = ITA_army_primacy
 		icon = GFX_goal_generic_axis_build_infantry
-		relative_position_id = ITA_ethiopian_war_logistics
-		x = 4
-		y = 0
+		x = 17
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -806,8 +822,7 @@ focus_tree = {
 	focus = {
 		id = ITA_mare_nostrum
 		icon = GFX_goal_generic_build_navy
-		relative_position_id = ITA_air_innovation
-		x = 4
+		x = 13
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -846,10 +861,9 @@ focus_tree = {
 
 	focus = {
 		id = ITA_air_innovation
-		icon = GFX_goal_generic_build_airforce
-		relative_position_id = ITA_army_primacy
-		x = 4
-		y = 0
+		icon = GFX_Regia_Aeronautica
+		x = 9
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1309,11 +1323,8 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
-		prerequisite = { focus = ITA_ethiopian_war_logistics }
-		relative_position_id = ITA_ethiopian_war_logistics
-		x = -1
-		y = 1
+		x = 22
+		y = 0
 		cost = 10
 		ai_will_do = {
 			factor = 1
