@@ -1,6 +1,146 @@
 spriteTypes = {	
 
 SpriteType = {
+	name = "GFX_roman_empire"
+	texturefile = "gfx/interface/goals/roman_empire.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_italy_axis"
+	texturefile = "gfx/interface/goals/italy_axis.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_italy_greece"
+	texturefile = "gfx/interface/goals/italy_greece.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Italy_yugoslavia"
+	texturefile = "gfx/interface/goals/Italy_yugoslavia.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_italy_albania"
+	texturefile = "gfx/interface/goals/italy_albania.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Triumph_africa"
+	texturefile = "gfx/interface/goals/Triumph_africa.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Decima_Flottiglia"
+	texturefile = "gfx/interface/goals/Decima_Flottiglia.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fiat_nationalise"
+	texturefile = "gfx/interface/goals/Fiat_nationalise.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_nationalise_ansaldo"
+	texturefile = "gfx/interface/goals/nationalise_ansaldo.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Lancia_nationalise"
+	texturefile = "gfx/interface/goals/Lancia_nationalise.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Beretta_nationalise"
+	texturefile = "gfx/interface/goals/Beretta_nationalise.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Regio_Esercito"
+	texturefile = "gfx/interface/goals/Regio_Esercito.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Italy_Marines"
+	texturefile = "gfx/interface/goals/Italy_Marines.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_italy_capital"
+	texturefile = "gfx/interface/goals/italy_capital.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Italy_cruiser"
+	texturefile = "gfx/interface/goals/Italy_cruiser.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_italy_destroyer"
+	texturefile = "gfx/interface/goals/italy_destroyer.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Ita_Navy"
+	texturefile = "gfx/interface/goals/Ita_Navy.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Italy_radar"
+	texturefile = "gfx/interface/goals/Italy_radar.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Aviazione_Navale"
+	texturefile = "gfx/interface/goals/Aviazione_Navale.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_aquila"
+	texturefile = "gfx/interface/goals/aquila.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_mediterranean_aircraft_carrier"
+	texturefile = "gfx/interface/goals/mediterranean_aircraft_carrier.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Mare_Nostrum"
+	texturefile = "gfx/interface/goals/Mare_Nostrum.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Regia_Marina"
+	texturefile = "gfx/interface/goals/Regia_Marina.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Regia_Marina"
+	texturefile = "gfx/interface/goals/Regia_Marina.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_italy_jet"
+	texturefile = "gfx/interface/goals/italy_jet.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Macchi_invest"
+	texturefile = "gfx/interface/goals/Macchi_invest.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Caproni_invest"
+	texturefile = "gfx/interface/goals/Caproni_invest.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Breda_invest"
+	texturefile = "gfx/interface/goals/Breda_invest.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_rapid_industry"
 	texturefile = "gfx/interface/goals/rapid_industry.dds"			
 	}

@@ -1,5 +1,69 @@
 ideas = {
 	country = {
+
+		italian_rapid_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_production_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		italian_nav_discount = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				naval_bomber_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		italian_cas_discount = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				cas_bomber_equimpent = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
 		victor_emmanuel = {
 			
 			
