@@ -56,6 +56,7 @@ focus = {
 				add_building_construction = {
 					type = naval_base
 					level = 5
+					rovince = 550
 					instant_build = yes
 				}
 				
@@ -285,7 +286,7 @@ focus = {
 		prerequisite = { focus = ITA_ethiopa_logistic}
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -409,7 +410,7 @@ focus = {
 		relative_position_id = ITA_industrial_effort_2
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -456,7 +457,7 @@ focus = {
 
 	focus = {
 		id = ITA_relocate_refineries 
-		icon = GFX_libya_oil
+		icon = GFX_Oil_Relocation
 		text = ITA_Relocate_Refineries
 		prerequisite = { focus = ITA_prospect_for_oil }
 		relative_position_id = ITA_prospect_for_oil
@@ -652,7 +653,7 @@ focus = {
 		icon = GFX_Regio_Esercito
 		x = 15
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -724,7 +725,7 @@ focus = {
 	focus = {
 		id = ITA_special_forces
 		icon = GFX_Decima_Flottiglia
-		text = special_forces
+		text = Decima_Flottiglia_MAS
 		prerequisite = { focus = ITA_moto_effort }
 		relative_position_id = ITA_moto_effort
 		x = 0
@@ -785,6 +786,7 @@ focus = {
 	focus = {
 		id = ITA_armored_effort
 		icon = GFX_Fiat_nationalise
+		text = ITA_Fiat_Investment
 		prerequisite = { focus = ITA_modernized_artillery }
 		mutually_exclusive = { focus = ITA_armored_effort_two }
 		relative_position_id = ITA_modernized_artillery
@@ -904,7 +906,7 @@ focus = {
 		text = ITA_Mare_Nostrum_Two
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1343,6 +1345,7 @@ focus = {
 				add_building_construction = {
 					type = naval_base
 					level = 3
+					rovince = 10007
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1366,6 +1369,7 @@ focus = {
 				add_building_construction = {
 					type = naval_base
 					level = 3
+					rovince = 11773
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1535,7 +1539,7 @@ focus = {
 			}
 		}
 
-		cost = 10
+		cost = 4.4
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1619,7 +1623,7 @@ focus = {
 		relative_position_id = ITA_albania_war_goal
 		x = 1
 		y = 1
-		cost = 10
+		cost = 4.4
 		ai_will_do = {
 			factor = 1
 		}
@@ -1713,7 +1717,7 @@ focus = {
 			country_exists = GRE
 		}
 		will_lead_to_war_with = GRE
-		cost = 10
+		cost = 4.4
 		ai_will_do = {
 			factor = 10
 		}

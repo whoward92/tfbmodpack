@@ -1,6 +1,11 @@
 spriteTypes = {	
 
 SpriteType = {
+	name = "GFX_Oil_Relocation"
+	texturefile = "gfx/interface/goals/Oil_Relocation.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_Italy_Axis_Armour"
 	texturefile = "gfx/interface/goals/Italy_Axis_Armour.dds"			
 	}

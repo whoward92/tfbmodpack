@@ -1,5 +1,10 @@
 ﻿l_english:
- ITA_Porsche_Procurement:0 "Porsche Procuremnt"
+ 
+ Decima_Flottiglia_MAS:0 "Decima Flottiglia MAS"
+ Decima_Flottiglia_MAS_desc:0 "Italy needs its own elite forces. Our enemies have created unbreachable fortresses in the Mediterranean. We must aim to change that."
+ ITA_Fiat_Investment:0 "Fiat Investment"
+ ITA_Fiat_Investment_desc:0 "Our own armour manufactures should be encouraged to improve their design in order to match those of our enemies."
+ ITA_Porsche_Procurement:0 "Porsche Procurement"
  ITA_Porsche_Procurement_desc:0 "Our tank industry is unsuitable for challenging our enemies, we should seek help from our friends north of the border."
  ITA_Encourage_Ansaldo:0 "Encourage Ansaldo"
  ITA_Encourage_Ansaldo_desc:0 "Our arms manufacturers should be encouraged to invest completely in the Italian war effort."
