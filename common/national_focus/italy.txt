@@ -673,6 +673,7 @@ focus = {
 	focus = {
 		id = ITA_modernized_artillery
 		icon = GFX_nationalise_ansaldo
+		text = ITA_Encourage_Ansaldo
 		prerequisite = { focus = ITA_army_primacy }
 		relative_position_id = ITA_army_primacy
 		x = 1
@@ -697,6 +698,7 @@ focus = {
 	focus = {
 		id = ITA_modernized_army
 		icon = GFX_Beretta_nationalise
+		text = ITA_Encourage_Beretta
 		prerequisite = { focus = ITA_army_primacy }
 		relative_position_id = ITA_army_primacy
 		x = -1
@@ -815,6 +817,7 @@ focus = {
 	focus = {
 		id = ITA_armored_effort_two
 		icon = GFX_Italy_Axis_Armour
+		text = ITA_Porsche_Procurement
 		prerequisite = { focus = ITA_modernized_army }
 		mutually_exclusive = { focus = ITA_armored_effort }
 		relative_position_id = ITA_modernized_army
