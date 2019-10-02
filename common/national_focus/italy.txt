@@ -18,10 +18,10 @@ focus_tree = {
 focus = {
 		id = ITA_ethiopa_logistic
 		icon = GFX_ethiopia_logistic
-		text = industrial_effort
+		text = ITA_ethiopa_logistic
 		x = 2
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -75,7 +75,7 @@ focus = {
 focus = {
 		id = ITA_industrial_effort
 		icon = GFX_Battle_for_grain
-		text = industrial_effort
+		text = ITA_battle_for_grain
 		prerequisite = { focus = ITA_rapid_industry }
 		relative_position_id = ITA_rapid_industry
 		x = 1
@@ -114,10 +114,10 @@ focus = {
 				}
 			}
 			157 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -127,7 +127,7 @@ focus = {
 	focus = {
 		id = ITA_industrial_effort_2
 		icon = GFX_Fund_Fiat
-		text = industrial_effort_2
+		text = ITA_nationalise_Fiat
 		prerequisite = { focus = ITA_industrial_effort }
 		relative_position_id = ITA_industrial_effort
 		x = 0
@@ -178,7 +178,7 @@ focus = {
 	focus = {
 		id = ITA_battle_for_lira
 		icon = GFX_battle_for_lira
-		text = industrial_effort
+		text = ITA_battle_for_Lira
 		prerequisite = { focus = ITA_rapid_industry }
 		relative_position_id = ITA_rapid_industry
 		x = -1
@@ -216,10 +216,10 @@ focus = {
 				}
 			}
 			158 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -229,7 +229,7 @@ focus = {
 	focus = {
 		id = ITA_fund_beretta
 		icon = GFX_Fund_Beretta
-		text = industrial_effort
+		text = ITA_nationalise_Beretta
 		prerequisite = { focus = ITA_battle_for_lira }
 		relative_position_id = ITA_battle_for_lira
 		x = 0
@@ -281,7 +281,7 @@ focus = {
 	focus = {
 		id = ITA_rapid_industry
 		icon = GFX_rapid_industry
-		text = industrial_effort
+		text = ITA_rapid_industry
 		prerequisite = { focus = ITA_ethiopa_logistic}
 		x = 2
 		y = 1
@@ -323,7 +323,7 @@ focus = {
 		relative_position_id = ITA_industrial_effort_2
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -438,7 +438,7 @@ focus = {
 
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -453,6 +453,55 @@ focus = {
 			}
 		}
 	}
+
+	focus = {
+		id = ITA_relocate_refineries 
+		icon = GFX_libya_oil
+		text = ITA_Relocate_Refineries
+		prerequisite = { focus = ITA_prospect_for_oil }
+		relative_position_id = ITA_prospect_for_oil
+		available = {
+			ENG = {
+				controls_state = 662
+				controls_state = 448
+				controls_state = 661
+				controls_state = 449
+				controls_state = 663
+				controls_state = 450
+				controls_state = 451
+				controls_state = 788
+			}
+		}
+
+		x = 0
+		y = 2
+		cost = 1.5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				160 = {
+				add_resource = {
+					type = rubber
+					amount = 20
+				}
+				add_resource = {
+				type = oil
+				amount = 30
+			}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
 
 	focus = {
 		id = ITA_libyan_refineries
@@ -636,18 +685,11 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 10
 			add_tech_bonus = {
 				name = arty_bonus
 				bonus = 1
 				uses = 2
 				category = artillery
-			}
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1
-				uses = 1
-				category = land_doctrine
 			}
 		}
 	}
@@ -667,18 +709,11 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 10
 			add_tech_bonus = {
 				name = infantry_weapons
 				bonus = 1
 				uses = 2
 				category = infantry_weapons
-			}
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1
-				uses = 1
-				category = land_doctrine
 			}
 		}
 	}
@@ -722,7 +757,7 @@ focus = {
 		relative_position_id = ITA_armored_effort
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -730,7 +765,6 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 10
 			add_tech_bonus = {
 				name = motorized_equipment
 				bonus = 1
@@ -830,7 +864,7 @@ focus = {
 		id = ITA_mare_nostrum
 		icon = GFX_Regia_Marina
 		x = 11
-		y = 0
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 5
@@ -839,7 +873,6 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			navy_experience = 100
 			156 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -865,6 +898,7 @@ focus = {
 		prerequisite = { focus = ITA_mare_nostrum }
 		relative_position_id = ITA_mare_nostrum
 		icon = GFX_Mare_Nostrum
+		text = ITA_Mare_Nostrum_Two
 		x = 0
 		y = 1
 		cost = 10
@@ -937,6 +971,7 @@ focus = {
 	focus = {
 		id = ITA_carrier_effort
 		icon = GFX_Aviazione_Navale
+		text = ITA_Aviazione_Navale
 		prerequisite = { focus = ITA_cruiser_effort }
 		relative_position_id = ITA_cruiser_effort
 		x = 0
@@ -966,6 +1001,7 @@ focus = {
 	focus = {
 		id = ITA_capital_ships
 		icon = GFX_Italy_radar
+		text = ITA_Radar
 		prerequisite = { focus = ITA_light_ship_effort }
 		relative_position_id = ITA_light_ship_effort
 		x = 0
@@ -1027,11 +1063,12 @@ focus = {
 	focus = {
 		id = ITA_capital_ships_two
 		icon = GFX_italy_capital
+		text = ITA_Battleships
 		prerequisite = { focus = ITA_carrier_effort focus = ITA_capital_ships }
 		relative_position_id = ITA_carrier_effort
 		x = 1
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1042,7 +1079,7 @@ focus = {
 			add_tech_bonus = {
 				name = bb_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = bb_tech
 				category = bc_tech
 			}
@@ -1052,6 +1089,7 @@ focus = {
 	focus = {
 		id = ITA_fighter_effort
 		icon = GFX_goal_generic_air_fighter2
+		text = naval_air_effort
 		prerequisite = { focus = ITA_air_innovation }
 		relative_position_id = ITA_air_innovation
 		x = 1
@@ -1115,12 +1153,13 @@ focus = {
 	focus = {
 		id = ITA_bomber_effort
 		icon = GFX_Breda_invest
+		text = ITA_Fund_Breda
 		prerequisite = { focus = ITA_cas_effort }
 		mutually_exclusive = { focus = ITA_naval_air_effort }
 		relative_position_id = ITA_cas_effort
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1131,12 +1170,6 @@ focus = {
 
 			air_experience = 100
 
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1
-				uses = 1
-				category = air_doctrine
-			}
 			add_ideas = italian_cas_discount
 		}
 	}
@@ -1144,13 +1177,13 @@ focus = {
 	focus = {
 		id = ITA_naval_air_effort
 		icon = GFX_Caproni_invest
-		text = naval_air_effort
+		text = ITA_Fund_Caproni
 		prerequisite = { focus = ITA_fighter_effort }
 		mutually_exclusive = { focus = ITA_bomber_effort }
 		relative_position_id = ITA_fighter_effort
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1160,12 +1193,6 @@ focus = {
 		completion_reward = {
 			air_experience = 100
 
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1
-				uses = 1
-				category = air_doctrine
-			}
 			add_ideas = italian_nav_discount
 		}
 
@@ -1202,7 +1229,7 @@ focus = {
 		relative_position_id = ITA_atlantic_fleet
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1232,6 +1259,7 @@ focus = {
 	focus = {
 		id = ITA_air_innovation_2
 		icon = GFX_Macchi_invest
+		text = ITA_Fund_Macchi
 		prerequisite = { focus = ITA_bomber_effort focus = ITA_naval_air_effort }
 		relative_position_id = ITA_bomber_effort
 		x = 1
@@ -1268,7 +1296,7 @@ focus = {
 		relative_position_id = ITA_air_innovation_2
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1289,6 +1317,7 @@ focus = {
 	focus = {
 		id = ITA_light_ship_effort
 		icon = GFX_mediterranean_aircraft_carrier
+		text = ITA_Italia
 		prerequisite = { focus = ITA_mare_nostrum_two }
 		mutually_exclusive = { focus = ITA_cruiser_effort }
 		relative_position_id = ITA_mare_nostrum_two
@@ -1305,22 +1334,22 @@ focus = {
 			164= {
 				add_building_construction = {
 					type = air_base
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = naval_base
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				
@@ -1328,22 +1357,22 @@ focus = {
 			114 = {
 				add_building_construction = {
 					type = air_base
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = naval_base
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				
@@ -1351,7 +1380,7 @@ focus = {
 			114 = {
 				add_building_construction = {
 					type = air_base
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				
@@ -1359,7 +1388,7 @@ focus = {
 			448 = {
 				add_building_construction = {
 					type = air_base
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				
@@ -1367,7 +1396,7 @@ focus = {
 			449 = {
 				add_building_construction = {
 					type = air_base
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				
@@ -1379,11 +1408,12 @@ focus = {
 	focus = {
 		id = ITA_light_ship_effort_two
 		icon = GFX_italy_destroyer
+		text = ITA_destroyer
 		prerequisite = { focus = ITA_carrier_effort focus = ITA_capital_ships }
 		relative_position_id = ITA_carrier_effort
 		x = -1
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1394,7 +1424,7 @@ focus = {
 			add_tech_bonus = {
 				name = dd_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = dd_tech
 			}
 		}
@@ -1404,6 +1434,7 @@ focus = {
 	focus = {
 		id = ITA_cruiser_effort
 		icon = GFX_aquila
+		text = ITA_Aquilla
 		prerequisite = { focus = ITA_mare_nostrum_two }
 		mutually_exclusive = { focus = ITA_light_ship_effort }
 		relative_position_id = ITA_mare_nostrum_two
@@ -1435,11 +1466,12 @@ focus = {
 	focus = {
 		id = ITA_cruiser_effort_two
 		icon = GFX_Italy_cruiser
+		text = ITA_Cruisers
 		prerequisite = { focus = ITA_carrier_effort focus = ITA_capital_ships }
 		relative_position_id = ITA_carrier_effort
 		x = 3
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1450,7 +1482,7 @@ focus = {
 			add_tech_bonus = {
 				name = cr_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = cl_tech
 				category = ca_tech
 			}
@@ -1633,7 +1665,7 @@ focus = {
 		}
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 
@@ -1670,8 +1702,8 @@ focus = {
 		icon = GFX_italy_greece
 		prerequisite = { focus = ITA_pact_of_steel }
 		relative_position_id = ITA_pact_of_steel
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		available = {
 			date > 1939.4.1
 			NOT = { is_in_faction_with = GRE }
@@ -1696,24 +1728,44 @@ focus = {
 	}
 
 	focus = {
-		id = ITA_german_millitary_cooperation
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = ITA_pact_of_steel }
-		relative_position_id = ITA_pact_of_steel
-		x = 0
-		y = 1
+		id = ITA_Roman_Empire 
+		icon = GFX_roman_empire
+		text = ITA_Roman_Empire
+		relative_position_id = ITA_marines_and_landing_craft
 		available = {
-			NOT = { has_war_with = GER }
+			ITA = {
+				controls_state = 103
+				controls_state = 105
+				controls_state = 44
+				controls_state = 185
+				controls_state = 184
+				controls_state = 732
+				controls_state = 47
+				controls_state = 186
+				controls_state = 452
+				controls_state = 447
+				controls_state = 446
+				controls_state = 453
+				controls_state = 454
+			}
 		}
 
-		cost = 10
+		x = 0
+		y = -9
+		cost = 0.15
+
+		available_if_capitulated = yes
+
 		ai_will_do = {
-			factor = 10
+			factor = 1
 		}
 		completion_reward = {
-			add_ideas = ITA_german_millitary_cooperation_focus
+
+		 add_ideas = italian_new_roman_empire
+				
 		}
 	}
+
 
 	focus = {
 		id = ITA_german_rd_treaty
@@ -1740,7 +1792,7 @@ focus = {
 				add_tech_bonus = {
 					name = synth_bonus
 					bonus = 3
-					uses = 1
+					uses = 2
 					category = synth_resources
 				}
 			}
@@ -1751,9 +1803,9 @@ focus = {
 		id = ITA_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
 		text = secret_weapons
-		prerequisite = { focus = ITA_german_millitary_cooperation }
-		relative_position_id = ITA_german_millitary_cooperation
-		x = 0
+		prerequisite = { focus = ITA_pact_of_steel }
+		relative_position_id = ITA_pact_of_steel
+		x = 2
 		y = 1
 		cost = 10
 		ai_will_do = {

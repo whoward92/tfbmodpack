@@ -1,6 +1,29 @@
 ideas = {
 	country = {
 
+		italian_new_roman_empire = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = vittoria_mutilata
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_factor = -0.05
+				non_core_manpower = 0.05
+
+			}
+		}
+
 italian_Special_Forces = {
 			
 			allowed = {
@@ -17,6 +40,8 @@ italian_Special_Forces = {
 			
 			modifier = { special_forces_attack_factor = 0.15
 			}
+	}
+		
 
 		italian_axis_armour = {
 			
@@ -62,9 +87,9 @@ italian_Special_Forces = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
 			}
 		}
 
