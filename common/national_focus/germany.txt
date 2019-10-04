@@ -37,10 +37,10 @@ focus_tree = {
 	focus = {
 		id = GER_west_wall
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = GER_four_year_plan }
-		x = -2
+	
+		x = 26
 		y = 1
-		relative_position_id = GER_four_year_plan
+	
 		cost = 5
 		ai_will_do = {
 			factor = 8
@@ -190,7 +190,7 @@ focus_tree = {
 		id = GER_autarky
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = GER_four_year_plan }
-		x = 4
+		x = 0
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 10
@@ -619,8 +619,8 @@ focus_tree = {
 		id = GER_air_innovation
 		text = air_innovation
 		icon = GFX_goal_generic_build_airforce
-		x = 13
-		y = 0
+		x = 18
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -851,8 +851,8 @@ focus_tree = {
 	focus = {
 		id = GER_army_innovation
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 16
-		y = 0
+		x = 8
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -904,7 +904,7 @@ focus_tree = {
 		}
 
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_army_innovation
 		cost = 10
 		ai_will_do = {
@@ -938,7 +938,7 @@ focus_tree = {
 	focus = {
 		id = GER_air_innovation_2
 		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = GER_strategic_air_effort focus = GER_tactical_air_effort focus = GER_soviet_treaty }
+		prerequisite = { focus = GER_strategic_air_effort focus = GER_tactical_air_effort }
 		x = 0
 		y = 2
 		relative_position_id = GER_strategic_air_effort
@@ -983,7 +983,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = GER_soviet_treaty }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_soviet_treaty
 		cost = 10
 		ai_will_do = {
@@ -1023,8 +1023,7 @@ focus_tree = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = GER_extra_tech_slot }
-		prerequisite = { focus = GER_air_innovation_2 }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = GER_extra_tech_slot
 		cost = 10
@@ -1079,7 +1078,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere
-		x = 20
+		x = 13
 		y = 0
 		cost = 10
 		available = { is_puppet = no }
@@ -2245,7 +2244,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_build_navy
-		x = 25
+		x = 22
 		y = 0
 		cost = 5
 		ai_will_do = {
