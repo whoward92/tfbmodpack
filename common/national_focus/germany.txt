@@ -14,9 +14,10 @@ focus_tree = {
 
 	focus = {
 		id = GER_four_year_plan
-		icon = GFX_goal_generic_construction
+		icon = GFX_4_year_plan
+		prerequisite = { focus = GER_rhineland }
 		x = 3
-		y = 0
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -188,7 +189,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_autarky
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_Autarky
 		prerequisite = { focus = GER_four_year_plan }
 		x = 0
 		y = 1
@@ -215,10 +216,10 @@ focus_tree = {
 
 	focus = {
 		id = GER_hermann_goring_werke
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_Herman_Works
 		dynamic = yes
 		prerequisite = { focus = GER_autarky }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = GER_autarky
 		cost = 10
@@ -294,7 +295,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_kdf_wagen
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_KDF_Wagon
 		dynamic = yes
 		prerequisite = { focus = GER_hermann_goring_werke }
 		x = 0
@@ -376,7 +377,7 @@ focus_tree = {
 		id = GER_coal_liquidization
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = GER_autarky }
-		x = 0
+		x = -3
 		y = 1
 		relative_position_id = GER_autarky
 		cost = 10
@@ -443,8 +444,8 @@ focus_tree = {
 		icon = GFX_focus_research
 		text = extra_tech_slot
 		prerequisite = { focus = GER_kdf_wagen focus = GER_synthetic_rubber }
-		x = -1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = GER_kdf_wagen
 		cost = 10
 		ai_will_do = {
@@ -460,9 +461,9 @@ focus_tree = {
 
 	focus = {
 		id = GER_autobahn
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_Reichsautobahn
 		prerequisite = { focus = GER_autarky }
-		x = -2
+		x = 3
 		y = 1
 		relative_position_id = GER_autarky
 		cost = 5
@@ -530,7 +531,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_german_war_economy
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_Ger_War_Indus
 		prerequisite = { focus = GER_autobahn }
 		x = 0
 		y = 1
@@ -619,8 +620,9 @@ focus_tree = {
 		id = GER_air_innovation
 		text = air_innovation
 		icon = GFX_goal_generic_build_airforce
-		x = 18
-		y = 1
+		prerequisite = { focus = GER_rhineland }
+		x = 19
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -850,14 +852,14 @@ focus_tree = {
 
 	focus = {
 		id = GER_army_innovation
-		icon = GFX_goal_generic_axis_build_infantry
-		x = 8
-		y = 1
+		icon = GFX_Wehrmacht_Develop
+		prerequisite = { focus = GER_rhineland }
+		x = 9
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
-		available = { has_completed_focus = GER_rhineland }
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -980,7 +982,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_army_innovation_2
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_Wehrmacht_two
 		prerequisite = { focus = GER_soviet_treaty }
 		x = 0
 		y = 1
@@ -1022,10 +1024,8 @@ focus_tree = {
 	focus = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_extra_tech_slot }
-		x = 0
+		x = 28
 		y = 1
-		relative_position_id = GER_extra_tech_slot
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1077,8 +1077,8 @@ focus_tree = {
 
 	focus = {
 		id = GER_rhineland
-		icon = GFX_goal_generic_military_sphere
-		x = 13
+		icon = GFX_Rhineland
+		x = 14
 		y = 0
 		cost = 10
 		available = { is_puppet = no }
@@ -1108,7 +1108,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_anti_comitern_pact
-		icon = GFX_goal_anti_comintern_pact
+		icon = GFX_Anti_Soviet
 		prerequisite = { focus = GER_rhineland  }
 		x = 0
 		y = 1
@@ -1221,7 +1221,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_anschluss
-		icon = GFX_goal_anschluss
+		icon = GFX_Annex_Austria
 		prerequisite = { focus = GER_anti_comitern_pact }
 		available = {
 			is_puppet = no
@@ -2244,8 +2244,9 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_build_navy
-		x = 22
-		y = 0
+		prerequisite = { focus = GER_rhineland }
+		x = 24
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2334,7 +2335,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = GER_naval_rearmament }
 		x = 0
-		y = 3
+		y = 1
 		relative_position_id = GER_naval_rearmament
 		cost = 5
 		ai_will_do = {
@@ -2734,7 +2735,7 @@ focus_tree = {
 		id = GER_defend_the_oil
 		prerequisite = { focus = GER_synthetic_rubber }
 		icon = GFX_goal_generic_construct_military
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = GER_synthetic_rubber
 		cost = 2

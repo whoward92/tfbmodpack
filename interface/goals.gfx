@@ -1,6 +1,61 @@
 spriteTypes = {	
 
 SpriteType = {
+	name = "GFX_Wehrmacht_two"
+	texturefile = "gfx/interface/goals/Wehrmacht_two.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Wehrmacht_Develop"
+	texturefile = "gfx/interface/goals/Wehrmacht_Develop.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Annex_Austria"
+	texturefile = "gfx/interface/goals/Annex_Austria.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Anti_Soviet"
+	texturefile = "gfx/interface/goals/Anti_Soviet.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Rhineland"
+	texturefile = "gfx/interface/goals/Rhineland.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Ger_War_Indus"
+	texturefile = "gfx/interface/goals/Ger_War_Indus.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Reichsautobahn"
+	texturefile = "gfx/interface/goals/Reichsautobahn.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Herman_Works"
+	texturefile = "gfx/interface/goals/Herman_Works.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_KDF_Wagon"
+	texturefile = "gfx/interface/goals/KDF_Wagon.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Autarky"
+	texturefile = "gfx/interface/goals/Autarky.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_4_year_plan"
+	texturefile = "gfx/interface/goals/4_year_plan.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_Oil_Relocation"
 	texturefile = "gfx/interface/goals/Oil_Relocation.dds"			
 	}
