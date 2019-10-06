@@ -460,6 +460,66 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_extra_tech_slot_two
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = GER_demand_sudetenland }
+		x = 0
+		y = 1
+		relative_position_id = GER_demand_sudetenland
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = GER_Waffen_SS
+		icon = GFX_Waffen_SS
+		text = extra_tech_slot
+		prerequisite = { focus = GER_anschluss }
+		x = 1
+		y = 1
+		relative_position_id = GER_anschluss
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = GER_Waffen_SS_two
+		icon = GFX_Ger_SS_France
+		text = extra_tech_slot
+		prerequisite = { focus = GER_anschluss }
+		x = -1
+		y = 1
+		relative_position_id = GER_anschluss
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
 		id = GER_autobahn
 		icon = GFX_Reichsautobahn
 		prerequisite = { focus = GER_autarky }
@@ -619,7 +679,7 @@ focus_tree = {
 	focus = {
 		id = GER_air_innovation
 		text = air_innovation
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_Luftwaffe
 		prerequisite = { focus = GER_rhineland }
 		x = 19
 		y = 2
@@ -1376,46 +1436,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER_demand_memel
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = GER_anschluss }
-		available = { is_puppet = no }
-		x = 2
-		y = 3
-		relative_position_id = GER_anschluss
-		cost = 10
-		bypass = {
-			188 = { is_owned_by = GER }
-			85 = { is_owned_by = GER }
-			86 = { is_owned_by = GER }
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-			}
-		}
-		completion_reward = {
-			188 = { add_claim_by = GER }
-			85 = { add_claim_by = GER }
-			86 = { add_claim_by = GER }
-			762 = { add_claim_by = GER }
-			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
-			if = {
-				limit = {
-					LIT = {
-						owns_state = 188
-						controls_state = 188
-					}
-				}
-				LIT = {
-					country_event = { id = baltic.4 }
-				}
-			}
-		}
-	}
+	
 	
 	focus = { #should already be signed in 39
 		id = GER_mol_rib_pact
@@ -1440,9 +1461,9 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 0
-		y = 6
-		relative_position_id = GER_rhineland
+		x = 2
+		y = 1
+		relative_position_id = GER_end_of_czechoslovakia
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1518,9 +1539,9 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = -2
-		y = 2
-		relative_position_id = GER_demand_memel
+		x = 0
+		y = 1
+		relative_position_id = GER_mol_rib_pact
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -1903,8 +1924,8 @@ focus_tree = {
 			is_puppet = yes
 		}
 		cancel_if_invalid = yes
-		x = -2
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = GER_anschluss
 		cost = 10
 		ai_will_do = {
@@ -2026,6 +2047,49 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = GER_demand_memel
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_demand_sudetenland }
+		available = { is_puppet = no }
+		x = 2
+		y = 2
+		relative_position_id = GER_demand_sudetenland
+		cost = 10
+		bypass = {
+			188 = { is_owned_by = GER }
+			85 = { is_owned_by = GER }
+			86 = { is_owned_by = GER }
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+		completion_reward = {
+			188 = { add_claim_by = GER }
+			85 = { add_claim_by = GER }
+			86 = { add_claim_by = GER }
+			762 = { add_claim_by = GER }
+			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
+			if = {
+				limit = {
+					LIT = {
+						owns_state = 188
+						controls_state = 188
+					}
+				}
+				LIT = {
+					country_event = { id = baltic.4 }
+				}
+			}
+		}
+	}
+
+
 	focus = {
 		id = GER_first_vienna_award
 		icon = GFX_goal_generic_military_deal
@@ -2045,7 +2109,7 @@ focus_tree = {
 			is_puppet = no
 			owns_state = 69
 		}
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = GER_demand_sudetenland
 		cost = 10
@@ -2679,7 +2743,6 @@ focus_tree = {
 
 	focus = {
 		id = GER_improve_national_spirit
-		prerequisite = { focus = GER_anschluss }
 		icon = GFX_goal_support_fascism
 		available = {
 			custom_trigger_tooltip = {
@@ -2718,9 +2781,8 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 0
-		y = 2
-		relative_position_id = GER_anschluss
+		x = 16
+		y = 8
 		cost = 10
 		ai_will_do = {
 			factor = 10

@@ -1,6 +1,21 @@
 spriteTypes = {	
 
 SpriteType = {
+	name = "GFX_Ger_SS_France"
+	texturefile = "gfx/interface/goals/Ger_SS_France.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Waffen_SS"
+	texturefile = "gfx/interface/goals/Waffen_SS.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Luftwaffe"
+	texturefile = "gfx/interface/goals/Luftwaffe.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_Wehrmacht_two"
 	texturefile = "gfx/interface/goals/Wehrmacht_two.dds"			
 	}
