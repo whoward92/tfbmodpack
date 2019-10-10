@@ -16,8 +16,8 @@ focus_tree = {
 		id = GER_four_year_plan
 		icon = GFX_4_year_plan
 		prerequisite = { focus = GER_rhineland }
-		x = 3
-		y = 1
+		x = 10
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -39,7 +39,7 @@ focus_tree = {
 		id = GER_west_wall
 		icon = GFX_goal_generic_construct_military
 	
-		x = 26
+		x = 34
 		y = 1
 	
 		cost = 5
@@ -377,7 +377,7 @@ focus_tree = {
 		id = GER_coal_liquidization
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = GER_autarky }
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = GER_autarky
 		cost = 10
@@ -438,6 +438,45 @@ focus_tree = {
         	}
 		}
 	}
+
+focus = {
+		id = GER_German_Empire
+		icon = GFX_New_German_Empire
+		mutually_exclusive = { focus = GER_Lebensraum}
+		text = extra_tech_slot
+		x = 18
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+focus = {
+		id = GER_Lebensraum
+		icon = GFX_The_Greater_Reich
+		mutually_exclusive = { focus = GER_German_Empire}
+		text = extra_tech_slot
+		x = 16
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
 
 	focus = {
 		id = GER_extra_tech_slot
@@ -523,7 +562,7 @@ focus_tree = {
 		id = GER_autobahn
 		icon = GFX_Reichsautobahn
 		prerequisite = { focus = GER_autarky }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = GER_autarky
 		cost = 5
@@ -681,7 +720,7 @@ focus_tree = {
 		text = air_innovation
 		icon = GFX_Luftwaffe
 		prerequisite = { focus = GER_rhineland }
-		x = 19
+		x = 24
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -914,7 +953,7 @@ focus_tree = {
 		id = GER_army_innovation
 		icon = GFX_Wehrmacht_Develop
 		prerequisite = { focus = GER_rhineland }
-		x = 9
+		x = 14
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -1084,7 +1123,7 @@ focus_tree = {
 	focus = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
-		x = 28
+		x = 38
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1138,8 +1177,8 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_Rhineland
-		x = 14
-		y = 0
+		x = 17
+		y = 1
 		cost = 10
 		available = { is_puppet = no }
 		bypass = {
@@ -2304,12 +2343,101 @@ focus_tree = {
 #		}
 #	}
 
+focus = {
+		id = GER_naval_rearmament_base
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = GER_Rhineland }
+		x = 3
+		y = 1
+		relative_position_id = GER_rhineland
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		available = { has_completed_focus = GER_rhineland }
+
+		bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = naval_effort_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			every_state = {
+				limit = {	has_state_flag = GER_naval_rearmament_2dockyards }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = {	has_state_flag = GER_naval_rearmament_1dockyard }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = GER_naval_rearmament_2dockyards
+			}
+			random_owned_controlled_state = {
+				limit = {
+					dockyard > 0
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GER_naval_rearmament_1dockyard
+			}
+		}
+	}
+
 
 	focus = {
 		id = GER_naval_rearmament
-		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = GER_rhineland }
-		x = 24
+		icon = GFX_focus_ger_revive_kaiserreich
+		prerequisite = { focus = GER_German_Empire }
+		x = 29
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -2392,14 +2520,40 @@ focus_tree = {
 			}
 		}
 	}
-	
+
+	focus = {
+		id = Ger_Admiralty
+		prerequisite = { focus = GER_naval_effort }
+		relative_position_id = GER_naval_effort
+		icon = GFX_Admiralty_Staff
+		text = ITA_Mare_Nostrum_Two
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+	}
+
 	focus = {
 		id = GER_naval_effort
 		text = naval_effort
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_Dreadnought_3
 		prerequisite = { focus = GER_naval_rearmament }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_naval_rearmament
 		cost = 5
 		ai_will_do = {
@@ -2409,7 +2563,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			navy_experience = 25
 			every_state = {
 				limit = { has_state_flag = GER_naval_effort_2dockyards }
 				add_extra_state_shared_building_slots = 2
@@ -2435,23 +2588,21 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+			62 = {
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 5
 					instant_build = yes
 				}
-				set_state_flag = GER_naval_effort_2dockyards
+			}
+			63 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
 			}
 			add_tech_bonus = {
 				name = dd_bonus
@@ -2468,13 +2619,45 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = Ger_Carrier_effort
+		icon = GFX_Zeppelin
+		text = ITA_Aquilla
+		prerequisite = { focus = GER_naval_effort }
+		relative_position_id = GER_naval_effort
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 1
+				uses = 2
+				category = cv_tech
+			}
+			add_tech_bonus = {
+				name = con_def_bonus
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+
 
 	focus = {
 		id = GER_naval_effort2
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = GER_naval_effort }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_naval_effort
 		cost = 10
 		ai_will_do = {
@@ -2535,200 +2718,15 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER_plan_z
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = GER_naval_effort }
-		mutually_exclusive = { focus = GER_u_boat_effort focus = GER_rebuild_the_high_seas_fleet focus = GER_accept_british_naval_dominance }
-		x = -1
-		y = 3
-		relative_position_id = GER_naval_effort
-		cost = 10
-		ai_will_do = {
-			factor = 0.25
-		}	
-
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-			navy_experience = 50
-			every_state = {
-				limit = { has_state_flag = GER_plan_z_dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = bc_bonus
-				bonus = 1.0
-				uses = 1
-				category = bc_tech
-			}
-			add_tech_bonus = {
-				name = bb_bonus
-				bonus = 1.0
-				uses = 1
-				category = bb_tech
-				category = shbb_tech
-			}
-			add_tech_bonus = {
-				name = cv_bonus
-				bonus = 1.0
-				uses = 1
-				category = cv_tech
-			}
-		}
-
-		completion_reward = {
-			navy_experience = 50
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_plan_z_dockyards
-			}
-			add_tech_bonus = {
-				name = bc_bonus
-				bonus = 1.0
-				uses = 1
-				category = bc_tech
-			}
-			add_tech_bonus = {
-				name = bb_bonus
-				bonus = 1.0
-				uses = 1
-				category = bb_tech
-				category = shbb_tech
-			}
-			add_tech_bonus = {
-				name = cv_bonus
-				bonus = 1.0
-				uses = 1
-				category = cv_tech
-			}
-		}
-	}
-
-	focus = {
-		id = GER_u_boat_effort
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = GER_naval_effort }
-		mutually_exclusive = { focus = GER_plan_z focus = GER_rebuild_the_high_seas_fleet focus = GER_accept_british_naval_dominance }
-		x = 1
-		y = 3
-		relative_position_id = GER_naval_effort
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-			navy_experience = 25
-			every_state = {
-				limit = { has_state_flag = GER_u_boat_effort_2dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = GER_u_boat_effort
-				bonus = 1.0
-				uses = 1
-				category = ss_tech
-			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				set_technology = { cruiser_submarines = 1 }
-			}
-		}
-		
-		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_u_boat_effort_2dockyards
-			}
-			add_tech_bonus = {
-				name = GER_u_boat_effort
-				bonus = 1.0
-				uses = 1
-				category = ss_tech
-			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				set_technology = { cruiser_submarines = 1 }
-			}
-		}
-	}
-
-	focus = {
-		id = GER_trade_interdiction
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = GER_u_boat_effort }
-		x = 0
-		y = 1
-		relative_position_id = GER_u_boat_effort
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-			
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_trade_interdiction
-				bonus = 1.0
-				uses = 2
-				category = trade_interdiction_tree
-			}
-		}
-	}
+	
 
 	focus = {
 		id = GER_modular_construction
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = GER_trade_interdiction }
+		prerequisite = { focus = GER_naval_effort2 }
 		x = 0
 		y = 1
-		relative_position_id = GER_trade_interdiction
+		relative_position_id = GER_naval_effort2
 		cost = 10
 		ai_will_do = {
 			factor = 1
