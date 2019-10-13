@@ -39,7 +39,7 @@ focus_tree = {
 		id = GER_west_wall
 		icon = GFX_goal_generic_construct_military
 	
-		x = 34
+		x = 38
 		y = 1
 	
 		cost = 5
@@ -477,6 +477,127 @@ focus = {
 		}
 	}
 
+focus = {
+		id = GER_Euro_Dom
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = GER_Lebensraum }
+		x = -13
+		y = 1
+		relative_position_id = GER_Lebensraum
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+focus = {
+		id = GER_Gebirgsjager
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = GER_Logistical_Reform }
+		x = 2
+		y = 1
+		relative_position_id = GER_Logistical_Reform
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = GER_Afrika_Korps
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = GER_Logistical_Reform }
+		x = -2
+		y = 1
+		relative_position_id = GER_Logistical_Reform
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+focus = {
+		id = GER_The_Panther
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = GER_Logistical_Reform }
+		x = 0
+		y = 2
+		relative_position_id = GER_Logistical_Reform
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = GER_The_New_Reich
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = GER_The_Panther }
+		x = 0
+		y = 1
+		relative_position_id = GER_The_Panther
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+
+
+	focus = {
+		id = GER_Logistical_Reform
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = GER_Euro_Dom }
+		x = 0
+		y = 2
+		relative_position_id = GER_Euro_Dom
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 
 	focus = {
 		id = GER_extra_tech_slot
@@ -1123,7 +1244,7 @@ focus = {
 	focus = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
-		x = 38
+		x = 42
 		y = 1
 		cost = 10
 		ai_will_do = {
