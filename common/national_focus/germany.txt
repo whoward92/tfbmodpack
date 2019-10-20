@@ -94,7 +94,7 @@ focus = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = GER_Lebensraum }
 	
-		x = -9
+		x = -14
 		y = 1
 	    relative_position_id = GER_Lebensraum
 		cost = 5
@@ -532,14 +532,14 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = GER_Euro_Dom
 		icon = GFX_focus_generic_strike_at_democracy1
-		text = extra_tech_slot
+		text = euro_dom
 		prerequisite = { focus = GER_Lebensraum }
-		x = -13
-		y = 1
 		relative_position_id = GER_Lebensraum
+		x = -12
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -551,6 +551,7 @@ focus = {
 			add_research_slot = 1
 		}
 	}
+
 
 focus = {
 		id = GER_Gebirgsjager
@@ -679,10 +680,10 @@ focus = {
 		id = GER_Waffen_SS
 		icon = GFX_Waffen_SS
 		text = extra_tech_slot
-		prerequisite = { focus = GER_anschluss }
-		x = 1
-		y = 1
-		relative_position_id = GER_anschluss
+		prerequisite = { focus = GER_Lebensraum }
+		x = -9
+		y = 2
+		relative_position_id = GER_Lebensraum
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -695,25 +696,7 @@ focus = {
 		}
 	}
 
-	focus = {
-		id = GER_Waffen_SS_two
-		icon = GFX_Ger_SS_France
-		text = extra_tech_slot
-		prerequisite = { focus = GER_anschluss }
-		x = -1
-		y = 1
-		relative_position_id = GER_anschluss
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
+	
 
 	focus = {
 		id = GER_autobahn
