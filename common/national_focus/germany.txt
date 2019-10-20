@@ -12,6 +12,60 @@ focus_tree = {
 
 	default = no
 
+focus = {
+		id = GER_Naval_Rearm_2
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		text = extra_tech_slot
+		prerequisite = { focus = GER_naval_rearmament_base }
+		x = 0
+		y = 1
+		relative_position_id = GER_naval_rearmament_base
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			61 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+		}
+	}
+	}
+	}
+
+	focus = {
+		id = GER_Naval_Rearm_3
+		icon = GFX_goal_generic_industry_fishing
+		text = extra_tech_slot
+		prerequisite = { focus = GER_Naval_Rearm_2}
+		x = 0
+		y = 1
+		relative_position_id = GER_Naval_Rearm_2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			61 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+		}
+	}
+	}
+	}
+
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_4_year_plan
@@ -38,10 +92,11 @@ focus_tree = {
 	focus = {
 		id = GER_west_wall
 		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = GER_Lebensraum }
 	
-		x = 38
+		x = -9
 		y = 1
-	
+	    relative_position_id = GER_Lebensraum
 		cost = 5
 		ai_will_do = {
 			factor = 8
@@ -128,7 +183,7 @@ focus_tree = {
 	focus = {
 		id = GER_atlantikwall
 		icon = GFX_focus_generic_coastal_fort
-		prerequisite = { focus = GER_west_wall }
+		prerequisite = { focus = GER_German_Empire }
 		available = {
 			OR = {
 				FRA = { has_capitulated = yes }
@@ -136,9 +191,9 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = yes
-		x = -1
-		y = 1
-		relative_position_id = GER_west_wall
+		x = 9
+		y = 2
+		relative_position_id = GER_German_Empire
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -174,7 +229,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GER_west_wall
 		cost = 5
@@ -479,7 +534,7 @@ focus = {
 
 focus = {
 		id = GER_Euro_Dom
-		icon = GFX_focus_research
+		icon = GFX_focus_generic_strike_at_democracy1
 		text = extra_tech_slot
 		prerequisite = { focus = GER_Lebensraum }
 		x = -13
@@ -499,7 +554,7 @@ focus = {
 
 focus = {
 		id = GER_Gebirgsjager
-		icon = GFX_focus_research
+		icon = GFX_Ger_Norway
 		text = extra_tech_slot
 		prerequisite = { focus = GER_Logistical_Reform }
 		x = 2
@@ -519,7 +574,7 @@ focus = {
 
 	focus = {
 		id = GER_Afrika_Korps
-		icon = GFX_focus_research
+		icon = GFX_Ger_Afrika
 		text = extra_tech_slot
 		prerequisite = { focus = GER_Logistical_Reform }
 		x = -2
@@ -539,7 +594,7 @@ focus = {
 
 focus = {
 		id = GER_The_Panther
-		icon = GFX_focus_research
+		icon = GFX_goal_black_power
 		text = extra_tech_slot
 		prerequisite = { focus = GER_Logistical_Reform }
 		x = 0
@@ -559,7 +614,7 @@ focus = {
 
 	focus = {
 		id = GER_The_New_Reich
-		icon = GFX_focus_research
+		icon = GFX_German_New_Reich
 		text = extra_tech_slot
 		prerequisite = { focus = GER_The_Panther }
 		x = 0
@@ -581,7 +636,7 @@ focus = {
 
 	focus = {
 		id = GER_Logistical_Reform
-		icon = GFX_focus_research
+		icon = GFX_goal_generic_position_armies
 		text = extra_tech_slot
 		prerequisite = { focus = GER_Euro_Dom }
 		x = 0
@@ -619,25 +674,6 @@ focus = {
 		}
 	}
 
-	focus = {
-		id = GER_extra_tech_slot_two
-		icon = GFX_focus_research
-		text = extra_tech_slot
-		prerequisite = { focus = GER_demand_sudetenland }
-		x = 0
-		y = 1
-		relative_position_id = GER_demand_sudetenland
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
 
 	focus = {
 		id = GER_Waffen_SS
@@ -2466,7 +2502,7 @@ focus = {
 
 focus = {
 		id = GER_naval_rearmament_base
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_Naval_Operations
 		prerequisite = { focus = GER_Rhineland }
 		x = 3
 		y = 1
@@ -2843,7 +2879,7 @@ focus = {
 
 	focus = {
 		id = GER_modular_construction
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_An_Empire_Again
 		prerequisite = { focus = GER_naval_effort2 }
 		x = 0
 		y = 1
@@ -2900,8 +2936,8 @@ focus = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 16
-		y = 8
+		x = 17
+		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 10

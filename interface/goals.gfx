@@ -1,6 +1,46 @@
 spriteTypes = {	
 
 SpriteType = {
+	name = "GFX_Naval_Operations"
+	texturefile = "gfx/interface/goals/Naval_Operations.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Large_Navy"
+	texturefile = "gfx/interface/goals/Large_Navy.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_German_New_Reich"
+	texturefile = "gfx/interface/goals/German_New_Reich.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Ger_Norway"
+	texturefile = "gfx/interface/goals/Ger_Norway.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Ger_Afrika"
+	texturefile = "gfx/interface/goals/Ger_Afrika.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_focus_generic_strike_at_democracy1"
+	texturefile = "gfx/interface/goals/focus_generic_strike_at_democracy1.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_An_Empire_Again"
+	texturefile = "gfx/interface/goals/An_Empire_Again.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Sea_Lion"
+	texturefile = "gfx/interface/goals/Sea_Lion.dds"			
+	}
+
+SpriteType = {
 	name = "GFX_Zeppelin"
 	texturefile = "gfx/interface/goals/Zeppelin.dds"			
 	}
