@@ -1080,6 +1080,16 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SOV_tactical_bomber3_medium"
 		texturefile = "gfx/interface/technologies/SOV_tactical_bomber3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_tac2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_tac1.dds"
 	}		
 	
 	SpriteType = {
@@ -1095,6 +1105,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SOV_strategic_bomber3_medium"
 		texturefile = "gfx/interface/technologies/SOV_strategic_bomber3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_strat1.dds"
 	}		
 	
 	SpriteType = {
@@ -1156,6 +1171,16 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SOV_fighter3_medium"
 		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_fighter2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_fighter1.dds"
 	}	
 	
 	SpriteType = {
@@ -2498,8 +2523,18 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_ENG_fighter3_MB5"
-		texturefile = "gfx/interface/technologies/ENG_fighter3_MB5.dds"
+		name = "GFX_ENG_fighter3"
+		texturefile = "gfx/interface/technologies/ENG_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/ENG_JET2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/ENG_JET1.dds"
 	}	
 	
 	SpriteType = {
@@ -2544,8 +2579,13 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_ENG_strategic_bomber3_medium"
-		texturefile = "gfx/interface/technologies/ENG_strategic_bomber3.dds"
+		texturefile = "gfx/interface/technologies/ENG_JET_STRAT.dds"
 	}		
+
+	SpriteType = {
+		name = "GFX_ENG_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ENG_JET_STRAT.dds"
+	}	
 	
 	SpriteType = {
 		name = "GFX_ENG_tactical_bomber1_medium"
@@ -2560,6 +2600,16 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ENG_tactical_bomber3_medium"
 		texturefile = "gfx/interface/technologies/ENG_tactical_bomber3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/ENG_JET_TAC_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ENG_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ENG_JET_TAC_1.dds"
 	}	
 
 	
@@ -3694,7 +3744,17 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_tactical_bomber3_medium"
 		texturefile = "gfx/interface/technologies/GER_tactical_bomber3.dds"
-	}		
+	}	
+
+	SpriteType = {
+		name = "GFX_GER_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/GER_jet_tac_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_GER_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/GER_jet_tac_1.dds"
+	}	
 	
 	SpriteType = {
 		name = "GFX_GER_strategic_bomber2_medium"
@@ -3704,7 +3764,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_strategic_bomber3_medium"
 		texturefile = "gfx/interface/technologies/GER_strategic_bomber3.dds"
-	}		
+	}
+
+	SpriteType = {
+		name = "GFX_GER_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/GER_jet_strat_1.dds"
+	}	
 	
 	SpriteType = {
 		name = "GFX_GER_CAS2_medium"
@@ -3734,6 +3799,16 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_fighter3_medium"
 		texturefile = "gfx/interface/technologies/GER_fighter3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_GER_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/GER_jet_fighter_2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_GER_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/GER_jet_fighter_1.dds"
 	}	
 	
 	SpriteType = {
