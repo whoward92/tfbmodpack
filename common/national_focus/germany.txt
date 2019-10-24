@@ -13,6 +13,26 @@ focus_tree = {
 	default = no
 
 focus = {
+		id = GER_Strenghen_Luftwaffe
+		icon = GFX_Ger_Fighter_Production
+		text = extra_tech_slot
+		prerequisite = { focus = GER_German_Empire }
+		x = 31
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+
+focus = {
 		id = GER_Naval_Rearm_2
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		text = extra_tech_slot
@@ -553,25 +573,7 @@ focus = {
 	}
 
 
-focus = {
-		id = GER_Gebirgsjager
-		icon = GFX_Ger_Norway
-		text = extra_tech_slot
-		prerequisite = { focus = GER_Logistical_Reform }
-		x = 2
-		y = 1
-		relative_position_id = GER_Logistical_Reform
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
 
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
 
 	focus = {
 		id = GER_Afrika_Korps
@@ -595,7 +597,7 @@ focus = {
 
 focus = {
 		id = GER_The_Panther
-		icon = GFX_goal_black_power
+		icon = GFX_The_Panther_2
 		text = extra_tech_slot
 		prerequisite = { focus = GER_Logistical_Reform }
 		x = 0
@@ -1262,9 +1264,11 @@ focus = {
 
 	focus = {
 		id = GER_rocketry_focus
-		icon = GFX_focus_rocketry
-		x = 42
+		icon = GFX_ME262
+		prerequisite = { focus = GER_Strenghen_Luftwaffe }
+		x = 0
 		y = 1
+		relative_position_id = GER_Strenghen_Luftwaffe
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1289,30 +1293,7 @@ focus = {
 		}
 	}
 
-	focus = {
-		id = GER_wunderwaffe
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = GER_rocketry_focus }
-		x = 0
-		y = 1
-		relative_position_id = GER_rocketry_focus
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 1
-				uses = 1
-				category = nuclear
-				category = rocketry
-			}
-		}
-	}
+	
 
 	focus = {
 		id = GER_rhineland
@@ -2932,12 +2913,12 @@ focus = {
 	}
 	
 	focus = {
-		id = GER_defend_the_oil
-		prerequisite = { focus = GER_synthetic_rubber }
+		id = GER_defend_the_Skies
+		prerequisite = { focus = GER_Logistical_Reform }
 		icon = GFX_goal_generic_construct_military
-		x = 0
+		x = 2
 		y = 1
-		relative_position_id = GER_synthetic_rubber
+		relative_position_id = GER_Logistical_Reform
 		cost = 2
 		
 		bypass = {
