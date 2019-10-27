@@ -2620,24 +2620,93 @@ spriteTypes = {
 	
 	### ENG tanks ###
 
+SpriteType = {
+		name = "GFX_ENG_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_amph_tank_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/ENG_amph_tank_3.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_ENG_basic_light_tank_medium"
 		texturefile = "gfx/interface/technologies/ENG_basic_light_tank.dds"
 	}
 	
 	SpriteType = {
+		name = "GFX_ENG_basic_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_light_tank_AA.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_basic_light_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_light_tank_TD.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_basic_light_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_light_tank_SPG.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_ENG_improved_light_tank_medium"
 		texturefile = "gfx/interface/technologies/ENG_imp_light_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_improved_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_Imp_Light_tank_AA.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_improved_light_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_Imp_Light_tank_TD.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_improved_light_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_Imp_Light_tank_SPG.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_ENG_advanced_light_tank_medium"
 		texturefile = "gfx/interface/technologies/ENG_adv_light_tank.dds"
 	}	
+
+	SpriteType = {
+		name = "GFX_ENG_advanced_light_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_light_tank_AA.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_advanced_light_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_light_tank_TD.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_advanced_light_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_light_tank_SPG.dds"
+	}	
 	
 	SpriteType = {
 		name = "GFX_ENG_basic_medium_tank_medium"
 		texturefile = "gfx/interface/technologies/ENG_basic_main_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_basic_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_main_tank_AA.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_basic_medium_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_main_tank_SPG.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_basic_medium_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_main_tank_TD.dds"
 	}	
 	
 	SpriteType = {
@@ -2646,8 +2715,33 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_ENG_improved_medium_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_imp_main_tank_AA.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_imp_main_tank_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_imp_main_tank_TD.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_ENG_advanced_medium_tank_medium"
 		texturefile = "gfx/interface/technologies/ENG_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_main_tank_TD.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_advanced_medium_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_main_tank_SPG.dds"
 	}
 
 	SpriteType = {
@@ -2656,13 +2750,38 @@ spriteTypes = {
 	}	
 
 	SpriteType = {
+		name = "GFX_ENG_main_battle_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_main_battle_tank_TD.dds"
+	}	
+
+	SpriteType = {
 		name = "GFX_ENG_basic_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/ENG_basic_heavy_tank.dds"
 	}	
-	
+
+	SpriteType = {
+		name = "GFX_ENG_basic_heavy_spaa_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_heavy_tank_AA.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_basic_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_heavy_tank_SPG.dds"
+	}	
+
 	SpriteType = {
 		name = "GFX_ENG_improved_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/ENG_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_imp_heavy_tank_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_improved_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_imp_heavy_tank_TD.dds"
 	}
 
 	SpriteType = {
@@ -2671,8 +2790,24 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_ENG_advanced_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_heavy_tank_SPG.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_advanced_heavy_td_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_heavy_tank_TD.dds"
+	}
+
+
+	SpriteType = {
 		name = "GFX_ENG_super_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/ENG_superheavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_super_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/ENG_superheavy_tank_SPG.dds"
 	}
 
 	### FRE equipment	###
