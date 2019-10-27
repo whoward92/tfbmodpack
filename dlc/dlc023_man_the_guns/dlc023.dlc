@@ -1,0 +1,8 @@
+name = "Man the Guns"
+archive = "dlc/dlc023_man_the_guns/dlc023.zip"
+steam_id = "815460"
+affects_checksum = yes
+affects_compatability = no
+checksum = "dd912274d93776a07b88d30fac2daeed"
+third_party_content = no
+category = "expansion"

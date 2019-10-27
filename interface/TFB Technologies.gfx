@@ -2429,6 +2429,26 @@ spriteTypes = {
 	
 	### ENG equipment ###	
 
+	SpriteType = {
+		name = "GFX_ENG_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/ENG_motorized_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/ENG_mechanized_equipment1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/ENG_mechanized_equipment2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/ENG_mechanized_equipment3.dds"
+	}
+
 
 	SpriteType = {
 		name = "GFX_ENG_rocket_artillery4_medium"
@@ -2622,12 +2642,12 @@ spriteTypes = {
 
 SpriteType = {
 		name = "GFX_ENG_amphibious_tank_medium"
-		texturefile = "gfx/interface/technologies/ENG_amph_tank_2.dds"
+		texturefile = "gfx/interface/technologies/eng_amphibious_tank_1.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_ENG_amphibious_tank_2_medium"
-		texturefile = "gfx/interface/technologies/ENG_amph_tank_3.dds"
+		texturefile = "gfx/interface/technologies/eng_amphibious_tank_2.dds"
 	}
 
 	SpriteType = {
