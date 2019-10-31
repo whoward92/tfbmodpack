@@ -1,6 +1,88 @@
 ideas = {
 
 	country = {
+
+
+		Afrika_Corps = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.1
+				supply_consumption_factor = -0.05
+			}
+			
+
+		}
+
+
+
+		Ger_Motorised = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+
+				motorized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+
+
+		Euro_Dom = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		GER_SS_2 = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				conscription = 0.01
+				}
+			}
+
 	
 		GER_SS = {
 		

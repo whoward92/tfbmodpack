@@ -1,5 +1,11 @@
 spriteTypes = {	
 
+
+SpriteType = {
+	name = "GFX_GER_AA"
+	texturefile = "gfx/interface/goals/GER_AA.dds"			
+	}
+
 SpriteType = {
 	name = "GFX_The_Panther_2"
 	texturefile = "gfx/interface/goals/The_Panther_2.dds"			

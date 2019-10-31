@@ -568,7 +568,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_ideas = Euro_Dom
 		}
 	}
 
@@ -591,7 +591,15 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+				name = special_bonus
+				bonus = 3.0
+				uses = 3
+				technology = desertinfantry_at3
+				technology = desertinfantry_at2
+				technology = desertinfantry_at
+			}
+			add_ideas = Afrika_Corps
 		}
 	}
 
@@ -611,7 +619,12 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+					name = med_armor_bonus
+					ahead_reduction = 1
+					bonus = 2
+					technology = advanced_medium_tank
+				}
 		}
 	}
 
@@ -631,8 +644,17 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_stability = 0.2
+			add_state_core = 28
+			add_state_core = 86
+			add_state_core = 85
+			add_state_core = 9
+			add_state_core = 75
+			add_state_core = 762
+			add_state_core = 72
+		
 		}
+		
 	}
 
 
@@ -653,7 +675,15 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+				name = special_bonus
+				bonus = 1.0
+				uses = 1
+				technology = tech_logistics_company2
+				technology = tech_logistics_company3
+			}
+
+			add_ideas = Ger_Motorised
 		}
 	}
 
@@ -694,7 +724,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_ideas = GER_SS_2
 		}
 	}
 
@@ -2915,7 +2945,7 @@ focus = {
 	focus = {
 		id = GER_defend_the_Skies
 		prerequisite = { focus = GER_Logistical_Reform }
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_GER_AA
 		x = 2
 		y = 1
 		relative_position_id = GER_Logistical_Reform
@@ -2939,6 +2969,21 @@ focus = {
 		}
 		
 		completion_reward = {
+
+			add_tech_bonus = {
+				name = special_bonus
+				ahead_reduction = 5
+				bonus = 1.0
+				uses = 6
+				technology = antiair1
+				technology = antiair2
+				technology = antiair3
+				technology = antiair4
+				technology = antiair5
+				technology = antiair6
+			}
+
+
 					42 = {
 						add_building_construction = {
 							type = anti_air_building
