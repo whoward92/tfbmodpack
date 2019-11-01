@@ -27,7 +27,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_ideas = Ger_Strenghen_Luftwaffe
 		}
 	}
 
@@ -2598,77 +2598,8 @@ focus = {
 		available_if_capitulated = yes
 		available = { has_completed_focus = GER_rhineland }
 
-		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = naval_effort_tt
-				NOT = {
-					any_owned_state = {
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			every_state = {
-				limit = {	has_state_flag = GER_naval_rearmament_2dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = {	has_state_flag = GER_naval_rearmament_1dockyard }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_naval_rearmament_2dockyards
-			}
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = GER_naval_rearmament_1dockyard
-			}
+			add_ideas = Atlantic_Dom
 		}
 	}
 
@@ -2695,6 +2626,15 @@ focus = {
 				uses = 3
 				category = naval_doctrine
 			}
+
+			add_tech_bonus = {
+				name = BB_bonus
+				bonus = 1.0
+				uses = 1
+				category = BB_tech
+			}
+
+			add_ideas = Ger_Dreadnought
 		}
 	}
 
@@ -2740,18 +2680,18 @@ focus = {
 
 		completion_reward = {
 			62 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 			}
 			63 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2799,13 +2739,15 @@ focus = {
 				uses = 1
 				category = naval_doctrine
 			}
+
+			add_ideas = Ger_Zeppelin
 		}
 	}
 
 
 	focus = {
 		id = GER_naval_effort2
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = { focus = GER_naval_effort }
 		x = 0
 		y = 2
@@ -2817,55 +2759,23 @@ focus = {
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = GER_naval_effort_2dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-					NOT = { has_state_flag = GER_naval_effort2_2dockyards }
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_naval_effort2_2dockyards
+
+
+
+			add_tech_bonus = {
+				name = Ger_amphibious_focus
+				bonus = 1.0
+				uses = 2
+				category = marine_tech
 			}
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-					NOT = { has_state_flag = GER_naval_effort2_2dockyards }
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_naval_effort2_2dockyards
+			add_tech_bonus = {
+				name = GER_amphibious_focus
+				bonus = 1.0
+				uses = 2
+				category = tp_tech
 			}
+
 		}
 	}
 
