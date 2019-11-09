@@ -1199,11 +1199,11 @@ focus = {
 				}
 				# Balance research bonus to 2 techs in armor, also in event
 				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 1
-					uses = 2
-					category = armor
-				}
+				name = land_doc_bonus
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
 			}
 		}
 	}
@@ -1271,16 +1271,16 @@ focus = {
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = land_doctrine
 			}
 			add_tech_bonus = {
 				bonus = 1
-				uses = 1
+				uses = 2
 				name = mech_army_bonus
-				technology = basic_medium_tank
 				technology = improved_medium_tank
-				technology = advanced_medium_tank
+				technology = improved_heavy_tank
+				technology = advanced_light_tank
 			}
 			add_tech_bonus = {
 				bonus = 1
@@ -2796,7 +2796,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = GER_modular_construction
+			add_ideas = GER_Empire
 		}
 	}
 

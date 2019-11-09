@@ -3,6 +3,28 @@ ideas = {
 	country = {
 
 
+		GER_Empire = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				non_core_manpower = 0.15
+			}
+			
+
+		}
+
+
 		Afrika_Corps = {
 			
 			allowed = {
