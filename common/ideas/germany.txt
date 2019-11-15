@@ -2,6 +2,28 @@ ideas = {
 
 	country = {
 
+		Fishing_Boats = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+
+				convoy = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+
 
 		GER_Empire = {
 			
@@ -288,6 +310,9 @@ ideas = {
 			research_bonus = {
 				battlefield_support_tree = 0.10
 				jet_technology = 0.10
+			}
+			set_technology = {
+				fighter2 = 1
 			}
 
 		}	

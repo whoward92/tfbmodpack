@@ -48,14 +48,12 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			61 = {
-			add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-		}
-	}
+			add_tech_bonus = {
+				name = con_def_bonus
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
 	}
 	}
 
@@ -75,14 +73,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			61 = {
-			add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-		}
-	}
+		add_ideas = Fishing_Boats
 	}
 	}
 
@@ -467,8 +458,8 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_coal_liquidization
-				bonus = 3
-				uses = 1
+				bonus = 1
+				uses = 3
 				category = synth_resources
 			}
 			if = {
@@ -901,106 +892,29 @@ focus = {
 		available = { has_completed_focus = GER_rhineland }
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			air_experience = 150
-			add_tech_bonus = {
-				name = air_sup_bonus
-				bonus = 3
-				uses = 1
-				category = air_doctrine
-			}
-			every_state = {
-				limit = { has_state_flag = GER_air_innovation_2air }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = { has_state_flag = GER_air_innovation_6air }
-				add_building_construction = {
-					type = air_base
-					level = 6
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = ritter_von_greim
-		}
+		
 
 		completion_reward = {
 
-			air_experience = 50
+			air_experience = 100
 
 			add_tech_bonus = {
 				name = air_sup_bonus
-				bonus = 3
-				uses = 1
+				bonus = 1
+				uses = 2
 				category = air_doctrine
 			}
 
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							air_base > 3
-							air_base < 9
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 5
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 6
-						instant_build = yes
-					}
-					set_state_flag = GER_air_innovation_6air
-				}
+			add_tech_bonus = {
+				name = Fighter_Bonus
+				bonus = 1
+				uses = 1
+				category = fighter2
+			}
+			set_technology = {
+				fighter2 = 1
 			}
 
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_air_innovation_2air
-			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 3
-					air_base < 9
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_air_innovation_2air
-			}
-			random_owned_controlled_state = {
-				limit = {
-					air_base > 2
-					air_base < 9
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = GER_air_innovation_2air
-			}
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ritter_von_greim
 		}
@@ -2555,10 +2469,10 @@ focus = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = GER_naval_rearmament_2dockyards
