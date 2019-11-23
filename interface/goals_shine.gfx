@@ -2,11 +2,19 @@ spriteTypes = {
 
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_GER_AA_shine"
 		texturefile = "gfx/interface/goals/GER_AA.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/GER_AA.dds"			
+=======
+		name = "GFX_Stand_Firm_shine"
+		texturefile = "gfx/interface/goals/Stand_Firm.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Stand_Firm.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -19,7 +27,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/GER_AA.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Stand_Firm.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -31,6 +43,7 @@ SpriteType = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		legacy_lazy_load = no
+<<<<<<< HEAD
 	}
 
 
@@ -970,6 +983,15 @@ SpriteType = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Herman_Works.dds"			
+=======
+	}	
+SpriteType = {
+		name = "GFX_We_Shall_Prevail_shine"
+		texturefile = "gfx/interface/goals/We_Shall_Prevail.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/We_Shall_Prevail.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -982,7 +1004,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Herman_Works.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/We_Shall_Prevail.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -997,11 +1023,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_KDF_Wagon_shine"
 		texturefile = "gfx/interface/goals/KDF_Wagon.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/KDF_Wagon.dds"			
+=======
+		name = "GFX_No_Matter_The_Cost_shine"
+		texturefile = "gfx/interface/goals/No_Matter_The_Cost.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/No_Matter_The_Cost.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1014,7 +1048,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/KDF_Wagon.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/No_Matter_The_Cost.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1029,11 +1067,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Autarky_shine"
 		texturefile = "gfx/interface/goals/Autarky.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Autarky.dds"			
+=======
+		name = "GFX_The_Rigs_shine"
+		texturefile = "gfx/interface/goals/The_Rigs.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/The_Rigs.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1046,7 +1092,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Autarky.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/The_Rigs.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1060,6 +1110,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}	
 
+<<<<<<< HEAD
 
 SpriteType = {
 		name = "GFX_4_year_plan_shine"
@@ -1067,6 +1118,14 @@ SpriteType = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/4_year_plan.dds"			
+=======
+SpriteType = {
+		name = "GFX_Invest_Offshore_shine"
+		texturefile = "gfx/interface/goals/Invest_Offshore.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Invest_Offshore.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1079,7 +1138,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/4_year_plan.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Invest_Offshore.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1094,11 +1157,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Oil_Relocation_shine"
 		texturefile = "gfx/interface/goals/Oil_Relocation.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Oil_Relocation.dds"			
+=======
+		name = "GFX_Steady_Goes_shine"
+		texturefile = "gfx/interface/goals/Steady_Goes.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Steady_Goes.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1111,7 +1182,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Oil_Relocation.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Steady_Goes.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1126,11 +1201,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_roman_empire_shine"
 		texturefile = "gfx/interface/goals/roman_empire.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/roman_empire.dds"			
+=======
+		name = "GFX_Reinforce_Empire_shine"
+		texturefile = "gfx/interface/goals/Reinforce_Empire.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Reinforce_Empire.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1143,7 +1226,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/roman_empire.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Reinforce_Empire.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1157,12 +1244,21 @@ SpriteType = {
 		legacy_lazy_load = no
 	}	
 
+<<<<<<< HEAD
 	SpriteType = {
 		name = "GFX_Italy_Axis_Armour_shine"
 		texturefile = "gfx/interface/goals/Italy_Axis_Armour.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Italy_Axis_Armour.dds"			
+=======
+SpriteType = {
+		name = "GFX_Mediterranean_Bastion_shine"
+		texturefile = "gfx/interface/goals/Mediterranean_Bastion.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Mediterranean_Bastion.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1175,7 +1271,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Italy_Axis_Armour.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Mediterranean_Bastion.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1190,11 +1290,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_italy_axis_shine"
 		texturefile = "gfx/interface/goals/italy_greece.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/italy_axis.dds"			
+=======
+		name = "GFX_Heavy_Tank_shine"
+		texturefile = "gfx/interface/goals/Heavy_Tank.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Heavy_Tank.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1207,7 +1315,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/italy_axis.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Heavy_Tank.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1222,11 +1334,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_italy_greece_shine"
 		texturefile = "gfx/interface/goals/italy_greece.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/italy_greece.dds"			
+=======
+		name = "GFX_Fortify_East_Asia_shine"
+		texturefile = "gfx/interface/goals/Fortify_East_Asia.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Fortify_East_Asia.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1239,7 +1359,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/italy_greece.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Fortify_East_Asia.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1254,11 +1378,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Italy_yugoslavia_shine"
 		texturefile = "gfx/interface/goals/Italy_yugoslavia.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Italy_yugoslavia.dds"			
+=======
+		name = "GFX_Develop_Raj_shine"
+		texturefile = "gfx/interface/goals/Develop_Raj.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Develop_Raj.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1271,7 +1403,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Italy_yugoslavia.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Develop_Raj.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1286,11 +1422,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_italy_albania_shine"
 		texturefile = "gfx/interface/goals/italy_albania.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/italy_albania.dds"			
+=======
+		name = "GFX_Develop_NewZealand_shine"
+		texturefile = "gfx/interface/goals/Develop_NewZealand.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Develop_NewZealand.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1303,7 +1447,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/italy_albania.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Develop_NewZealand.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1318,11 +1466,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Triumph_africa_shine"
 		texturefile = "gfx/interface/goals/Triumph_africa.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Triumph_africa.dds"			
+=======
+		name = "GFX_Develop_Canada_shine"
+		texturefile = "gfx/interface/goals/Develop_Canada.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Develop_Canada.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1335,7 +1491,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Triumph_africa.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Develop_Canada.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1350,11 +1510,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Decima_Flottiglia_shine"
 		texturefile = "gfx/interface/goals/Decima_Flottiglia.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Decima_Flottiglia.dds"			
+=======
+		name = "GFX_Develop_Australia_shine"
+		texturefile = "gfx/interface/goals/Develop_Australia.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Develop_Australia.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1367,7 +1535,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Decima_Flottiglia.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Develop_Australia.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1382,11 +1554,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Fiat_nationalise_shine"
 		texturefile = "gfx/interface/goals/Fiat_nationalise.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Fiat_nationalise.dds"			
+=======
+		name = "GFX_Cruiser_Tank_shine"
+		texturefile = "gfx/interface/goals/Cruiser_Tank.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Cruiser_Tank.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1399,7 +1579,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Fiat_nationalise.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Cruiser_Tank.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1414,11 +1598,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_nationalise_ansaldo_shine"
 		texturefile = "gfx/interface/goals/nationalise_ansaldo.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/nationalise_ansaldo.dds"			
+=======
+		name = "GFX_Commonwealth_Ties_shine"
+		texturefile = "gfx/interface/goals/Commonwealth_Ties.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Commonwealth_Ties.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1431,7 +1623,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/nationalise_ansaldo.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Commonwealth_Ties.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1445,12 +1641,22 @@ SpriteType = {
 		legacy_lazy_load = no
 	}	
 
+<<<<<<< HEAD
 SpriteType = {
 		name = "GFX_Lancia_nationalise_shine"
 		texturefile = "gfx/interface/goals/Lancia_nationalise.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Lancia_nationalise.dds"			
+=======
+
+SpriteType = {
+		name = "GFX_Air_Training_shine"
+		texturefile = "gfx/interface/goals/Air_Training.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Air_Training.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1463,7 +1669,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Lancia_nationalise.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Air_Training.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1478,11 +1688,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Beretta_nationalise_shine"
 		texturefile = "gfx/interface/goals/Beretta_nationalise.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Beretta_nationalise.dds"			
+=======
+		name = "GFX_Develop_SouthAfrica_shine"
+		texturefile = "gfx/interface/goals/Develop_SouthAfrica.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Develop_SouthAfrica.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1495,7 +1713,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Beretta_nationalise.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Develop_SouthAfrica.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1510,11 +1732,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Regio_Esercito_shine"
 		texturefile = "gfx/interface/goals/Regio_Esercito.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Regio_Esercito.dds"			
+=======
+		name = "GFX_Coldstream_Guards_shine"
+		texturefile = "gfx/interface/goals/Coldstream_Guards.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Coldstream_Guards.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1527,7 +1757,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Regio_Esercito.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Coldstream_Guards.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1542,11 +1776,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Italy_Marines_shine"
 		texturefile = "gfx/interface/goals/Italy_Marines.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Italy_Marines.dds"			
+=======
+		name = "GFX_Scots_Guards_shine"
+		texturefile = "gfx/interface/goals/Scots_Guards.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Scots_Guards.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1559,7 +1801,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Italy_Marines.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Scots_Guards.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1574,11 +1820,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_italy_capital_shine"
 		texturefile = "gfx/interface/goals/italy_capital.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/italy_capital.dds"			
+=======
+		name = "GFX_The_Grenadiers_shine"
+		texturefile = "gfx/interface/goals/The_Grenadiers.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/The_Grenadiers.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1591,7 +1845,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/italy_capital.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/The_Grenadiers.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1606,11 +1864,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Italy_cruiser_shine"
 		texturefile = "gfx/interface/goals/Italy_cruiser.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Italy_cruiser.dds"			
+=======
+		name = "GFX_Glory_Carrier_shine"
+		texturefile = "gfx/interface/goals/Glory_Carrier.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Glory_Carrier.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1623,7 +1889,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Italy_cruiser.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Glory_Carrier.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1638,11 +1908,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_italy_destroyer_shine"
 		texturefile = "gfx/interface/goals/italy_destroyer.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/italy_destroyer.dds"			
+=======
+		name = "GFX_Prince_Wales_shine"
+		texturefile = "gfx/interface/goals/Prince_Wales.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Prince_Wales.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1655,7 +1933,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/italy_destroyer.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Prince_Wales.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1670,11 +1952,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Ita_Navy_shine"
 		texturefile = "gfx/interface/goals/Ita_Navy.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Ita_Navy.dds"			
+=======
+		name = "GFX_Britannia_Rules_shine"
+		texturefile = "gfx/interface/goals/Britannia_Rules.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Britannia_Rules.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1687,7 +1977,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Ita_Navy.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Britannia_Rules.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1702,11 +1996,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Italy_radar_shine"
 		texturefile = "gfx/interface/goals/Italy_radar.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Italy_radar.dds"			
+=======
+		name = "GFX_Crown_Colony_Class_shine"
+		texturefile = "gfx/interface/goals/Crown_Colony_Class.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Crown_Colony_Class.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1719,7 +2021,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Italy_radar.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Crown_Colony_Class.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1734,11 +2040,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Aviazione_Navale_shine"
 		texturefile = "gfx/interface/goals/Aviazione_Navale.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Aviazione_Navale.dds"			
+=======
+		name = "GFX_Battle_Class_shine"
+		texturefile = "gfx/interface/goals/Battle_Class.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Battle_Class.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1751,7 +2065,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Aviazione_Navale.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Battle_Class.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1766,11 +2084,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_aquila_shine"
 		texturefile = "gfx/interface/goals/aquila.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/aquila.dds"			
+=======
+		name = "GFX_Royal_Marines_shine"
+		texturefile = "gfx/interface/goals/Royal_Marines.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Royal_Marines.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1783,7 +2109,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/aquila.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Royal_Marines.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1798,11 +2128,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_mediterranean_aircraft_carrier_shine"
 		texturefile = "gfx/interface/goals/mediterranean_aircraft_carrier.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/mediterranean_aircraft_carrier.dds"			
+=======
+		name = "GFX_Royal_Navy_shine"
+		texturefile = "gfx/interface/goals/Royal_Navy.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Royal_Navy.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1815,7 +2153,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/mediterranean_aircraft_carrier.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Royal_Navy.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1830,11 +2172,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Mare_Nostrum_shine"
 		texturefile = "gfx/interface/goals/Mare_Nostrum.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Mare_Nostrum.dds"			
+=======
+		name = "GFX_Fund_Gloster_shine"
+		texturefile = "gfx/interface/goals/Fund_Gloster.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Fund_Gloster.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1847,7 +2197,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Mare_Nostrum.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Fund_Gloster.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1861,12 +2215,22 @@ SpriteType = {
 		legacy_lazy_load = no
 	}	
 
+<<<<<<< HEAD
 SpriteType = {
 		name = "GFX_Regia_Marina_shine"
 		texturefile = "gfx/interface/goals/Regia_Marina.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Regia_Marina.dds"			
+=======
+
+SpriteType = {
+		name = "GFX_The_Spitfire_shine"
+		texturefile = "gfx/interface/goals/The_Spitfire.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/The_Spitfire.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1879,7 +2243,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Regia_Marina.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/The_Spitfire.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1894,11 +2262,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_italy_jet_shine"
 		texturefile = "gfx/interface/goals/italy_jet.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/italy_jet.dds"			
+=======
+		name = "GFX_Fund_De_Haviland_shine"
+		texturefile = "gfx/interface/goals/Fund_De_Haviland.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Fund_De_Haviland.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1911,7 +2287,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/italy_jet.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Fund_De_Haviland.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1926,11 +2306,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Macchi_invest_shine"
 		texturefile = "gfx/interface/goals/Macchi_invest.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Macchi_invest.dds"			
+=======
+		name = "GFX_Fund_Blackburn_shine"
+		texturefile = "gfx/interface/goals/Fund_Blackburn.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Fund_Blackburn.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1943,7 +2331,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Macchi_invest.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Fund_Blackburn.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1958,11 +2350,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Caproni_invest_shine"
 		texturefile = "gfx/interface/goals/Caproni_invest.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Caproni_invest.dds"			
+=======
+		name = "GFX_Fund_Supermarine_shine"
+		texturefile = "gfx/interface/goals/Fund_Supermarine.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Fund_Supermarine.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1975,7 +2375,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Caproni_invest.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Fund_Supermarine.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1990,11 +2394,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Breda_invest_shine"
 		texturefile = "gfx/interface/goals/Breda_invest.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Breda_invest.dds"			
+=======
+		name = "GFX_Specification_F10_shine"
+		texturefile = "gfx/interface/goals/Specification_F10.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Specification_F10.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2007,7 +2419,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Breda_invest.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Specification_F10.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2022,11 +2438,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_rapid_industry_shine"
 		texturefile = "gfx/interface/goals/rapid_industry.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/rapid_industry.dds"			
+=======
+		name = "GFX_Royal_Air_Force_shine"
+		texturefile = "gfx/interface/goals/Royal_Air_Force.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Royal_Air_Force.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2039,7 +2463,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/rapid_industry.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Royal_Air_Force.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2052,6 +2480,7 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}	
+<<<<<<< HEAD
 
 SpriteType = {
 		name = "GFX_Regia_Aeronautica_shine"
@@ -2059,6 +2488,15 @@ SpriteType = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Regia_Aeronautica.dds"			
+=======
+	
+SpriteType = {
+		name = "GFX_General_Rearm_shine"
+		texturefile = "gfx/interface/goals/General_Rearm.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/General_Rearm.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2071,7 +2509,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Regia_Aeronautica.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/General_Rearm.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2086,11 +2528,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Libya_Infastructure_shine"
 		texturefile = "gfx/interface/goals/Libya_Infastructure.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Libya_Infastructure.dds"			
+=======
+		name = "GFX_S_A_S_shine"
+		texturefile = "gfx/interface/goals/S_A_S.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/S_A_S.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2103,7 +2553,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Libya_Infastructure.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/S_A_S.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2118,11 +2572,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Libya_Refinery_shine"
 		texturefile = "gfx/interface/goals/Libya_Refinery.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Libya_Refinery.dds"			
+=======
+		name = "GFX_Royal_Tank_shine"
+		texturefile = "gfx/interface/goals/Royal_Tank.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Royal_Tank.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2135,7 +2597,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Libya_Refinery.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Royal_Tank.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2150,11 +2616,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_libya_oil_shine"
 		texturefile = "gfx/interface/goals/libya_oil.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/libya_oil.dds"			
+=======
+		name = "GFX_Armoured_Corps_shine"
+		texturefile = "gfx/interface/goals/Armoured_Corps.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Armoured_Corps.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2167,7 +2641,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/libya_oil.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Armoured_Corps.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2182,11 +2660,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Fund_Fiat_shine"
 		texturefile = "gfx/interface/goals/Fund_Fiat.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Fund_Fiat.dds"			
+=======
+		name = "GFX_Royal_Artillery_shine"
+		texturefile = "gfx/interface/goals/Royal_Artillery.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Royal_Artillery.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2199,7 +2685,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Fund_Fiat.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Royal_Artillery.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2213,12 +2703,22 @@ SpriteType = {
 		legacy_lazy_load = no
 	}	
 
+<<<<<<< HEAD
 SpriteType = {
 		name = "GFX_Fund_Beretta_shine"
 		texturefile = "gfx/interface/goals/Fund_Beretta.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Fund_Beretta.dds"			
+=======
+
+SpriteType = {
+		name = "GFX_Casualty_Avoidance_shine"
+		texturefile = "gfx/interface/goals/Casualty_Avoidance.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Casualty_Avoidance.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2231,7 +2731,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Fund_Beretta.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Casualty_Avoidance.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2245,12 +2749,22 @@ SpriteType = {
 		legacy_lazy_load = no
 	}	
 
+<<<<<<< HEAD
 SpriteType = {
 		name = "GFX_battle_for_lira_shine"
 		texturefile = "gfx/interface/goals/battle_for_lira.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/battle_for_lira.dds"			
+=======
+
+SpriteType = {
+		name = "GFX_B_S_A_shine"
+		texturefile = "gfx/interface/goals/B_S_A.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/B_S_A.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2263,7 +2777,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/battle_for_lira.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/B_S_A.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2278,11 +2796,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_Battle_for_grain_shine"
 		texturefile = "gfx/interface/goals/Battle_for_grain.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Battle_for_grain.dds"			
+=======
+		name = "GFX_Royal_Ordnance_shine"
+		texturefile = "gfx/interface/goals/Royal_Ordnance.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Royal_Ordnance.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2295,7 +2821,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/Battle_for_grain.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Royal_Ordnance.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2310,11 +2840,19 @@ SpriteType = {
 	}	
 
 SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_ethiopia_logistic_shine"
 		texturefile = "gfx/interface/goals/ethiopia_logistic.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/ethiopia_logistic.dds"			
+=======
+		name = "GFX_Limited_Rearm_shine"
+		texturefile = "gfx/interface/goals/Limited_Rearm.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Limited_Rearm.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2327,7 +2865,11 @@ SpriteType = {
 		}
 
 		animation = {
+<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/ethiopia_logistic.dds"			
+=======
+			animationmaskfile = "gfx/interface/goals/Limited_Rearm.dds"			
+>>>>>>> UK_Overhaul
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -2341,7 +2883,10 @@ SpriteType = {
 		legacy_lazy_load = no
 	}	
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> UK_Overhaul
 SpriteType = {
 		name = "GFX_South_Doctrine_shine"
 		texturefile = "gfx/interface/goals/South_Doctrine.dds"			

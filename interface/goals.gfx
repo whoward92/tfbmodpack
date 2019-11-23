@@ -378,6 +378,228 @@ SpriteType = {
 
 
 SpriteType = {
+	name = "GFX_Stand_Firm"
+	texturefile = "gfx/interface/goals/Stand_Firm.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_We_Shall_Prevail"
+	texturefile = "gfx/interface/goals/We_Shall_Prevail.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_No_Matter_The_Cost"
+	texturefile = "gfx/interface/goals/No_Matter_The_Cost.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_The_Rigs"
+	texturefile = "gfx/interface/goals/The_Rigs.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Invest_Offshore"
+	texturefile = "gfx/interface/goals/Invest_Offshore.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Steady_Goes"
+	texturefile = "gfx/interface/goals/Steady_Goes.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Reinforce_Empire"
+	texturefile = "gfx/interface/goals/Reinforce_Empire.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Mediterranean_Bastion"
+	texturefile = "gfx/interface/goals/Mediterranean_Bastion.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Heavy_Tank"
+	texturefile = "gfx/interface/goals/Heavy_Tank.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fortify_East_Asia"
+	texturefile = "gfx/interface/goals/Fortify_East_Asia.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Develop_Raj"
+	texturefile = "gfx/interface/goals/Develop_Raj.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Develop_NewZealand"
+	texturefile = "gfx/interface/goals/Develop_NewZealand.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Develop_Canada"
+	texturefile = "gfx/interface/goals/Develop_Canada.dds"			
+	}
+
+
+SpriteType = {
+	name = "GFX_Develop_Australia"
+	texturefile = "gfx/interface/goals/Develop_Australia.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Cruiser_Tank"
+	texturefile = "gfx/interface/goals/Cruiser_Tank.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Commonwealth_Ties"
+	texturefile = "gfx/interface/goals/Commonwealth_Ties.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Air_Training"
+	texturefile = "gfx/interface/goals/Air_Training.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Develop_SouthAfrica"
+	texturefile = "gfx/interface/goals/Develop_SouthAfrica.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Coldstream_Guards"
+	texturefile = "gfx/interface/goals/Coldstream_Guards.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Scots_Guards"
+	texturefile = "gfx/interface/goals/Scots_Guards.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_The_Grenadiers"
+	texturefile = "gfx/interface/goals/The_Grenadiers.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Glory_Carrier"
+	texturefile = "gfx/interface/goals/Glory_Carrier.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Prince_Wales"
+	texturefile = "gfx/interface/goals/Prince_Wales.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Britannia_Rules"
+	texturefile = "gfx/interface/goals/Britannia_Rules.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Crown_Colony_Class"
+	texturefile = "gfx/interface/goals/Crown_Colony_Class.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Battle_Class"
+	texturefile = "gfx/interface/goals/Battle_Class.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Royal_Marines"
+	texturefile = "gfx/interface/goals/Royal_Marines.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Royal_Navy"
+	texturefile = "gfx/interface/goals/Royal_Navy.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fund_Gloster"
+	texturefile = "gfx/interface/goals/Fund_Gloster.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_The_Spitfire"
+	texturefile = "gfx/interface/goals/The_Spitfire.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fund_De_Haviland"
+	texturefile = "gfx/interface/goals/Fund_De_Haviland.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fund_Blackburn"
+	texturefile = "gfx/interface/goals/Fund_Blackburn.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Fund_Supermarine"
+	texturefile = "gfx/interface/goals/Fund_Supermarine.dds"			
+	}
+
+
+SpriteType = {
+	name = "GFX_Specification_F10"
+	texturefile = "gfx/interface/goals/Specification_F10.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Royal_Air_Force"
+	texturefile = "gfx/interface/goals/Royal_Air_Force.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_General_Rearm"
+	texturefile = "gfx/interface/goals/General_Rearm.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_S_A_S"
+	texturefile = "gfx/interface/goals/S_A_S.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Royal_Tank"
+	texturefile = "gfx/interface/goals/Royal_Tank.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Armoured_Corps"
+	texturefile = "gfx/interface/goals/Armoured_Corps.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Royal_Artillery"
+	texturefile = "gfx/interface/goals/Royal_Artillery.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Casualty_Avoidance"
+	texturefile = "gfx/interface/goals/Casualty_Avoidance.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_B_S_A"
+	texturefile = "gfx/interface/goals/B_S_A.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Royal_Ordnance"
+	texturefile = "gfx/interface/goals/Royal_Ordnance.dds"			
+	}
+
+SpriteType = {
+	name = "GFX_Limited_Rearm"
+	texturefile = "gfx/interface/goals/Limited_Rearm.dds"			
+	}	
+
+SpriteType = {
 	name = "GFX_Join_Axis"
 	texturefile = "gfx/interface/goals/Join_Axis.dds"			
 	}	
@@ -1553,7 +1775,7 @@ SpriteType = {
 	}	
 	
 	SpriteType = {
-	name = "GFX_goal_support_fascism"
+	name = "GFX_goal_sup`t_fascism"
 	texturefile = "gfx/interface/goals/goal_generic_support_fascism.dds"			
 	}	
 	
