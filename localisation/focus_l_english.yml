@@ -131,6 +131,33 @@
  naval_air_effort:0 "Naval Air Effort"
  naval_air_effort_desc:0 "The efficacy of air strikes against naval targets was demonstrated by the Americans already back in 1921. We should not neglect this branch of the Air Force if we intend to wage war on a naval power."
  german_focus:0 "German National Focus"
+ GER_Lebensraum:0 "The Third Reich"
+ GER_Lebensraum_desc:0 "Our attention should be focused on the Wehrmacht and our sights should be set eastwards, committing to dominating the European continent."
+ GER_German_Empire:0 "The German Empire"
+ GER_German_Empire_desc:0 "The time has come for us to seize the lost glory of our former empire, the Soviets to our east should be contained but our true focus should be on the west, reclaiming our empire and punsihing those who forced Gemrany to its knees in 1918."
+ GER_Waffen_SS:0 "The Waffen SS"
+ GER_Waffen_SS_desc:0 "The Waffen SS shall begin drawing manpower form various conquered territories in order to bolster their numbers."
+ GER_Euro_Dom:0 "European Domination"
+ GER_Euro_Dom_desc:0 "We should ensure that our grasp over Europe is unquestionable by beginning to accelerate our industry"
+ GER_Logistical_Reform:0 "Logistical Reform"
+ GER_Logistical_Reform_desc:0 "In order for us to traverse the vast distances in our eastern campaign, our logistical system will need a huge overhaul. "
+ GER_Afrika_Korps:0 "Afrika Korps"
+ GER_Afrika_Korps_desc:0 "There has become a requirement for us to enage the enemy in the northern African campaign led by the Itlians. A rapid develepmont and integration of Desert warfare tactics within the Wehrmacht."
+ GER_Defend_The_Skies:0 "Defend The Skies"
+ GER_Defend_The_Skies_desc:0 "With Allied strategic bombing looking ever more likely, it is time for us to increase development of our anti air defence."
+ GER_The_Panther:0 "The Panther"
+ GER_The_Panther_desc:0 "A new Medium tank is required to combat the suprisingly efficent Soviet armour. The Panzerkampfwagen V Panther"
+ GER_The_Greater_Reich:0 "The Greater Reich"
+ GER_The_Greater_Reich_desc:0 "It is time for us to bring former and new German territories back into the core territory of the Reich."
+ GER_The_High_seas_fleet:0 "The High Seas Fleet"
+ GER_The_High_seas_fleet_desc:0 "It is time for us to rebuild our once great fleet and challenge British Naval Superiority."
+ GER_The_Göring_program:0 "The Göring Program"
+ GER_The_Göring_program_desc:0 
+
+
+
+
+
  GER_autobahn:0 "Reichsautobahn"
  GER_autobahn_tt:0 "Add maximum §YInfrastructure§! in §YBrandenburg§!, §YHannover§!, §YThüringen§! and §YFranken§!"
  GER_autobahn_desc:1 "Since its inception in 1933, the reichsautobahn project has been a glorious success. The construction efforts have reduced unemployment, and the wide roads stand as a monument to Germany's economic recovery. Much work remains to be done, however."

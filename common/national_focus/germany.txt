@@ -17,7 +17,7 @@ focus = {
 		icon = GFX_Ger_Fighter_Production
 		text = extra_tech_slot
 		prerequisite = { focus = GER_German_Empire }
-		x = 31
+		x = 30
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -51,7 +51,7 @@ focus = {
 			add_tech_bonus = {
 				name = con_def_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = naval_doctrine
 			}
 	}
@@ -202,7 +202,7 @@ focus = {
 			}
 		}
 		cancel_if_invalid = yes
-		x = 9
+		x = 8
 		y = 2
 		relative_position_id = GER_German_Empire
 		cost = 5
@@ -516,17 +516,19 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available_if_capitulated = yes
-
 		completion_reward = {
 			add_research_slot = 1
 		}
+
+		available = {
+		date > 1939.9.1
 	}
+}
 
 focus = {
 		id = GER_Lebensraum
 		icon = GFX_The_Greater_Reich
+	
 		mutually_exclusive = { focus = GER_German_Empire}
 		text = extra_tech_slot
 		x = 16
@@ -535,13 +537,19 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+	
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_research_slot = 1
 		}
+
+		available = {
+		date > 1939.9.1
+
 	}
+}
 
 	focus = {
 		id = GER_Euro_Dom
@@ -883,7 +891,7 @@ focus = {
 		text = air_innovation
 		icon = GFX_Luftwaffe
 		prerequisite = { focus = GER_rhineland }
-		x = 24
+		x = 23
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -923,7 +931,7 @@ focus = {
 		x = 1
 		y = 2
 		relative_position_id = GER_air_innovation
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -931,7 +939,6 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 100 # due to spot mod 100
 			air_experience = 150
 			add_tech_bonus = {
 				name = op_dest_bonus
@@ -1033,6 +1040,7 @@ focus = {
 
 		completion_reward = {
 			# Balance research bonus for 2 techs in battlefield_support_tree
+			air_experience = 150
 			add_tech_bonus = {
 				name = strat_dest_bonus
 				bonus = 1
@@ -2515,7 +2523,7 @@ focus = {
 		id = GER_naval_rearmament
 		icon = GFX_focus_ger_revive_kaiserreich
 		prerequisite = { focus = GER_German_Empire }
-		x = 29
+		x = 28
 		y = 1
 		cost = 5
 		ai_will_do = {
